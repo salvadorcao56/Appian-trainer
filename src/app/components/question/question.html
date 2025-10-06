@@ -1,0 +1,46 @@
+<div class="question-container" *ngIf="preguntaActual">
+  <!-- Título y progreso -->
+  <div class="question-header">
+    <h2>Entrenamiento Appian</h2>
+    <div class="question-progress">Pregunta {{preguntaActual.id}}</div>
+  </div>
+
+  <!-- Pregunta -->
+  <div class="question-content">
+    <h3>{{preguntaActual.contenido}}</h3>
+
+    <!-- Indicador múltiple -->
+    <div class="question-type" *ngIf="preguntaActual.multiple">
+      🔘 Selección múltiple (elige 2 o más)
+    </div>
+    <div class="question-type" *ngIf="!preguntaActual.multiple">
+      ⚪ Selección simple (elige 1)
+    </div>
+  </div>
+
+  <!-- Respuestas -->
+  <div class="answers-container">
+    <div
+      *ngFor="let respuesta of preguntaActual.respuestas"
+      class="answer-option"
+      [class.selected]="respuestaSeleccionada.includes(respuesta.id)"
+      (click)="toggleRespuesta(respuesta.id)"
+    >
+      <div class="answer-checkbox">
+        {{preguntaActual.multiple ? '☐' : '○'}}
+      </div>
+      <div class="answer-text">{{respuesta.contenido}}</div>
+    </div>
+  </div>
+
+  <!-- Botones -->
+  <div class="actions">
+    <button class="btn-next" (click)="cargarPreguntaAleatoria()">
+      Siguiente Pregunta
+    </button>
+  </div>
+</div>
+
+<div *ngIf="!preguntaActual">
+  <p>Cargando preguntas...</p>
+</div>

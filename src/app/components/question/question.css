@@ -1,0 +1,83 @@
+.question-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.question-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.question-progress {
+  background: #007acc;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.question-content {
+  margin-bottom: 30px;
+}
+
+.question-type {
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.answers-container {
+  margin: 20px 0;
+}
+
+.answer-option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.answer-option:hover {
+  background: #f9f9f9;
+}
+
+.answer-option.selected {
+  border-color: #007acc;
+  background: #e6f3ff;
+}
+
+.answer-checkbox {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.answer-text {
+  flex: 1;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-next {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-next:hover {
+  background: #005a9e;
+}
