@@ -1,46 +1,98 @@
 <div class="question-container" *ngIf="preguntaActual">
-  <!-- Título y progreso -->
+  <!-- Header compacto -->
   <div class="question-header">
-    <h2>Entrenamiento Appian</h2>
-    <div class="question-progress">Pregunta {{preguntaActual.id}}</div>
+    <div class="header-left">
+      <span class="question-type-badge" [class.multiple]="preguntaActual.multiple" [class.single]="!preguntaActual.multiple">
+        {{preguntaActual.multiple ? '🔘 Múltiple' : '⚪ Simple'}}
+      </span>
+      <span class="progress">{{preguntasRespondidas + 1}}/{{totalPreguntas}}</span>
+    </div>
+    <div class="header-right">
+      <span class="score correct">✅ {{aciertos}}</span>
+      <span class="score incorrect">❌ {{errores}}</span>
+      <button class="btn-reset" (click)="reiniciarSesion()" title="Reiniciar">🔄</button>
+    </div>
   </div>
 
-  <!-- Pregunta -->
+  <!-- Pregunta con fondo azul y menos espacio -->
   <div class="question-content">
     <h3>{{preguntaActual.contenido}}</h3>
-
-    <!-- Indicador múltiple -->
-    <div class="question-type" *ngIf="preguntaActual.multiple">
-      🔘 Selección múltiple (elige 2 o más)
-    </div>
-    <div class="question-type" *ngIf="!preguntaActual.multiple">
-      ⚪ Selección simple (elige 1)
-    </div>
   </div>
 
   <!-- Respuestas -->
   <div class="answers-container">
     <div
-      *ngFor="let respuesta of preguntaActual.respuestas"
+      *ngFor="let respuesta of respuestasAleatorias"
       class="answer-option"
       [class.selected]="respuestaSeleccionada.includes(respuesta.id)"
+      [class.correct]="haRespondido && esRespuestaCorrecta(respuesta.id)"
+      [class.incorrect]="haRespondido && esRespuestaSeleccionadaIncorrecta(respuesta.id)"
+      [class.disabled]="haRespondido"
       (click)="toggleRespuesta(respuesta.id)"
     >
       <div class="answer-checkbox">
-        {{preguntaActual.multiple ? '☐' : '○'}}
+        {{obtenerSimboloCheckbox(respuesta.id)}}
       </div>
-      <div class="answer-text">{{respuesta.contenido}}</div>
+      <div class="answer-content">
+        <div class="answer-text">{{respuesta.contenido}}</div>
+        <div class="answer-explanation" *ngIf="haRespondido">
+          {{respuesta.explicacion}}
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Botones -->
-  <div class="actions">
-    <button class="btn-next" (click)="cargarPreguntaAleatoria()">
-      Siguiente Pregunta
+  <!-- Botón con MUCHO menos espacio arriba -->
+  <div class="actions-footer">
+    <div class="result-feedback" *ngIf="haRespondido">
+      <span class="feedback-message" [class.correct]="esCorrecta" [class.incorrect]="!esCorrecta">
+        {{esCorrecta ? '✅ Correcto' : '❌ Incorrecto'}}
+      </span>
+    </div>
+
+    <button
+      *ngIf="!haRespondido"
+      class="btn-primary"
+      (click)="verificarRespuesta()"
+      [disabled]="respuestaSeleccionada.length === 0"
+    >
+      Responder
+    </button>
+
+    <button
+      *ngIf="haRespondido"
+      class="btn-next"
+      (click)="siguientePregunta()"
+    >
+      {{preguntasRestantes.length > 1 ? 'Siguiente' : 'Finalizar'}}
     </button>
   </div>
 </div>
 
-<div *ngIf="!preguntaActual">
-  <p>Cargando preguntas...</p>
+<!-- Pantalla final (igual) -->
+<div class="completion-screen" *ngIf="!preguntaActual && preguntasRespondidas > 0">
+  <div class="completion-content">
+    <h2>🎉 Completado</h2>
+    <div class="final-stats">
+      <div class="stat-item">
+        <span>Total:</span>
+        <span>{{totalPreguntas}}</span>
+      </div>
+      <div class="stat-item correct">
+        <span>Aciertos:</span>
+        <span>{{aciertos}}</span>
+      </div>
+      <div class="stat-item incorrect">
+        <span>Errores:</span>
+        <span>{{errores}}</span>
+      </div>
+      <div class="stat-item percentage">
+        <span>Porcentaje:</span>
+        <span>{{(aciertos / totalPreguntas * 100).toFixed(1)}}%</span>
+      </div>
+    </div>
+    <button class="btn-restart" (click)="reiniciarSesion()">
+      Nueva Sesión
+    </button>
+  </div>
 </div>
