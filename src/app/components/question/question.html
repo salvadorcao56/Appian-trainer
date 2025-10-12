@@ -78,10 +78,9 @@
       </span>
     </div>
 
-    <!-- Botones de estudio CON botón Finalizar -->
+    <!-- Botones de estudio SIN botón "Ver Explicación" -->
     <div class="study-actions" *ngIf="modo === 'estudio' && !haRespondido">
       <button class="btn-skip" (click)="saltarPregunta()">⏭️ Saltar</button>
-      <button class="btn-explain" (click)="verExplicacion()" [disabled]="respuestaSeleccionada.length === 0">🔍 Ver Explicación</button>
       <button class="btn-finish" (click)="finalizarSesionEstudio()">🏁 Finalizar Sesión</button>
     </div>
 

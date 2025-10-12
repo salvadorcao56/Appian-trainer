@@ -52,7 +52,7 @@ export class QuestionComponent implements OnInit {
   inicializarSesion() {
     let preguntasSeleccionadas: Question[];
 
-    // SELECCIÓN DE PREGUNTAS SEGÚN MODO - CORREGIDO
+    // SELECCIÓN DE PREGUNTAS SEGÚN MODO
     if (this.modo === 'examen-curso') {
       // Examen Curso: 60 preguntas del curso oficial
       preguntasSeleccionadas = this.dataService.getQuestions();
@@ -193,28 +193,24 @@ export class QuestionComponent implements OnInit {
   }
 
   saltarPregunta() {
-  if (!this.preguntaActual) return;
+    if (!this.preguntaActual) return;
 
-  this.preguntaSaltada = true;
-  this.haRespondido = true;
-  this.mostrarExplicaciones = true;
-
-  // ✅ CONTAR como error en estadísticas
-  this.errores++;
-
-  // ✅ AÑADIR a preguntas para repasar (porque no la sabes)
-  if (this.modo === 'estudio') {
-    this.preguntasFalladas.push(this.preguntaActual.id);
-  }
-
-  this.preguntasRespondidas++;
-}
-
-  verExplicacion() {
+    this.preguntaSaltada = true;
+    this.haRespondido = true;
     this.mostrarExplicaciones = true;
+
+    // Contar como error y añadir a preguntas para repasar
+    this.errores++;
+    if (this.modo === 'estudio') {
+      this.preguntasFalladas.push(this.preguntaActual.id);
+    }
+
+    this.preguntasRespondidas++;
   }
 
-  // NUEVO MÉTODO: Finalizar sesión de estudio
+  // ELIMINADO: método verExplicacion() - YA NO ES NECESARIO
+
+  // Método: Finalizar sesión de estudio
   finalizarSesionEstudio() {
     // Forzar la finalización mostrando estadísticas
     this.preguntasRestantes = [];

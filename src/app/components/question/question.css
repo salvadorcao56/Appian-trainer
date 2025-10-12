@@ -270,7 +270,7 @@
   border: 1px solid #ff9800;
 }
 
-/* Botones de estudio CON botón Finalizar */
+/* Botones de estudio SIN botón "Ver Explicación" */
 .study-actions {
   display: flex;
   gap: 8px;
@@ -279,18 +279,6 @@
 
 .btn-skip {
   background: #ff9800;
-  color: white;
-  border: none;
-  padding: 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: bold;
-  flex: 1;
-}
-
-.btn-explain {
-  background: #9c27b0;
   color: white;
   border: none;
   padding: 8px;
@@ -317,17 +305,8 @@
   background: #f57c00;
 }
 
-.btn-explain:hover:not(:disabled) {
-  background: #7b1fa2;
-}
-
 .btn-finish:hover {
   background: #5d4037;
-}
-
-.btn-explain:disabled {
-  background: #ccc;
-  cursor: not-allowed;
 }
 
 .btn-primary, .btn-next {
