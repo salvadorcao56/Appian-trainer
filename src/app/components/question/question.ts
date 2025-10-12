@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Question as QuestionModel, Answer } from '../../models/question.model';
+import { Question, Answer } from '../../models/question.model';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { DataService } from '../../services/data.service';
   styleUrl: './question.css'
 })
 export class QuestionComponent implements OnInit {
-  preguntaActual: QuestionModel | undefined;
+  preguntaActual: Question | undefined;
   respuestasAleatorias: Answer[] = [];
   respuestaSeleccionada: number[] = [];
   haRespondido: boolean = false;
@@ -21,29 +21,89 @@ export class QuestionComponent implements OnInit {
   errores: number = 0;
   preguntasRestantes: number[] = [];
   preguntasRespondidas: number = 0;
+  preguntasFalladas: number[] = [];
+
+  // Temporizador y Modos
+  tiempoTotal: number = 60 * 60;
+  tiempoRestante: number = this.tiempoTotal;
+  temporizador: any;
+  modo: 'examen-curso' | 'examen-completo' | 'estudio' = 'examen-curso';
+
+  // Propiedades para modo estudio
+  mostrarExplicaciones: boolean = false;
+  preguntaSaltada: boolean = false;
+
+  // Getter para tiempo formateado
+  get tiempoFormateado(): string {
+    const minutos = Math.floor(this.tiempoRestante / 60);
+    const segundos = this.tiempoRestante % 60;
+    return `${minutos}:${segundos.toString().padStart(2, '0')}`;
+  }
 
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
     this.inicializarSesion();
+    if (this.modo !== 'estudio') {
+      this.iniciarTemporizador();
+    }
   }
 
   inicializarSesion() {
-    const todasLasPreguntas = this.dataService.getQuestions();
-    this.totalPreguntas = todasLasPreguntas.length;
-    this.preguntasRestantes = this.dataService.getQuestionIds();
+    let preguntasSeleccionadas: Question[];
+
+    // SELECCIÓN DE PREGUNTAS SEGÚN MODO - CORREGIDO
+    if (this.modo === 'examen-curso') {
+      // Examen Curso: 60 preguntas del curso oficial
+      preguntasSeleccionadas = this.dataService.getQuestions();
+    } else if (this.modo === 'examen-completo') {
+      // Examen Completo: 60 preguntas aleatorias de todas las fuentes
+      const todasLasFuentes = this.dataService.getAllQuestions(); // 85 preguntas
+      preguntasSeleccionadas = this.aleatorizarArray([...todasLasFuentes]).slice(0, 60); // 60 aleatorias
+    } else {
+      // Modo Estudio: todas las preguntas (85)
+      preguntasSeleccionadas = this.dataService.getAllQuestions();
+    }
+
+    this.totalPreguntas = preguntasSeleccionadas.length;
+    this.preguntasRestantes = preguntasSeleccionadas.map(q => q.id);
     this.preguntasRestantes = this.aleatorizarArray([...this.preguntasRestantes]);
     this.aciertos = 0;
     this.errores = 0;
     this.preguntasRespondidas = 0;
+    this.preguntasFalladas = [];
+    this.tiempoRestante = this.tiempoTotal;
+    this.mostrarExplicaciones = false;
+    this.preguntaSaltada = false;
     this.cargarSiguientePregunta();
+  }
+
+  cambiarModo(nuevoModo: 'examen-curso' | 'examen-completo' | 'estudio') {
+    if (this.temporizador) {
+      clearInterval(this.temporizador);
+    }
+    this.modo = nuevoModo;
+    this.inicializarSesion();
+
+    // Iniciar timer solo en modos examen
+    if (this.modo !== 'estudio') {
+      this.iniciarTemporizador();
+    }
   }
 
   cargarSiguientePregunta() {
     if (this.preguntasRestantes.length === 0) {
-      // Todas las preguntas respondidas
-      this.preguntaActual = undefined;
-      return;
+      if (this.modo === 'estudio' && this.preguntasFalladas.length > 0) {
+        this.preguntasRestantes = [...this.preguntasFalladas];
+        this.preguntasFalladas = [];
+        this.preguntasRestantes = this.aleatorizarArray(this.preguntasRestantes);
+      } else {
+        this.preguntaActual = undefined;
+        if (this.temporizador) {
+          clearInterval(this.temporizador);
+        }
+        return;
+      }
     }
 
     const siguienteId = this.preguntasRestantes[0];
@@ -51,6 +111,8 @@ export class QuestionComponent implements OnInit {
     this.respuestaSeleccionada = [];
     this.haRespondido = false;
     this.esCorrecta = false;
+    this.mostrarExplicaciones = false;
+    this.preguntaSaltada = false;
 
     if (this.preguntaActual) {
       this.respuestasAleatorias = this.aleatorizarArray([...this.preguntaActual.respuestas]);
@@ -68,8 +130,7 @@ export class QuestionComponent implements OnInit {
   }
 
   toggleRespuesta(id: number) {
-    if (this.haRespondido) return;
-
+    if (this.haRespondido && this.modo !== 'estudio') return;
     if (!this.preguntaActual) return;
 
     if (this.preguntaActual.multiple) {
@@ -81,6 +142,11 @@ export class QuestionComponent implements OnInit {
       }
     } else {
       this.respuestaSeleccionada = [id];
+    }
+
+    // Auto-verificar en modo estudio para preguntas simples
+    if (this.modo === 'estudio' && !this.preguntaActual.multiple && this.respuestaSeleccionada.length === 1) {
+      setTimeout(() => this.verificarRespuesta(), 300);
     }
   }
 
@@ -111,10 +177,49 @@ export class QuestionComponent implements OnInit {
       this.aciertos++;
     } else {
       this.errores++;
+      // En modo estudio, añadir a preguntas falladas para repetir
+      if (this.modo === 'estudio' && this.preguntaActual) {
+        this.preguntasFalladas.push(this.preguntaActual.id);
+      }
     }
 
     this.haRespondido = true;
     this.preguntasRespondidas++;
+
+    // En modo estudio, mostrar explicaciones inmediatamente
+    if (this.modo === 'estudio') {
+      this.mostrarExplicaciones = true;
+    }
+  }
+
+  saltarPregunta() {
+  if (!this.preguntaActual) return;
+
+  this.preguntaSaltada = true;
+  this.haRespondido = true;
+  this.mostrarExplicaciones = true;
+
+  // ✅ CONTAR como error en estadísticas
+  this.errores++;
+
+  // ✅ AÑADIR a preguntas para repasar (porque no la sabes)
+  if (this.modo === 'estudio') {
+    this.preguntasFalladas.push(this.preguntaActual.id);
+  }
+
+  this.preguntasRespondidas++;
+}
+
+  verExplicacion() {
+    this.mostrarExplicaciones = true;
+  }
+
+  // NUEVO MÉTODO: Finalizar sesión de estudio
+  finalizarSesionEstudio() {
+    // Forzar la finalización mostrando estadísticas
+    this.preguntasRestantes = [];
+    this.preguntaActual = undefined;
+    this.mostrarExplicaciones = true;
   }
 
   siguientePregunta() {
@@ -126,7 +231,13 @@ export class QuestionComponent implements OnInit {
   }
 
   reiniciarSesion() {
+    if (this.temporizador) {
+      clearInterval(this.temporizador);
+    }
     this.inicializarSesion();
+    if (this.modo !== 'estudio') {
+      this.iniciarTemporizador();
+    }
   }
 
   esRespuestaCorrecta(id: number): boolean {
@@ -141,7 +252,6 @@ export class QuestionComponent implements OnInit {
     return !!respuesta && this.respuestaSeleccionada.includes(id) && !respuesta.correcta;
   }
 
-  // Nuevo: Obtener símbolo para el checkbox
   obtenerSimboloCheckbox(id: number): string {
     if (!this.preguntaActual) return '○';
 
@@ -151,6 +261,35 @@ export class QuestionComponent implements OnInit {
       return estaSeleccionada ? '☑' : '☐';
     } else {
       return estaSeleccionada ? '●' : '○';
+    }
+  }
+
+  iniciarTemporizador() {
+    this.temporizador = setInterval(() => {
+      this.tiempoRestante--;
+
+      // Alerta últimos 5 minutos
+      if (this.tiempoRestante === 5 * 60) {
+        alert('⏰ ¡Solo 5 minutos restantes!');
+      }
+
+      // Tiempo agotado - auto-enviar
+      if (this.tiempoRestante <= 0) {
+        this.finalizarExamenPorTiempo();
+      }
+    }, 1000);
+  }
+
+  finalizarExamenPorTiempo() {
+    clearInterval(this.temporizador);
+    this.preguntasRestantes = [];
+    this.preguntaActual = undefined;
+    alert('⌛ Tiempo agotado. Mostrando resultados...');
+  }
+
+  ngOnDestroy() {
+    if (this.temporizador) {
+      clearInterval(this.temporizador);
     }
   }
 }

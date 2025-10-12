@@ -8,6 +8,46 @@
   flex-direction: column;
 }
 
+/* === Selector de 3 modos === */
+.mode-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mode-btn {
+  padding: 8px 12px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.mode-btn.active {
+  color: white;
+}
+
+.mode-btn.exam-course-mode.active {
+  background: #f44336;
+  border-color: #f44336;
+}
+
+.mode-btn.exam-complete-mode.active {
+  background: #ff9800;
+  border-color: #ff9800;
+}
+
+.mode-btn.study-mode.active {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
 /* Header compacto */
 .question-header {
   display: flex;
@@ -78,12 +118,23 @@
   font-size: 15px;
 }
 
+/* Ajustar badge de estudio */
+.study-badge {
+  background: #4caf50;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
 /* Pregunta con fondo azul - REDUCIDO SOLO VERTICALMENTE */
 .question-content {
   margin-bottom: 8px;
   flex: 0 0 auto;
   background: #007acc;
-  padding: 4px 8px; /* Cambiado: 4px vertical (antes 8px), 8px horizontal igual */
+  padding: 4px 8px;
   border-radius: 6px;
 }
 
@@ -111,7 +162,7 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
   min-height: 40px;
 }
 
@@ -122,6 +173,8 @@
 .answer-option.selected {
   border-color: #007acc;
   background: #e6f3ff;
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 122, 204, 0.3);
 }
 
 .answer-option.correct {
@@ -165,6 +218,16 @@
   border-left: 2px solid #007acc;
 }
 
+.answer-option.correct .answer-explanation {
+  border-left-color: #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.answer-option.incorrect .answer-explanation {
+  border-left-color: #f44336;
+  background: rgba(244, 67, 54, 0.1);
+}
+
 /* Botón con menos espacio */
 .actions-footer {
   position: sticky;
@@ -199,6 +262,72 @@
   background: #ffebee;
   color: #c62828;
   border: 1px solid #f44336;
+}
+
+.feedback-message.skipped {
+  background: #fff3e0;
+  color: #ef6c00;
+  border: 1px solid #ff9800;
+}
+
+/* Botones de estudio CON botón Finalizar */
+.study-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.btn-skip {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.btn-explain {
+  background: #9c27b0;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.btn-finish {
+  background: #795548;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.btn-skip:hover {
+  background: #f57c00;
+}
+
+.btn-explain:hover:not(:disabled) {
+  background: #7b1fa2;
+}
+
+.btn-finish:hover {
+  background: #5d4037;
+}
+
+.btn-explain:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }
 
 .btn-primary, .btn-next {
@@ -279,6 +408,11 @@
   border-left: 3px solid #2196f3;
 }
 
+.stat-item.study-info {
+  background: #fff3e0 !important;
+  border-left: 3px solid #ff9800 !important;
+}
+
 .btn-restart {
   width: 100%;
   background: #2196f3;
@@ -294,4 +428,26 @@
 
 .btn-restart:hover {
   background: #1976d2;
+}
+
+/* === Estilos del temporizador === */
+.temporizador {
+  background: #2196f3;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.temporizador.alerta {
+  background: #f44336;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
 }

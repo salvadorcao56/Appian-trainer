@@ -1,4 +1,26 @@
 <div class="question-container" *ngIf="preguntaActual">
+  <!-- Selector de 3 modos -->
+  <div class="mode-selector">
+    <button
+      [class.active]="modo === 'examen-curso'"
+      (click)="cambiarModo('examen-curso')"
+      class="mode-btn exam-course-mode">
+      📝 Examen Curso
+    </button>
+    <button
+      [class.active]="modo === 'examen-completo'"
+      (click)="cambiarModo('examen-completo')"
+      class="mode-btn exam-complete-mode">
+      🚀 Examen Completo
+    </button>
+    <button
+      [class.active]="modo === 'estudio'"
+      (click)="cambiarModo('estudio')"
+      class="mode-btn study-mode">
+      📚 Modo Estudio
+    </button>
+  </div>
+
   <!-- Header compacto -->
   <div class="question-header">
     <div class="header-left">
@@ -6,6 +28,12 @@
         {{preguntaActual.multiple ? '🔘 Múltiple' : '⚪ Simple'}}
       </span>
       <span class="progress">{{preguntasRespondidas + 1}}/{{totalPreguntas}}</span>
+      <span class="temporizador" [class.alerta]="tiempoRestante <= 300" *ngIf="modo !== 'estudio'">
+        ⏰ {{tiempoFormateado}}
+      </span>
+      <span class="study-badge" *ngIf="modo === 'estudio'">
+        🎓 Sin Timer
+      </span>
     </div>
     <div class="header-right">
       <span class="score correct">✅ {{aciertos}}</span>
@@ -14,7 +42,7 @@
     </div>
   </div>
 
-  <!-- Pregunta con fondo azul y menos espacio -->
+  <!-- Pregunta con fondo azul -->
   <div class="question-content">
     <h3>{{preguntaActual.contenido}}</h3>
   </div>
@@ -27,7 +55,7 @@
       [class.selected]="respuestaSeleccionada.includes(respuesta.id)"
       [class.correct]="haRespondido && esRespuestaCorrecta(respuesta.id)"
       [class.incorrect]="haRespondido && esRespuestaSeleccionadaIncorrecta(respuesta.id)"
-      [class.disabled]="haRespondido"
+      [class.disabled]="haRespondido && modo !== 'estudio'"
       (click)="toggleRespuesta(respuesta.id)"
     >
       <div class="answer-checkbox">
@@ -35,23 +63,30 @@
       </div>
       <div class="answer-content">
         <div class="answer-text">{{respuesta.contenido}}</div>
-        <div class="answer-explanation" *ngIf="haRespondido">
+        <div class="answer-explanation" *ngIf="mostrarExplicaciones">
           {{respuesta.explicacion}}
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Botón con MUCHO menos espacio arriba -->
+  <!-- Botones de acciones -->
   <div class="actions-footer">
     <div class="result-feedback" *ngIf="haRespondido">
-      <span class="feedback-message" [class.correct]="esCorrecta" [class.incorrect]="!esCorrecta">
-        {{esCorrecta ? '✅ Correcto' : '❌ Incorrecto'}}
+      <span class="feedback-message" [class.correct]="esCorrecta" [class.incorrect]="!esCorrecta && !preguntaSaltada" [class.skipped]="preguntaSaltada">
+        {{preguntaSaltada ? '⏭️ Pregunta saltada' : (esCorrecta ? '✅ Correcto' : '❌ Incorrecto')}}
       </span>
     </div>
 
+    <!-- Botones de estudio CON botón Finalizar -->
+    <div class="study-actions" *ngIf="modo === 'estudio' && !haRespondido">
+      <button class="btn-skip" (click)="saltarPregunta()">⏭️ Saltar</button>
+      <button class="btn-explain" (click)="verExplicacion()" [disabled]="respuestaSeleccionada.length === 0">🔍 Ver Explicación</button>
+      <button class="btn-finish" (click)="finalizarSesionEstudio()">🏁 Finalizar Sesión</button>
+    </div>
+
     <button
-      *ngIf="!haRespondido"
+      *ngIf="!haRespondido && modo !== 'estudio'"
       class="btn-primary"
       (click)="verificarRespuesta()"
       [disabled]="respuestaSeleccionada.length === 0"
@@ -64,19 +99,30 @@
       class="btn-next"
       (click)="siguientePregunta()"
     >
-      {{preguntasRestantes.length > 1 ? 'Siguiente' : 'Finalizar'}}
+      {{preguntasRestantes.length > 1 || preguntasFalladas.length > 0 ? 'Siguiente' : 'Finalizar'}}
     </button>
   </div>
 </div>
 
-<!-- Pantalla final (igual) -->
+<!-- Pantalla final -->
 <div class="completion-screen" *ngIf="!preguntaActual && preguntasRespondidas > 0">
   <div class="completion-content">
-    <h2>🎉 Completado</h2>
+    <h2>🎉 {{modo === 'estudio' ? 'Sesión Completada' : 'Examen Finalizado'}}</h2>
     <div class="final-stats">
       <div class="stat-item">
-        <span>Total:</span>
+        <span>Modo:</span>
+        <span>
+          {{modo === 'examen-curso' ? 'Examen Curso' :
+            modo === 'examen-completo' ? 'Examen Completo' : 'Estudio'}}
+        </span>
+      </div>
+      <div class="stat-item">
+        <span>Total preguntas:</span>
         <span>{{totalPreguntas}}</span>
+      </div>
+      <div class="stat-item">
+        <span>Preguntas respondidas:</span>
+        <span>{{preguntasRespondidas}}</span>
       </div>
       <div class="stat-item correct">
         <span>Aciertos:</span>
@@ -87,12 +133,16 @@
         <span>{{errores}}</span>
       </div>
       <div class="stat-item percentage">
-        <span>Porcentaje:</span>
-        <span>{{(aciertos / totalPreguntas * 100).toFixed(1)}}%</span>
+        <span>Porcentaje de aciertos:</span>
+        <span>{{(aciertos / preguntasRespondidas * 100).toFixed(1)}}%</span>
+      </div>
+      <div class="stat-item study-info" *ngIf="modo === 'estudio'">
+        <span>Preguntas para repasar:</span>
+        <span>{{preguntasFalladas.length}}</span>
       </div>
     </div>
     <button class="btn-restart" (click)="reiniciarSesion()">
-      Nueva Sesión
+      {{modo === 'estudio' ? 'Nueva Sesión' : 'Nuevo Examen'}}
     </button>
   </div>
 </div>
