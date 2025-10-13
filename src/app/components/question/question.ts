@@ -186,10 +186,8 @@ export class QuestionComponent implements OnInit {
     this.haRespondido = true;
     this.preguntasRespondidas++;
 
-    // En modo estudio, mostrar explicaciones inmediatamente
-    if (this.modo === 'estudio') {
-      this.mostrarExplicaciones = true;
-    }
+    // ✅ CAMBIO CLAVE: Mostrar explicaciones en TODOS los modos inmediatamente
+    this.mostrarExplicaciones = true;
   }
 
   saltarPregunta() {
@@ -249,7 +247,7 @@ export class QuestionComponent implements OnInit {
   }
 
   obtenerSimboloCheckbox(id: number): string {
-    if (!this.preguntaActual) return '○';
+    if (!this.preguntaActual) return '☐';
 
     const estaSeleccionada = this.respuestaSeleccionada.includes(id);
 
