@@ -142,11 +142,10 @@ export class QuestionComponent implements OnInit {
       }
     } else {
       this.respuestaSeleccionada = [id];
-    }
-
-    // Auto-verificar en modo estudio para preguntas simples
-    if (this.modo === 'estudio' && !this.preguntaActual.multiple && this.respuestaSeleccionada.length === 1) {
-      setTimeout(() => this.verificarRespuesta(), 300);
+      // Auto-verificar solo para preguntas simples en modo estudio
+      if (this.modo === 'estudio' && !this.preguntaActual.multiple) {
+        setTimeout(() => this.verificarRespuesta(), 300);
+      }
     }
   }
 
@@ -205,8 +204,6 @@ export class QuestionComponent implements OnInit {
 
     this.preguntasRespondidas++;
   }
-
-  // ELIMINADO: método verExplicacion() - YA NO ES NECESARIO
 
   // Método: Finalizar sesión de estudio
   finalizarSesionEstudio() {

@@ -78,12 +78,26 @@
       </span>
     </div>
 
-    <!-- Botones de estudio SIN botón "Ver Explicación" -->
+    <!-- Botones de estudio MODIFICADOS -->
     <div class="study-actions" *ngIf="modo === 'estudio' && !haRespondido">
-      <button class="btn-skip" (click)="saltarPregunta()">⏭️ Saltar</button>
-      <button class="btn-finish" (click)="finalizarSesionEstudio()">🏁 Finalizar Sesión</button>
+      <div class="study-buttons-row">
+        <button class="btn-skip" (click)="saltarPregunta()">⏭️ Saltar</button>
+
+        <!-- Botón Responder para preguntas múltiples en modo estudio - MISMAS DIMENSIONES -->
+        <button
+          *ngIf="preguntaActual?.multiple"
+          class="btn-primary study-respond-btn"
+          (click)="verificarRespuesta()"
+          [disabled]="respuestaSeleccionada.length === 0"
+        >
+          Responder
+        </button>
+
+        <button class="btn-finish" (click)="finalizarSesionEstudio()">🏁 Finalizar</button>
+      </div>
     </div>
 
+    <!-- Botón Responder para modos examen -->
     <button
       *ngIf="!haRespondido && modo !== 'estudio'"
       class="btn-primary"
@@ -93,6 +107,7 @@
       Responder
     </button>
 
+    <!-- Botón Siguiente -->
     <button
       *ngIf="haRespondido"
       class="btn-next"

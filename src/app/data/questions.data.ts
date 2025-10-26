@@ -1857,7 +1857,7 @@ export const QUESTIONS: Question[] = [
         id: 240,
         contenido: 'To validate data store edits.',
         correcta: false,
-        explicacion: 'INCORRECTO: La verificación no valida ediciones de datos.'
+        explicacion: 'CORRECTO: La verificación de data store entities se utiliza principalmente para validar que las ediciones en el data store cumplan con las reglas de integridad referencial y estructura definidas.'
       },
       {
         id: 241,
@@ -1869,7 +1869,7 @@ export const QUESTIONS: Question[] = [
         id: 242,
         contenido: 'To nest CDTs.',
         correcta: true,
-        explicacion: 'CORRECTO: La verificación de data store entities permite anidar CDTs (Complex Data Types) para crear estructuras de datos más complejas.'
+        explicacion: 'INCORRECTO: El anidamiento de CDTs se realiza durante el diseño, no mediante la verificación de entidades.'
       }
     ]
   }

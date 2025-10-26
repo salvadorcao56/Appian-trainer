@@ -430,3 +430,76 @@
   50% { opacity: 0.7; }
   100% { opacity: 1; }
 }
+
+/* Botones de estudio que ocupan el 100% del ancho */
+.study-buttons-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+.study-buttons-row .btn-skip,
+.study-buttons-row .btn-finish,
+.study-buttons-row .study-respond-btn {
+  flex: 1;
+  padding: 6px 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+  height: 32px;
+  min-height: 32px;
+  width: 100%;
+}
+
+.study-buttons-row .btn-skip {
+  background: #ff9800;
+  color: white;
+  flex: 1;
+}
+
+.study-buttons-row .btn-skip:hover {
+  background: #f57c00;
+}
+
+.study-buttons-row .study-respond-btn {
+  background: #007acc;
+  color: white;
+  flex: 2; /* El botón responder ocupa más espacio */
+}
+
+.study-buttons-row .study-respond-btn:hover:not(:disabled) {
+  background: #005a9e;
+}
+
+.study-buttons-row .study-respond-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.study-buttons-row .btn-finish {
+  background: #795548;
+  color: white;
+  flex: 1;
+}
+
+.study-buttons-row .btn-finish:hover {
+  background: #5d4037;
+}
+
+/* Ajustar altura de botones en otros modos para que coincidan */
+.btn-primary, .btn-next {
+  width: 100%;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  height: 32px;
+  min-height: 32px;
+}
