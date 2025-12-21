@@ -1,0 +1,33 @@
+{
+  "instruccion": "Genera exactamente 25 preguntas nuevas en formato JSON para una aplicación de preguntas y respuestas sobre Appian.",
+  "requisitos": {
+    "estructura": "Debe ser un array JSON válido. Cada pregunta debe seguir EXACTAMENTE el formato del ejemplo proporcionado.",
+    "formato_salida": "Tu respuesta debe ser ÚNICAMENTE el código JSON, sin explicaciones, introducción o texto adicional.",
+    "contenido": "Preguntas técnicas sobre desarrollo en Appian (funciones SAIL, objetos, mejores prácticas, configuración).",
+    "idiomas": "Las preguntas ('contenido') en inglés. Las explicaciones de respuestas ('explicacion') en castellano."
+  },
+  "ejemplo": {
+    "id": 531,
+    "contenido": "Select 2 that apply. Which two security principles are enforced by Appian's object security model?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1625,
+        "contenido": "Principle of Least Privilege",
+        "correcta": true,
+        "explicacion": "CORRECTO: Appian aplica el principio de privilegio mínimo por defecto."
+      }
+    ]
+  },
+  "parametros_actuales": {
+    "ultimo_id_pregunta_usado": 590,
+    "ultimo_id_respuesta_usado": 1785,
+    "nuevas_preguntas_solicitadas": 25,
+    "ids_a_usar": {
+      "inicio_preguntas": 591,
+      "fin_preguntas": 615,
+      "inicio_respuestas": 1786,
+      "fin_respuestas_estimado": 1886
+    }
+  }
+}
