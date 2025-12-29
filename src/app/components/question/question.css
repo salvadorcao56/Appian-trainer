@@ -23,7 +23,7 @@
   border-radius: 20px;
   background: white;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease;
   white-space: nowrap;
@@ -66,7 +66,7 @@
 .question-type-badge {
   padding: 1px 4px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -87,14 +87,14 @@
   color: white;
   padding: 1px 4px;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .score {
   padding: 1px 3px;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -115,7 +115,7 @@
   padding: 1px 3px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* Ajustar badge de estudio */
@@ -139,7 +139,7 @@
 }
 
 .question-content h3 {
-  font-size: 16px;
+  font-size: 20px; /*tamaño pregunta*/
   line-height: 1.2;
   margin: 0;
   color: white;
@@ -193,7 +193,7 @@
 
 .answer-checkbox {
   margin-right: 8px;
-  font-size: 13px;
+  font-size: 20px;
   margin-top: 1px;
   min-width: 16px;
   text-align: center;
@@ -204,7 +204,7 @@
 }
 
 .answer-text {
-  font-size: 16px;
+  font-size: 20px; /*tamaño respuestas*/
   line-height: 1.2;
 }
 
@@ -213,7 +213,7 @@
   padding: 3px 5px;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 3px;
-  font-size: 11px;
+  font-size: 20px;
   color: #555;
   border-left: 2px solid #007acc;
 }
@@ -247,7 +247,7 @@
 .feedback-message {
   padding: 3px 6px;
   border-radius: 3px;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
   display: inline-block;
 }
@@ -284,7 +284,7 @@
   padding: 8px;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   flex: 1;
 }
@@ -296,7 +296,7 @@
   padding: 8px;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   flex: 1;
 }
@@ -317,7 +317,7 @@
   padding: 8px;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -355,7 +355,7 @@
 
 .completion-content h2 {
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .final-stats {
@@ -369,7 +369,7 @@
   margin: 6px 0;
   background: #f8f9fa;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .stat-item.correct {
@@ -415,7 +415,7 @@
   color: white;
   padding: 2px 8px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   margin-left: 8px;
 }
@@ -447,7 +447,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
   height: 32px;
   min-height: 32px;

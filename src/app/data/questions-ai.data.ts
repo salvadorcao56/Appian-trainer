@@ -553,9 +553,9 @@ export const QUESTIONS_AI: Question[] = [
       },
       {
         id: 1572,
-        contenido: 'text() with format parameter',
+        contenido: 'datetext()',
         correcta: true,
-        explicacion: 'CORRECTO: La función text() con el parámetro format se usa para formatear fechas en patrones específicos.'
+        explicacion: 'CORRECTO: La función datetext() con el parámetro format se usa para formatear fechas en patrones específicos.'
       },
       {
         id: 1573,
@@ -739,9 +739,9 @@ export const QUESTIONS_AI: Question[] = [
     "respuestas": [
       {
         "id": 1596,
-        "contenido": "Start Process",
+        "contenido": "Subprocess",
         "correcta": true,
-        "explicacion": "CORRECTO: El servicio inteligente Start Process inicia otro modelo de proceso desde un proceso en ejecución."
+        "explicacion": "CORRECTO: El servicio inteligente Subprocess inicia otro modelo de proceso desde un proceso en ejecución."
       },
       {
         "id": 1597,
@@ -1563,15 +1563,15 @@ export const QUESTIONS_AI: Question[] = [
     "respuestas": [
       {
         "id": 1703,
-        "contenido": "isnullorempty()",
+        "contenido": "a!isNullOrEmpty()",
         "correcta": true,
         "explicacion": "CORRECTO: isnullorempty() verifica si un valor es nulo o vacío."
       },
       {
         "id": 1704,
-        "contenido": "a!isNullOrEmpty()",
+        "contenido": "isnullorempty()",
         "correcta": false,
-        "explicacion": "INCORRECTO: No existe la función a!isNullOrEmpty()."
+        "explicacion": "INCORRECTO: No existe la función isnullorempty()."
       },
       {
         "id": 1705,
@@ -1755,9 +1755,9 @@ export const QUESTIONS_AI: Question[] = [
     "respuestas": [
       {
         "id": 1728,
-        "contenido": "tonumber()",
+        "contenido": "tointeger()",
         "correcta": true,
-        "explicacion": "CORRECTO: tonumber() convierte una cadena de texto a un valor numérico."
+        "explicacion": "CORRECTO: tointeger() convierte una cadena de texto a un valor numérico."
       },
       {
         "id": 1729,

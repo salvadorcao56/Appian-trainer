@@ -26,9 +26,9 @@ export const QUESTIONS_EXTRA: Question[] = [
       },
       {
         id: 304,
-        contenido: 'a!recordList()',
+        contenido: 'a!recordFilterList()',
         correcta: true,
-        explicacion: 'CORRECTO: a!recordList() muestra dinámicamente una lista de registros basada en un tipo de registro con capacidades de paginación y filtrado.'
+        explicacion: 'CORRECTO: a!recordFilterList() muestra dinámicamente una lista de registros basada en un tipo de registro con capacidades de paginación y filtrado.'
       }
     ]
   },
@@ -551,26 +551,26 @@ export const QUESTIONS_EXTRA: Question[] = [
     {
       id: 368,
       contenido: 'a',
-      correcta: false,
-      explicacion: 'INCORRECTO: La función index() reemplaza el elemento en la posición especificada, no retorna el elemento original.'
+      correcta: true,
+      explicacion: 'CORRECTO: La función index() devuelve el elemento en la posición especificada.'
     },
     {
       id: 369,
       contenido: 'b',
       correcta: false,
-      explicacion: 'INCORRECTO: "b" está en la posición 2, pero la función está modificando la posición 1.'
+      explicacion: 'INCORRECTO: "b" está en la posición 2, pero la función devuelve el de la posición 1.'
     },
     {
       id: 370,
       contenido: 'c',
       correcta: false,
-      explicacion: 'INCORRECTO: "c" está en la posición 3 y no es afectado por esta operación.'
+      explicacion: 'INCORRECTO: "c" está en la posición 3, pero la función devuelve el de la posición 1.'
     },
     {
       id: 371,
       contenido: 'x',
-      correcta: true,
-      explicacion: 'CORRECTO: La función index() reemplaza el elemento en el índice 1 con "x" y retorna el nuevo valor en esa posición.'
+      correcta: false,
+      explicacion: 'INCORRECTO: "x" está en la posición 3, pero la función devuelve el de la posición 1.'
     }
   ]
 },
@@ -2491,7 +2491,7 @@ export const QUESTIONS_EXTRA: Question[] = [
         "id": 614,
         "contenido": "Editable Grid",
         "correcta": false,
-        "explicacion": "INCORRECTO: Un 'Editable Grid' es apropiado para datos tabulares, pero está diseñado específicamente para la edición. La pregunta pregunta por el más apropiado para *mostrar* (display) datos, lo que implica una vista de solo lectura."
+        "explicacion": "INCORRECTO: Un 'Editable Grid' es apropiado para datos tabulares, pero está diseñado específicamente para la edición. La pregunta por el más apropiado para *mostrar* (display) datos, lo que implica una vista de solo lectura."
       },
       {
         "id": 615,

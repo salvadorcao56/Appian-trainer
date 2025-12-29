@@ -381,8 +381,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 49,
         contenido: 'Update record-level security.',
-        correcta: false,
-        explicacion: 'INCORRECTO: Se requieren permisos de administrador para seguridad.'
+        correcta: true,
+        explicacion: 'CORRECTO: Se los editores pueden elevar el nivel de seguridad de un record.'
       },
       {
         id: 50,
@@ -914,8 +914,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 118,
         contenido: '[{"Word 1 is length: 4", "Word 2 is length: 3", "Word 3 is length: 5"]',
-        correcta: false,
-        explicacion: 'INCORRECTO: Los cálculos de longitud no coinciden con las longitudes reales de las palabras.'
+        correcta: true,
+        explicacion: 'CORRECTO: "apple" tiene 5-1=4 letras, "pear" tiene 4-1=3, "banana" tiene 6-1=5. Los índices comienzan en 1.'
       },
       {
         id: 119,
@@ -926,8 +926,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 120,
         contenido: '[{"Word 1 is length: 5", "Word 2 is length: 4", "Word 3 is length: 6"]',
-        correcta: true,
-        explicacion: 'CORRECTO: "apple" tiene 5 letras, "pear" tiene 4, "banana" tiene 6. Los índices comienzan en 1.'
+        correcta: false,
+        explicacion: 'INCORRECTO: Los cálculos de longitud no coinciden con las longitudes reales de las palabras -1.'
       },
       {
         id: 121,
@@ -1224,8 +1224,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 158,
         contenido: 'Is stored at index',
-        correcta: false,
-        explicacion: 'INCORRECTO: Este operador es específico para arrays/listas.'
+        correcta: true,
+        explicacion: 'CORRECTO: Este operador es específico para arrays/listas.'
       },
       {
         id: 159,
@@ -1242,8 +1242,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 161,
         contenido: 'Is appended to list',
-        correcta: false,
-        explicacion: 'INCORRECTO: Este operador es específico para listas/arrays.'
+        correcta: true,
+        explicacion: 'CORRECTO: Este operador es específico para listas/arrays.'
       },
       {
         id: 162,
@@ -1261,8 +1261,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 163,
         contenido: 'almatch()',
-        correcta: false,
-        explicacion: 'INCORRECTO: a!match() no es una función estándar de Appian.'
+        correcta: true,
+        explicacion: 'CORRECTO: a!match() permite utilizar condiciones (equal/whenTrue) y resultados (then)'
       },
       {
         id: 164,
@@ -1273,8 +1273,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 165,
         contenido: 'if()',
-        correcta: true,
-        explicacion: 'CORRECTO: La función if() permite especificar pares de condiciones (equal/whenTrue) y resultados (then).'
+        correcta: false,
+        explicacion: 'INCORRECTO: La función if() evalua una condición y un resultado si es cierto u otro si no lo es'
       },
       {
         id: 166,
@@ -1329,8 +1329,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 172,
         contenido: 'Must use a database as its source',
-        correcta: false,
-        explicacion: 'INCORRECTO: Puede usar diferentes fuentes de datos.'
+        correcta: true,
+        explicacion: 'CORRECTO: Puede usar database como fuente de datos.'
       },
       {
         id: 173,
@@ -1690,7 +1690,7 @@ export const QUESTIONS: Question[] = [
   {
     id: 55,
     contenido: 'When configuring a Write Records smart service\'s records input, how do you specify the records to be updated?',
-    multiple: false,
+    multiple: true,
     respuestas: [
       {
         id: 219,
@@ -1713,8 +1713,8 @@ export const QUESTIONS: Question[] = [
       {
         id: 222,
         contenido: 'Write an expression to specify the records to update.',
-        correcta: false,
-        explicacion: 'INCORRECTO: No se escribe una expresión directa, se selecciona una process variable.'
+        correcta: true,
+        explicacion: 'CORRECTO: Se puede escribir una expresión que devuelva los registros del record type a actualizar.'
       }
     ]
   },
