@@ -2186,9 +2186,1567 @@ export const QUESTIONS_AI: Question[] = [
         "correcta": true,
         "explicacion": "CORRECTO"
       }]
-    }
+    },
+  {
+    "id": 570,
+    "contenido": "Which function is used to check if a value exists in a list in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1785,
+        "contenido": "contains()",
+        "correcta": true,
+        "explicacion": "CORRECTO: La función contains() verifica si un valor está presente en una lista."
+      },
+      {
+        "id": 1786,
+        "contenido": "exists()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: exists() no es una función válida en Appian."
+      },
+      {
+        "id": 1787,
+        "contenido": "find()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: find() no verifica presencia en listas, busca posiciones."
+      },
+      {
+        "id": 1788,
+        "contenido": "lookup()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: lookup() se usa para relaciones de datos, no listas simples."
+      }
+    ]
+  },
+  {
+    "id": 571,
+    "contenido": "Select 2 that apply. Which two are common phases in the Agile software development lifecycle?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1789,
+        "contenido": "Sprint Planning",
+        "correcta": true,
+        "explicacion": "CORRECTO: La planificación del sprint es una fase clave de Agile."
+      },
+      {
+        "id": 1790,
+        "contenido": "Waterfall Design",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Waterfall es un enfoque tradicional, no parte de Agile."
+      },
+      {
+        "id": 1791,
+        "contenido": "Daily Stand-up",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las reuniones diarias (daily stand-up) son parte de Agile."
+      },
+      {
+        "id": 1792,
+        "contenido": "Project Closure Report",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Puede existir, pero no es un evento típico de cada sprint."
+      }
+    ]
+  },
+  {
+    "id": 572,
+    "contenido": "What is the purpose of the a!queryRecordType() function in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1793,
+        "contenido": "To retrieve data from a record type based on filters and sorting",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite obtener datos de un record type aplicando filtros y ordenamiento."
+      },
+      {
+        "id": 1794,
+        "contenido": "To create a new record type",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se utiliza para crear record types."
+      },
+      {
+        "id": 1795,
+        "contenido": "To update user interface components",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No afecta componentes de interfaz directamente."
+      },
+      {
+        "id": 1796,
+        "contenido": "To configure system permissions",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se relaciona con permisos del sistema."
+      }
+    ]
+  },
+  {
+    "id": 573,
+    "contenido": "Select 3 that apply. Which three are valid roles in Scrum methodology?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1797,
+        "contenido": "Product Owner",
+        "correcta": true,
+        "explicacion": "CORRECTO: El Product Owner define las prioridades del producto."
+      },
+      {
+        "id": 1798,
+        "contenido": "Scrum Master",
+        "correcta": true,
+        "explicacion": "CORRECTO: Facilita el proceso Scrum y ayuda al equipo a eliminar impedimentos."
+      },
+      {
+        "id": 1799,
+        "contenido": "Development Team",
+        "correcta": true,
+        "explicacion": "CORRECTO: El equipo de desarrollo realiza el trabajo técnico."
+      },
+      {
+        "id": 1800,
+        "contenido": "Project Sponsor",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Puede existir en la organización, pero no es un rol Scrum formal."
+      }
+    ]
+  },
+  {
+    "id": 574,
+    "contenido": "Which parameter in a!textField() makes the field required for form submission?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1801,
+        "contenido": "required",
+        "correcta": true,
+        "explicacion": "CORRECTO: El parámetro 'required' obliga al usuario a completar el campo."
+      },
+      {
+        "id": 1802,
+        "contenido": "mandatory",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No existe el parámetro 'mandatory' en Appian."
+      },
+      {
+        "id": 1803,
+        "contenido": "validate",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'validate' no hace el campo obligatorio."
+      },
+      {
+        "id": 1804,
+        "contenido": "enforce",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'enforce' no es un parámetro válido en Appian."
+      }
+    ]
+  },
+  {
+    "id": 575,
+    "contenido": "What is the main goal of a retrospective in Agile?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1805,
+        "contenido": "To reflect on the previous sprint and identify improvements",
+        "correcta": true,
+        "explicacion": "CORRECTO: La retrospectiva permite mejorar procesos y colaboración del equipo."
+      },
+      {
+        "id": 1806,
+        "contenido": "To plan the next sprint",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La planificación es otro evento de Scrum."
+      },
+      {
+        "id": 1807,
+        "contenido": "To assign tasks to team members",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La asignación se realiza durante la planificación o por el equipo mismo."
+      },
+      {
+        "id": 1808,
+        "contenido": "To define project budget",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se aborda el presupuesto en la retrospectiva."
+      }
+    ]
+  },
+  {
+    "id": 576,
+    "contenido": "Select 2 that apply. Which two practices help ensure data consistency in Appian records?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1809,
+        "contenido": "Use record type relationships and queries",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las relaciones y consultas entre record types ayudan a mantener la consistencia."
+      },
+      {
+        "id": 1810,
+        "contenido": "Allow users to directly modify database tables",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se debe modificar la base de datos directamente."
+      },
+      {
+        "id": 1811,
+        "contenido": "Validate inputs using expressions",
+        "correcta": true,
+        "explicacion": "CORRECTO: La validación en interfaces garantiza datos correctos."
+      },
+      {
+        "id": 1812,
+        "contenido": "Disable audit logs",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Desactivar auditoría puede comprometer integridad y trazabilidad."
+      }
+    ]
+  },
+  {
+    "id": 577,
+    "contenido": "Which Appian function is used to concatenate multiple text values?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1813,
+        "contenido": "concat()",
+        "correcta": true,
+        "explicacion": "CORRECTO: concat() une múltiples valores de texto en uno solo."
+      },
+      {
+        "id": 1814,
+        "contenido": "join()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: join() no es la función utilizada en Appian."
+      },
+      {
+        "id": 1815,
+        "contenido": "merge()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: merge() no existe en Appian."
+      },
+      {
+        "id": 1816,
+        "contenido": "append()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: append() no concatena cadenas en Appian."
+      }
+    ]
+  },
+  {
+    "id": 578,
+    "contenido": "Select 3 that apply. Which three are considered Agile ceremonies?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1817,
+        "contenido": "Sprint Planning",
+        "correcta": true,
+        "explicacion": "CORRECTO: La planificación del sprint es una ceremonia formal."
+      },
+      {
+        "id": 1818,
+        "contenido": "Daily Stand-up",
+        "correcta": true,
+        "explicacion": "CORRECTO: Reunión diaria de seguimiento del equipo."
+      },
+      {
+        "id": 1819,
+        "contenido": "Retrospective",
+        "correcta": true,
+        "explicacion": "CORRECTO: Retrospectiva para identificar mejoras."
+      },
+      {
+        "id": 1820,
+        "contenido": "Project Kickoff",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Kickoff es un evento de inicio de proyecto tradicional, no una ceremonia Agile."
+      }
+    ]
+  },
+  {
+    "id": 579,
+    "contenido": "What parameter in a!numberField() sets the minimum allowed value?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1821,
+        "contenido": "min",
+        "correcta": true,
+        "explicacion": "CORRECTO: 'min' define el valor mínimo que el usuario puede ingresar."
+      },
+      {
+        "id": 1822,
+        "contenido": "minimumValue",
+        "correcta": false,
+        "explicacion": "INCORRECTO: minimumValue no es un parámetro válido en Appian."
+      },
+      {
+        "id": 1823,
+        "contenido": "lowerLimit",
+        "correcta": false,
+        "explicacion": "INCORRECTO: lowerLimit no se usa en Appian."
+      },
+      {
+        "id": 1824,
+        "contenido": "floor",
+        "correcta": false,
+        "explicacion": "INCORRECTO: floor no restringe el valor mínimo del campo."
+      }
+    ]
+  },
+//==========================================================
+  {
+    "id": 580,
+    "contenido": "Which Appian function is used to calculate the number of items in a list?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1825,
+        "contenido": "count()",
+        "correcta": true,
+        "explicacion": "CORRECTO: La función count() devuelve la cantidad de elementos en una lista."
+      },
+      {
+        "id": 1826,
+        "contenido": "length()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: length() no es una función válida en Appian."
+      },
+      {
+        "id": 1827,
+        "contenido": "size()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: size() no se usa en Appian para contar elementos."
+      },
+      {
+        "id": 1828,
+        "contenido": "total()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: total() no cuenta elementos de listas."
+      }
+    ]
+  },
+  {
+    "id": 581,
+    "contenido": "Select 2 that apply. Which two are valid Appian data types?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1829,
+        "contenido": "Text",
+        "correcta": true,
+        "explicacion": "CORRECTO: Text es un tipo de dato básico en Appian."
+      },
+      {
+        "id": 1830,
+        "contenido": "Number",
+        "correcta": true,
+        "explicacion": "CORRECTO: Number es un tipo de dato numérico válido."
+      },
+      {
+        "id": 1831,
+        "contenido": "StringList",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No existe StringList como tipo nativo en Appian."
+      },
+      {
+        "id": 1832,
+        "contenido": "BooleanArray",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No existe BooleanArray como tipo nativo en Appian."
+      }
+    ]
+  },
+  {
+    "id": 582,
+    "contenido": "What is the main purpose of a!localVariables() in an Appian interface?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1833,
+        "contenido": "To define temporary values for use in expressions",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite declarar variables locales temporales para cálculos o lógica dentro de la interfaz."
+      },
+      {
+        "id": 1834,
+        "contenido": "To store data permanently in the database",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las variables locales no persisten en la base de datos."
+      },
+      {
+        "id": 1835,
+        "contenido": "To define system-wide constants",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se usan para valores globales, solo locales."
+      },
+      {
+        "id": 1836,
+        "contenido": "To manage user permissions",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No tiene relación con permisos de usuarios."
+      }
+    ]
+  },
+  {
+    "id": 583,
+    "contenido": "Select 2 that apply. Which two are common metrics tracked in Agile projects?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1837,
+        "contenido": "Velocity",
+        "correcta": true,
+        "explicacion": "CORRECTO: Velocity mide la cantidad de trabajo completado en un sprint."
+      },
+      {
+        "id": 1838,
+        "contenido": "Burn-down Chart",
+        "correcta": true,
+        "explicacion": "CORRECTO: Muestra la evolución del trabajo restante en un sprint."
+      },
+      {
+        "id": 1839,
+        "contenido": "Code Coverage",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Es una métrica de calidad de código, no directamente de Agile."
+      },
+      {
+        "id": 1840,
+        "contenido": "Budget Utilization",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es un KPI estándar en Agile."
+      }
+    ]
+  },
+  {
+    "id": 584,
+    "contenido": "Which function is used to round a number to the nearest integer in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1841,
+        "contenido": "round()",
+        "correcta": true,
+        "explicacion": "CORRECTO: round() redondea un número al entero más cercano."
+      },
+      {
+        "id": 1842,
+        "contenido": "ceil()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: ceil() redondea hacia arriba, no al entero más cercano."
+      },
+      {
+        "id": 1843,
+        "contenido": "floor()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: floor() redondea hacia abajo."
+      },
+      {
+        "id": 1844,
+        "contenido": "truncate()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: truncate() elimina decimales sin redondear."
+      }
+    ]
+  },
+  {
+    "id": 585,
+    "contenido": "Select 3 that apply. Which three are benefits of using Appian records?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1845,
+        "contenido": "Centralized access to related data",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los records permiten ver y manejar datos relacionados desde un punto central."
+      },
+      {
+        "id": 1846,
+        "contenido": "Pre-built UI components for record actions",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los records incluyen acciones integradas como editar o crear."
+      },
+      {
+        "id": 1847,
+        "contenido": "Automatic data encryption",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los records no cifran datos automáticamente."
+      },
+      {
+        "id": 1848,
+        "contenido": "Consistent business rules enforcement",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permiten aplicar reglas de negocio consistentes en toda la información."
+      }
+    ]
+  },
+  {
+    "id": 586,
+    "contenido": "What is the primary purpose of a Scrum board?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1849,
+        "contenido": "To visualize work in progress and track task status",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite que el equipo vea tareas pendientes, en progreso y completadas."
+      },
+      {
+        "id": 1850,
+        "contenido": "To assign salaries to team members",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No tiene relación con remuneraciones."
+      },
+      {
+        "id": 1851,
+        "contenido": "To define the project scope",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se utiliza para definir alcance."
+      },
+      {
+        "id": 1852,
+        "contenido": "To store archived documents",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es su función principal."
+      }
+    ]
+  },
+  {
+    "id": 587,
+    "contenido": "Select 2 that apply. Which two are valid ways to handle null values in Appian expressions?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1853,
+        "contenido": "Using if() to provide default values",
+        "correcta": true,
+        "explicacion": "CORRECTO: if() permite definir un valor cuando se encuentra null."
+      },
+      {
+        "id": 1854,
+        "contenido": "Using isnull() to check for null",
+        "correcta": true,
+        "explicacion": "CORRECTO: isnull() permite detectar valores nulos antes de procesarlos."
+      },
+      {
+        "id": 1855,
+        "contenido": "Directly assigning null to a!textField() without checks",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Puede generar errores si no se maneja correctamente."
+      },
+      {
+        "id": 1856,
+        "contenido": "Using append() to ignore nulls",
+        "correcta": false,
+        "explicacion": "INCORRECTO: append() no maneja automáticamente valores nulos."
+      }
+    ]
+  },
+  {
+    "id": 588,
+    "contenido": "Which function is used to format dates in Appian expressions?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1857,
+        "contenido": "todatetime()",
+        "correcta": true,
+        "explicacion": "CORRECTO: todatetime() se utiliza para convertir o formatear fechas."
+      },
+      {
+        "id": 1858,
+        "contenido": "formatdate()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: formatdate() no es una función nativa de Appian."
+      },
+      {
+        "id": 1859,
+        "contenido": "datetimeformat()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: datetimeformat() no existe en Appian."
+      },
+      {
+        "id": 1860,
+        "contenido": "dateconvert()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: dateconvert() no es válido en Appian."
+      }
+    ]
+  },
+  {
+    "id": 589,
+    "contenido": "Select 3 that apply. Which three are key characteristics of Agile teams?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1861,
+        "contenido": "Self-organizing",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los equipos Agile gestionan su propio trabajo."
+      },
+      {
+        "id": 1862,
+        "contenido": "Cross-functional",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los equipos tienen todas las habilidades necesarias para completar tareas."
+      },
+      {
+        "id": 1863,
+        "contenido": "Hierarchical decision-making",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Agile promueve decisiones colaborativas, no jerárquicas."
+      },
+      {
+        "id": 1864,
+        "contenido": "Continuous improvement",
+        "correcta": true,
+        "explicacion": "CORRECTO: Agile fomenta la mejora continua en procesos y productos."
+      }
+    ]
+  },
+
+//==========================================================
+  {
+    "id": 590,
+    "contenido": "Which Appian function is used to merge two lists into a single list?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1865,
+        "contenido": "append()",
+        "correcta": true,
+        "explicacion": "CORRECTO: append() combina listas en una sola lista."
+      },
+      {
+        "id": 1866,
+        "contenido": "merge()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: merge() no es una función válida en Appian."
+      },
+      {
+        "id": 1867,
+        "contenido": "combine()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: combine() no existe en Appian."
+      },
+      {
+        "id": 1868,
+        "contenido": "concat()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: concat() se usa para texto, no listas."
+      }
+    ]
+  },
+  {
+    "id": 591,
+    "contenido": "Select 2 that apply. Which two are valid ways to restrict access to a process model in Appian?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1869,
+        "contenido": "Set user/group permissions in the process model security settings",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se pueden configurar permisos para usuarios o grupos específicos."
+      },
+      {
+        "id": 1870,
+        "contenido": "Use a!securityGroup() in the interface",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite restringir visibilidad en la interfaz de la aplicación."
+      },
+      {
+        "id": 1871,
+        "contenido": "Modify the database ACL",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La seguridad de Appian no depende de la base de datos directamente."
+      },
+      {
+        "id": 1872,
+        "contenido": "Hide the model in the Appian Designer by renaming it",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Renombrar no restringe el acceso a usuarios."
+      }
+    ]
+  },
+  {
+    "id": 592,
+    "contenido": "What is the purpose of a!textField() in an Appian interface?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1873,
+        "contenido": "To allow users to input or edit text",
+        "correcta": true,
+        "explicacion": "CORRECTO: a!textField() permite la entrada o edición de texto por parte del usuario."
+      },
+      {
+        "id": 1874,
+        "contenido": "To store text permanently in the database",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No almacena datos automáticamente, solo captura input."
+      },
+      {
+        "id": 1875,
+        "contenido": "To display static labels",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Para mostrar texto estático se usa a!textLabel()."
+      },
+      {
+        "id": 1876,
+        "contenido": "To enforce text encryption",
+        "correcta": false,
+        "explicacion": "INCORRECTO: a!textField() no cifra texto."
+      }
+    ]
+  },
+  {
+    "id": 593,
+    "contenido": "Select 3 that apply. Which three are principles of the Agile Manifesto?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1877,
+        "contenido": "Customer collaboration over contract negotiation",
+        "correcta": true,
+        "explicacion": "CORRECTO: Prioriza la colaboración con el cliente sobre la negociación de contratos."
+      },
+      {
+        "id": 1878,
+        "contenido": "Working software over comprehensive documentation",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se valora entregar software funcional sobre documentar en exceso."
+      },
+      {
+        "id": 1879,
+        "contenido": "Process and tools over individuals and interactions",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los individuos e interacciones se valoran más que los procesos y herramientas."
+      },
+      {
+        "id": 1880,
+        "contenido": "Responding to change over following a plan",
+        "correcta": true,
+        "explicacion": "CORRECTO: La adaptabilidad es más importante que seguir estrictamente un plan."
+      }
+    ]
+  },
+  {
+    "id": 594,
+    "contenido": "Which Appian function converts a text into a date?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1881,
+        "contenido": "todate()",
+        "correcta": true,
+        "explicacion": "CORRECTO: todatetime() o todate() se usan para convertir texto a fecha."
+      },
+      {
+        "id": 1882,
+        "contenido": "texttodate()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: texttodate() no existe en Appian."
+      },
+      {
+        "id": 1883,
+        "contenido": "formatdate()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: formatdate() no convierte, solo formatea fechas."
+      },
+      {
+        "id": 1884,
+        "contenido": "convertDate()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: convertDate() no es función nativa."
+      }
+    ]
+  },
+  {
+    "id": 595,
+    "contenido": "Select 2 that apply. Which two are common Agile ceremonies?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1885,
+        "contenido": "Sprint Planning",
+        "correcta": true,
+        "explicacion": "CORRECTO: Reunión para planificar el trabajo del sprint."
+      },
+      {
+        "id": 1886,
+        "contenido": "Daily Stand-up",
+        "correcta": true,
+        "explicacion": "CORRECTO: Reunión diaria para sincronizar al equipo y resolver impedimentos."
+      },
+      {
+        "id": 1887,
+        "contenido": "Code Review",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es una ceremonia Agile, aunque sí práctica de desarrollo."
+      },
+      {
+        "id": 1888,
+        "contenido": "Budget Review",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es ceremonia Agile."
+      }
+    ]
+  },
+  {
+    "id": 596,
+    "contenido": "Which function is used to remove duplicates from a list in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1889,
+        "contenido": "distinct()",
+        "correcta": true,
+        "explicacion": "CORRECTO: distinct() devuelve una lista sin duplicados."
+      },
+      {
+        "id": 1890,
+        "contenido": "unique()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: unique() no existe en Appian."
+      },
+      {
+        "id": 1891,
+        "contenido": "removeDuplicates()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: removeDuplicates() no es válido en Appian."
+      },
+      {
+        "id": 1892,
+        "contenido": "filter()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: filter() no elimina duplicados automáticamente."
+      }
+    ]
+  },
+  {
+    "id": 597,
+    "contenido": "Select 3 that apply. Which three are benefits of using process models in Appian?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1893,
+        "contenido": "Automate repetitive tasks",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los process models permiten automatizar procesos."
+      },
+      {
+        "id": 1894,
+        "contenido": "Enforce business rules",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se pueden aplicar reglas de negocio consistentes."
+      },
+      {
+        "id": 1895,
+        "contenido": "Guarantee user adoption",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No garantiza que los usuarios adopten la aplicación."
+      },
+      {
+        "id": 1896,
+        "contenido": "Integrate with external systems",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite la integración con sistemas externos mediante conectores o APIs."
+      }
+    ]
+  },
+  {
+    "id": 598,
+    "contenido": "Which Appian function is used to remove null values from a list?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1897,
+        "contenido": "rejectnulls()",
+        "correcta": true,
+        "explicacion": "CORRECTO: rejectnulls() filtra los valores nulos de una lista."
+      },
+      {
+        "id": 1898,
+        "contenido": "filter()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: filter() necesita una expresión, no filtra nulls automáticamente."
+      },
+      {
+        "id": 1899,
+        "contenido": "removeNull()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: removeNull() no es válido en Appian."
+      },
+      {
+        "id": 1900,
+        "contenido": "distinct()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: distinct() elimina duplicados, no nulls."
+      }
+    ]
+  },
+  {
+    "id": 599,
+    "contenido": "Select 2 that apply. Which two are ways to improve collaboration in Agile teams?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1901,
+        "contenido": "Daily stand-ups",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permiten sincronizar el equipo y detectar bloqueos rápidamente."
+      },
+      {
+        "id": 1902,
+        "contenido": "Pair programming",
+        "correcta": true,
+        "explicacion": "CORRECTO: Fomenta colaboración directa y mejora la calidad del código."
+      },
+      {
+        "id": 1903,
+        "contenido": "Individual code ownership",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Puede generar silos, contrario a colaboración."
+      },
+      {
+        "id": 1904,
+        "contenido": "Monthly status reports",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No promueven colaboración diaria ni inmediata."
+      }
+    ]
+  },
+
+//==========================================================
+  {
+    "id": 600,
+    "contenido": "Which Appian function is used to check if a value exists in a list?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1905,
+        "contenido": "contains()",
+        "correcta": true,
+        "explicacion": "CORRECTO: contains() devuelve true si el valor existe en la lista."
+      },
+      {
+        "id": 1906,
+        "contenido": "exists()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: exists() no es una función válida en Appian."
+      },
+      {
+        "id": 1907,
+        "contenido": "inList()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: inList() no existe en Appian."
+      },
+      {
+        "id": 1908,
+        "contenido": "find()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: find() busca posición, no devuelve un booleano de existencia."
+      }
+    ]
+  },
+  {
+    "id": 601,
+    "contenido": "Select 2 that apply. Which two are valid ways to handle exceptions in Appian process models?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1909,
+        "contenido": "Configure a node to catch errors and redirect the flow",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se puede capturar el error y redirigir el flujo a un nodo específico."
+      },
+      {
+        "id": 1910,
+        "contenido": "Use a!save() with try/catch",
+        "correcta": false,
+        "explicacion": "INCORRECTO: a!save() no maneja excepciones directamente."
+      },
+      {
+        "id": 1911,
+        "contenido": "Use error event sub-processes",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los sub-procesos de error permiten manejar fallos específicos."
+      },
+      {
+        "id": 1912,
+        "contenido": "Wrap all code in if() statements",
+        "correcta": false,
+        "explicacion": "INCORRECTO: if() no captura errores de ejecución."
+      }
+    ]
+  },
+  {
+    "id": 602,
+    "contenido": "Which Appian function is used to round a number to a specific number of decimal places?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1913,
+        "contenido": "round()",
+        "correcta": true,
+        "explicacion": "CORRECTO: round() redondea números a los decimales indicados."
+      },
+      {
+        "id": 1914,
+        "contenido": "truncate()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: truncate() corta el número sin redondear."
+      },
+      {
+        "id": 1915,
+        "contenido": "floor()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: floor() redondea hacia abajo siempre."
+      },
+      {
+        "id": 1916,
+        "contenido": "ceil()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: ceil() redondea hacia arriba siempre."
+      }
+    ]
+  },
+  {
+    "id": 603,
+    "contenido": "Select 2 that apply. Which two are valid ways to improve user experience in an Appian interface?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1917,
+        "contenido": "Use dynamic links to show or hide fields based on conditions",
+        "correcta": true,
+        "explicacion": "CORRECTO: La interfaz se adapta según condiciones del usuario."
+      },
+      {
+        "id": 1918,
+        "contenido": "Minimize the number of fields displayed at once",
+        "correcta": true,
+        "explicacion": "CORRECTO: Mejora la claridad y reduce saturación visual."
+      },
+      {
+        "id": 1919,
+        "contenido": "Force all fields to be visible always",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Mostrar todo siempre puede confundir al usuario."
+      },
+      {
+        "id": 1920,
+        "contenido": "Disable validations to speed up form submission",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Validaciones son necesarias para evitar errores."
+      }
+    ]
+  },
+  {
+    "id": 604,
+    "contenido": "Which Appian function returns the first element of a list?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1921,
+        "contenido": "first()",
+        "correcta": true,
+        "explicacion": "CORRECTO: first() devuelve el primer valor de la lista."
+      },
+      {
+        "id": 1922,
+        "contenido": "head()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: head() no es función de Appian."
+      },
+      {
+        "id": 1923,
+        "contenido": "get(0)",
+        "correcta": false,
+        "explicacion": "INCORRECTO: get() requiere un índice válido y no siempre es preferido."
+      },
+      {
+        "id": 1924,
+        "contenido": "take(1)",
+        "correcta": false,
+        "explicacion": "INCORRECTO: take() devuelve una lista, no un elemento único."
+      }
+    ]
+  },
+  {
+    "id": 605,
+    "contenido": "Select 3 that apply. Which three are best practices when designing process models in Appian?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1925,
+        "contenido": "Keep models simple and modular",
+        "correcta": true,
+        "explicacion": "CORRECTO: Modelos simples son más fáciles de mantener."
+      },
+      {
+        "id": 1926,
+        "contenido": "Use subprocesses for reusable logic",
+        "correcta": true,
+        "explicacion": "CORRECTO: Subprocesos promueven reutilización de lógica."
+      },
+      {
+        "id": 1927,
+        "contenido": "Document all assumptions and rules",
+        "correcta": true,
+        "explicacion": "CORRECTO: La documentación ayuda a comprensión y mantenimiento."
+      },
+      {
+        "id": 1928,
+        "contenido": "Avoid using connectors",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los conectores son necesarios para integraciones externas."
+      }
+    ]
+  },
+  {
+    "id": 606,
+    "contenido": "Which function is used to calculate the length of a list in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1929,
+        "contenido": "length()",
+        "correcta": true,
+        "explicacion": "CORRECTO: length() devuelve el número de elementos de la lista."
+      },
+      {
+        "id": 1930,
+        "contenido": "size()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: size() no es función de Appian."
+      },
+      {
+        "id": 1931,
+        "contenido": "count()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: count() no existe en Appian."
+      },
+      {
+        "id": 1932,
+        "contenido": "total()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: total() no es válida para listas."
+      }
+    ]
+  },
+  {
+    "id": 607,
+    "contenido": "Select 2 that apply. Which two are valid ways to optimize performance in Appian process models?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1933,
+        "contenido": "Use query aggregation instead of looping through each record",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las agregaciones reducen consultas repetitivas y mejoran el rendimiento."
+      },
+      {
+        "id": 1934,
+        "contenido": "Reduce the number of nested process calls",
+        "correcta": true,
+        "explicacion": "CORRECTO: Menos llamadas anidadas simplifican el flujo y aumentan eficiencia."
+      },
+      {
+        "id": 1935,
+        "contenido": "Add delays between nodes",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los retrasos no optimizan rendimiento."
+      },
+      {
+        "id": 1936,
+        "contenido": "Use multiple timers for the same task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No mejora rendimiento, solo complica el modelo."
+      }
+    ]
+  },
+  {
+    "id": 608,
+    "contenido": "Which Appian function is used to convert a number to text?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1937,
+        "contenido": "tostring()",
+        "correcta": true,
+        "explicacion": "CORRECTO: tostring() convierte números en texto."
+      },
+      {
+        "id": 1938,
+        "contenido": "tonumber()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: tonumber() convierte texto a número, no al revés."
+      },
+      {
+        "id": 1939,
+        "contenido": "text()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: text() no es función válida en Appian."
+      },
+      {
+        "id": 1940,
+        "contenido": "format()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: format() se usa para formatos, no conversión directa."
+      }
+    ]
+  },
+  {
+    "id": 609,
+    "contenido": "Select 3 that apply. Which three are advantages of Agile methodologies in software development?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1941,
+        "contenido": "Faster feedback from stakeholders",
+        "correcta": true,
+        "explicacion": "CORRECTO: Iteraciones cortas permiten recibir retroalimentación rápidamente."
+      },
+      {
+        "id": 1942,
+        "contenido": "Better adaptability to change",
+        "correcta": true,
+        "explicacion": "CORRECTO: Agile se adapta a cambios de requisitos y prioridades."
+      },
+      {
+        "id": 1943,
+        "contenido": "Improved team collaboration",
+        "correcta": true,
+        "explicacion": "CORRECTO: La comunicación y colaboración constante mejora los resultados."
+      },
+      {
+        "id": 1944,
+        "contenido": "Guaranteed project success",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Agile no garantiza éxito, solo aumenta probabilidad mediante buenas prácticas."
+      }
+    ]
+  },
 
 
+//==========================================================
+  {
+    "id": 610,
+    "contenido": "What is a key benefit of using process models in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1945,
+        "contenido": "Visual representation of workflows",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los modelos de proceso permiten ver los flujos de trabajo de manera visual, facilitando comprensión y mantenimiento."
+      },
+      {
+        "id": 1946,
+        "contenido": "Automatic database tuning",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se relaciona con optimización de bases de datos."
+      },
+      {
+        "id": 1947,
+        "contenido": "Real-time server monitoring",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Esto no es un beneficio directo de los modelos de proceso."
+      },
+      {
+        "id": 1948,
+        "contenido": "Increased browser compatibility",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los modelos de proceso no afectan la compatibilidad del navegador."
+      }
+    ]
+  },
+  {
+    "id": 611,
+    "contenido": "Which methodology emphasizes iterative development and continuous feedback?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1949,
+        "contenido": "Agile",
+        "correcta": true,
+        "explicacion": "CORRECTO: Agile promueve entregas iterativas y retroalimentación continua durante el desarrollo."
+      },
+      {
+        "id": 1950,
+        "contenido": "Waterfall",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Waterfall sigue un enfoque secuencial y no iterativo."
+      },
+      {
+        "id": 1951,
+        "contenido": "V-Model",
+        "correcta": false,
+        "explicacion": "INCORRECTO: V-Model es un modelo secuencial con pruebas planificadas, no iterativo."
+      },
+      {
+        "id": 1952,
+        "contenido": "Spiral",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Spiral combina iteraciones con análisis de riesgos, pero Agile es el enfoque principal iterativo con feedback."
+      }
+    ]
+  },
+  {
+    "id": 612,
+    "contenido": "Select 2 that apply. Which two are valid ways to handle errors in Appian process models?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1953,
+        "contenido": "Use exception flows",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los flujos de excepción permiten capturar errores y actuar en consecuencia."
+      },
+      {
+        "id": 1954,
+        "contenido": "Ignore errors and retry manually",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es una práctica recomendada; los errores deben gestionarse automáticamente."
+      },
+      {
+        "id": 1955,
+        "contenido": "Use try/catch blocks in expressions",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las expresiones pueden incluir manejo de errores mediante try/catch."
+      },
+      {
+        "id": 1956,
+        "contenido": "Delete the process instance",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Borrar la instancia no maneja correctamente el error."
+      }
+    ]
+  },
+  {
+    "id": 613,
+    "contenido": "What is the purpose of milestones in Appian project management?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1957,
+        "contenido": "Track progress and key deliverables",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los hitos ayudan a monitorizar el progreso y los entregables importantes del proyecto."
+      },
+      {
+        "id": 1958,
+        "contenido": "Set database access permissions",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se relaciona con gestión de proyectos."
+      },
+      {
+        "id": 1959,
+        "contenido": "Control network traffic",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los hitos no controlan el tráfico de red."
+      },
+      {
+        "id": 1960,
+        "contenido": "Encrypt sensitive data",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La encriptación no es función de los hitos de proyecto."
+      }
+    ]
+  },
+  {
+    "id": 614,
+    "contenido": "Which Appian function is used to query a record type with filtering?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1961,
+        "contenido": "a!queryRecordType()",
+        "correcta": true,
+        "explicacion": "CORRECTO: a!queryRecordType() permite consultar un tipo de registro con filtros y condiciones."
+      },
+      {
+        "id": 1962,
+        "contenido": "a!recordFilter()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No existe la función a!recordFilter()."
+      },
+      {
+        "id": 1963,
+        "contenido": "query()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: query() no es una función válida en Appian."
+      },
+      {
+        "id": 1964,
+        "contenido": "filterRecordType()",
+        "correcta": false,
+        "explicacion": "INCORRECTO: filterRecordType() no es válida."
+      }
+    ]
+  },
+  {
+    "id": 615,
+    "contenido": "Select 2 that apply. Which two are benefits of using interfaces in Appian?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1965,
+        "contenido": "Reusable components across multiple applications",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las interfaces se pueden reutilizar en diferentes aplicaciones."
+      },
+      {
+        "id": 1966,
+        "contenido": "Automatic code compilation",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las interfaces no compilán código automáticamente."
+      },
+      {
+        "id": 1967,
+        "contenido": "Consistent user experience",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las interfaces proporcionan una experiencia de usuario consistente."
+      },
+      {
+        "id": 1968,
+        "contenido": "Direct manipulation of the database schema",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las interfaces no modifican directamente la base de datos."
+      }
+    ]
+  },
+  {
+    "id": 616,
+    "contenido": "Which Agile ceremony is used to plan the work for the upcoming sprint?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1969,
+        "contenido": "Sprint Planning",
+        "correcta": true,
+        "explicacion": "CORRECTO: Sprint Planning se utiliza para planificar el trabajo de la siguiente iteración."
+      },
+      {
+        "id": 1970,
+        "contenido": "Daily Standup",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Daily Standup se centra en seguimiento diario, no planificación."
+      },
+      {
+        "id": 1971,
+        "contenido": "Sprint Review",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Sprint Review revisa lo entregado, no planifica."
+      },
+      {
+        "id": 1972,
+        "contenido": "Backlog Refinement",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Refinamiento de backlog ajusta historias, no planifica toda la iteración."
+      }
+    ]
+  },
+  {
+    "id": 617,
+    "contenido": "What does a!save() do in an interface expression?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1973,
+        "contenido": "Stores the value in a local variable or rule input",
+        "correcta": true,
+        "explicacion": "CORRECTO: a!save() almacena un valor en una variable local o en una entrada de regla."
+      },
+      {
+        "id": 1974,
+        "contenido": "Saves the interface as a PDF",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No guarda la interfaz como PDF."
+      },
+      {
+        "id": 1975,
+        "contenido": "Commits a database transaction",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No realiza transacciones de base de datos."
+      },
+      {
+        "id": 1976,
+        "contenido": "Triggers a workflow email",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No dispara correos automáticamente."
+      }
+    ]
+  },
+  {
+    "id": 618,
+    "contenido": "Select 2 that apply. Which two practices improve process performance in Appian?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1977,
+        "contenido": "Use parallel gateways when possible",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las gateways paralelas permiten ejecutar tareas simultáneamente, mejorando rendimiento."
+      },
+      {
+        "id": 1978,
+        "contenido": "Avoid indexing database fields",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Evitar índices empeora el rendimiento."
+      },
+      {
+        "id": 1979,
+        "contenido": "Minimize sub-process calls",
+        "correcta": true,
+        "explicacion": "CORRECTO: Reducir llamadas a subprocesos ayuda a mejorar eficiencia."
+      },
+      {
+        "id": 1980,
+        "contenido": "Use nested loops extensively",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los bucles anidados en exceso disminuyen el rendimiento."
+      }
+    ]
+  },
+  {
+    "id": 619,
+    "contenido": "Which statement about record types in Appian is correct?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1981,
+        "contenido": "They allow defining data structures and actions for business entities",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los record types permiten definir estructuras de datos y acciones asociadas a entidades de negocio."
+      },
+      {
+        "id": 1982,
+        "contenido": "They automatically generate reports in Excel",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No generan reportes Excel automáticamente."
+      },
+      {
+        "id": 1983,
+        "contenido": "They are only used for UI layout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No son solo para la interfaz de usuario."
+      },
+      {
+        "id": 1984,
+        "contenido": "They replace process models entirely",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No reemplazan modelos de proceso."
+      }
+    ]
+  }
+
+//==========================================================
   // =====================================================
   // PRÓXIMAS PREGUNTAS A AÑADIR (IDs 521 en adelante)
   // =====================================================
