@@ -1,6 +1,4 @@
-import { Question } from '../models/question.model';
-
-export const QUESTIONS: Question[] = [
+[
   {
     id: 1,
     contenido: 'Select 2 that apply. You have built an expression rule that takes in two numbers and returns the first number divided by the second number. What are two useful test cases that you can create to ensure the expression outputs an expected numerical response?',
@@ -884,25 +882,25 @@ export const QUESTIONS: Question[] = [
         id: 114,
         contenido: 'Navigate to the Scheduling tab and select Asynchronously.',
         correcta: false,
-        explicacion: 'InCORRECTO: En la pestaña Setup.'
+        explicacion: 'INCORRECTO: Asynchronous permite que el proceso padre continúe sin esperar al hijo.'
       },
       {
         id: 115,
         contenido: 'Navigate to the Setup tab and select Asynchronously.',
         correcta: false,
-        explicacion: 'INCORRECTO: Seleccionar ASynchronously hace que el proceso padre NO espere a que el proceso hijo termine.'
+        explicacion: 'INCORRECTO: La configuración de synchronous/asynchronous está en otra pestaña.'
       },
       {
         id: 116,
         contenido: 'Navigate to the Setup tab and select Synchronously.',
-        correcta: true,
-        explicacion: 'CORRECTO: En la pestaña Setup, seleccionar Synchronously hace que el proceso padre espere a que el proceso hijo termine.'
+        correcta: false,
+        explicacion: 'INCORRECTO: La opción synchronous está en la pestaña Scheduling.'
       },
       {
         id: 117,
         contenido: 'Navigate to the Scheduling tab and select Synchronously.',
         correcta: true,
-        explicacion: 'InCORRECTO: En la pestaña Setup.'
+        explicacion: 'CORRECTO: En la pestaña Scheduling, seleccionar Synchronously hace que el proceso padre espere a que el proceso hijo termine.'
       }
     ]
   },
@@ -1873,4 +1871,4 @@ export const QUESTIONS: Question[] = [
       }
     ]
   }
-];
+]
