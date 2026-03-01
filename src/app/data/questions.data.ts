@@ -901,7 +901,7 @@ export const QUESTIONS: Question[] = [
       {
         id: 117,
         contenido: 'Navigate to the Scheduling tab and select Synchronously.',
-        correcta: true,
+        correcta: false,
         explicacion: 'InCORRECTO: En la pestaña Setup.'
       }
     ]
@@ -1856,7 +1856,7 @@ export const QUESTIONS: Question[] = [
       {
         id: 240,
         contenido: 'To validate data store edits.',
-        correcta: false,
+        correcta: true,
         explicacion: 'CORRECTO: La verificación de data store entities se utiliza principalmente para validar que las ediciones en el data store cumplan con las reglas de integridad referencial y estructura definidas.'
       },
       {
@@ -1868,7 +1868,7 @@ export const QUESTIONS: Question[] = [
       {
         id: 242,
         contenido: 'To nest CDTs.',
-        correcta: true,
+        correcta: false,
         explicacion: 'INCORRECTO: El anidamiento de CDTs se realiza durante el diseño, no mediante la verificación de entidades.'
       }
     ]
