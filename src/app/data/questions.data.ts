@@ -325,14 +325,14 @@ export const QUESTIONS: Question[] = [
       {
         id: 42,
         contenido: 'pagingInfo',
-        correcta: false,
-        explicacion: 'INCORRECTO: pagingInfo controla paginación, no ordenamiento.'
+        correcta: true,
+        explicacion: 'CORRECTO: pagingInfo permite definir campos y dirección de ordenamiento.'
       },
       {
         id: 43,
         contenido: 'sortFields',
-        correcta: true,
-        explicacion: 'CORRECTO: sortFields permite definir campos y dirección de ordenamiento.'
+        correcta: false,
+        explicacion: 'INCORRECTO: sortFields no controla paginación, no ordenamiento.'
       },
       {
         id: 44,
