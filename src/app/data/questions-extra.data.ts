@@ -1591,14 +1591,14 @@ export const QUESTIONS_EXTRA: Question[] = [
       {
         "id": 498,
         "contenido": "Build",
-        "correcta": true,
-        "explicacion": "CORRECTO: La fase 'Build' es cuando el equipo de desarrollo trabaja en sprints. El refinamiento regular del backlog (grooming) es una ceremonia ágil clave durante esta fase para priorizar, aclarar y estimar los elementos del backlog para los próximos sprints."
+        "correcta": false,
+        "explicacion": "INCORRECTO: La fase 'Build' es cuando el equipo de desarrollo trabaja en sprints"
       },
       {
         "id": 499,
         "contenido": "Initiate",
-        "correcta": false,
-        "explicacion": "INCORRECTO: La fase 'Initiate' se trata de definir la visión, el alcance y el backlog inicial de alto nivel. El 'refinamiento regular' es una actividad continua que ocurre una vez que el desarrollo está en marcha, típicamente en la fase 'Build'."
+        "correcta": true,
+        "explicacion": "CORRECTO: La fase 'Initiate' se trata de definir la visión, el refinamiento regular del backlog (grooming) es una ceremonia ágil clave durante esta fase para priorizar, aclarar y estimar los elementos del backlog para los próximos sprints."
       }
     ]
   },
@@ -2292,8 +2292,8 @@ export const QUESTIONS_EXTRA: Question[] = [
       {
         "id": 588,
         "contenido": "\"Create or Update Record; \" & pv!recordName",
-        "correcta": false,
-        "explicacion": "INCORRECTO: El separador utilizado es un punto y coma (`;`) seguido de un espacio. En las expresiones de Appian, el operador de concatenación de texto es el 'ampersand' (`&`) o el signo más (`+`). Este formato es incorrecto."
+        "correcta": true,
+        "explicacion": "CORRECTO: Esta es una representación correcta. Utiliza el operador de concatenación estándar de Appian (`&`) para combinar un texto literal con el valor de una variable de proceso (`pv!recordName`). Este es el patrón típico para crear un nombre para mostrar de proceso dinámico y legible."
       },
       {
         "id": 589,
@@ -2309,9 +2309,9 @@ export const QUESTIONS_EXTRA: Question[] = [
       },
       {
         "id": 591,
-        "contenido": "\"Create or Update Record: \" & pv!recordName",
-        "correcta": true,
-        "explicacion": "CORRECTO: Esta es una representación correcta. Utiliza el operador de concatenación estándar de Appian (`&`) para combinar un texto literal con el valor de una variable de proceso (`pv!recordName`). Este es el patrón típico para crear un nombre para mostrar de proceso dinámico y legible."
+        "contenido": "\"Create or Update Record: \" & pv!recordName\"",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Esta es una representación correcta. Utiliza el operador de concatenación estándar de Appian (`&`) para combinar un texto literal con el valor de una variable de proceso (`pv!recordName`). Este es el patrón típico para crear un nombre para mostrar de proceso dinámico y legible; PERO le sobra la \" del final."
       }
     ]
   },
@@ -2447,8 +2447,8 @@ export const QUESTIONS_EXTRA: Question[] = [
       {
         "id": 608,
         "contenido": "After every user interaction",
-        "correcta": false,
-        "explicacion": "INCORRECTO: Las variables locales no se refrescan automáticamente después de cada interacción del usuario. Se evalúan cuando la expresión que las contiene se evalúa, lo cual está controlado por los mecanismos de actualización (refresh) de la interfaz."
+        "correcta": true,
+        "explicacion": "CORRECTO: Las variables locales se refrescan automáticamente por defecto, después de cada interacción del usuario. Se evalúan cuando la expresión que las contiene se evalúa, lo cual está controlado por los mecanismos de actualización (refresh) de la interfaz."
       },
       {
         "id": 609,
@@ -2459,8 +2459,8 @@ export const QUESTIONS_EXTRA: Question[] = [
       {
         "id": 610,
         "contenido": "When any referenced variable changes",
-        "correcta": true,
-        "explicacion": "CORRECTO: Por defecto, una expresión `a!localVariables()` (y sus variables locales internas) se vuelve a evaluar (se 'refresca') cuando cambia el valor de *cualquier* variable a la que haga referencia dentro de su bloque. Esto es parte del modelo de evaluación reactiva de Appian SAIL."
+        "correcta": false,
+        "explicacion": "INCORRECTO: Por defecto, una expresión `a!localVariables()` (y sus variables locales internas) NO se vuelve a evaluar (se 'refresca') cuando cambia el valor de *cualquier* variable a la que haga referencia dentro de su bloque. Esto es parte del modelo de evaluación reactiva de Appian SAIL."
       },
       {
         "id": 611,
@@ -2696,7 +2696,7 @@ export const QUESTIONS_EXTRA: Question[] = [
         "id": 640,
         "contenido": "Hourly Sync",
         "correcta": false,
-        "explicacion": "INCORRECTO: 'Hourly Sync' se refiere a la frecuencia de sincronización, no al modo de acceso (lectura/escritura). El problema es sobre permisos de escritura, no sobre la frecuencia."
+        "explicacion": "INCORRECTO: 'Hourly Sync' se refiere a la frecuencia de sincronización, una conexión cada hora en principio puede resultar excesiva y más teniendo en cuenta que Appian tiene una copia de la BBDD en memoria."
       },
       {
         "id": 641,
@@ -2707,14 +2707,14 @@ export const QUESTIONS_EXTRA: Question[] = [
       {
         "id": 642,
         "contenido": "Daily Sync",
-        "correcta": false,
-        "explicacion": "INCORRECTO: Al igual que 'Hourly Sync', 'Daily Sync' define la frecuencia, no el modo de acceso de solo lectura."
+        "correcta": true,
+        "explicacion": "CORRECTO: Al igual que 'Hourly Sync', 'Daily Sync' define la frecuencia, como no tengo acceso continuo es una opción apropiada.",
       },
       {
         "id": 643,
         "contenido": "Immediate Sync",
-        "correcta": true,
-        "explicacion": "CORRECTO: 'Immediate Sync' es el modo de sincronización de datos diseñado para escenarios de **solo lectura**. Cuando se selecciona este modo, Appian sincroniza automáticamente los datos desde la base de datos de origen (lectura), pero **no** intentará escribir los cambios realizados en Appian de vuelta a la base de datos fuente, lo que coincide perfectamente con la restricción de no tener acceso de escritura."
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'Immediate Sync' es el modo de sincronización de datos diseñado para escenarios de **solo lectura**. Cuando se selecciona este modo, Appian sincroniza automáticamente los datos desde la base de datos de origen (lectura), pero **no** intentará escribir los cambios realizados en Appian de vuelta a la base de datos fuente, lo que coincide perfectamente con la restricción de no tener acceso de escritura."
       }
     ]
   },
