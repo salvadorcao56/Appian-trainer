@@ -3744,7 +3744,3215 @@ export const QUESTIONS_AI: Question[] = [
         "explicacion": "INCORRECTO: No reemplazan modelos de proceso."
       }
     ]
+  },
+
+  //INTERFACES
+  {
+    "id": 620,
+    "contenido": "Which component is commonly used in Appian interfaces to arrange content horizontally?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1985,
+        "contenido": "a!columnsLayout",
+        "correcta": true,
+        "explicacion": "CORRECTO: a!columnsLayout organiza componentes en columnas dentro de la interfaz."
+      },
+      {
+        "id": 1986,
+        "contenido": "a!sectionLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: a!sectionLayout agrupa contenido bajo un título, pero no crea columnas."
+      },
+      {
+        "id": 1987,
+        "contenido": "a!formLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: a!formLayout define la estructura del formulario completo."
+      },
+      {
+        "id": 1988,
+        "contenido": "a!sideBySideLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa para colocar pequeños elementos lado a lado, pero no para estructurar layouts completos."
+      }
+    ]
+  },
+  {
+    "id": 621,
+    "contenido": "In an Appian interface, which function is used to store temporary values during interface evaluation?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1989,
+        "contenido": "a!localVariables",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite definir variables locales que existen durante la evaluación de la interfaz."
+      },
+      {
+        "id": 1990,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: a!save guarda valores durante una acción del usuario."
+      },
+      {
+        "id": 1991,
+        "contenido": "a!queryRecordType",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa para consultar datos de un record type."
+      },
+      {
+        "id": 1992,
+        "contenido": "a!startProcess",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se utiliza para iniciar un proceso."
+      }
+    ]
+  },
+  {
+    "id": 622,
+    "contenido": "Which components can be used to structure content in an Appian interface?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1993,
+        "contenido": "a!columnsLayout",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite organizar contenido en columnas."
+      },
+      {
+        "id": 1994,
+        "contenido": "a!sectionLayout",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite agrupar contenido con un encabezado."
+      },
+      {
+        "id": 1995,
+        "contenido": "a!gridField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: gridField muestra datos en tabla, no estructura layouts."
+      },
+      {
+        "id": 1996,
+        "contenido": "a!formLayout",
+        "correcta": true,
+        "explicacion": "CORRECTO: formLayout define la estructura principal de una interfaz tipo formulario."
+      }
+    ]
+  },
+  {
+    "id": 623,
+    "contenido": "Which parameter is used in input components to store the user input?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 1997,
+        "contenido": "value",
+        "correcta": true,
+        "explicacion": "CORRECTO: value contiene el valor actual del componente."
+      },
+      {
+        "id": 1998,
+        "contenido": "saveInto",
+        "correcta": true,
+        "explicacion": "CORRECTO: saveInto define dónde se guarda el valor introducido."
+      },
+      {
+        "id": 1999,
+        "contenido": "label",
+        "correcta": false,
+        "explicacion": "INCORRECTO: label solo muestra texto descriptivo."
+      },
+      {
+        "id": 2000,
+        "contenido": "required",
+        "correcta": false,
+        "explicacion": "INCORRECTO: required solo define si el campo es obligatorio."
+      }
+    ]
+  },
+  {
+    "id": 624,
+    "contenido": "Which function is used to refresh a variable when another variable changes?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2001,
+        "contenido": "a!refreshVariable",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite recalcular una variable cuando cambian ciertas dependencias."
+      },
+      {
+        "id": 2002,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: save se usa para guardar valores."
+      },
+      {
+        "id": 2003,
+        "contenido": "a!localVariables",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Define variables pero no controla su refresco."
+      },
+      {
+        "id": 2004,
+        "contenido": "a!queryEntity",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa para consultar bases de datos."
+      }
+    ]
+  },
+  {
+    "id": 625,
+    "contenido": "Which component is used to display tabular data in an Appian interface?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2005,
+        "contenido": "a!gridField",
+        "correcta": true,
+        "explicacion": "CORRECTO: gridField muestra datos en formato tabla."
+      },
+      {
+        "id": 2006,
+        "contenido": "a!columnsLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo organiza contenido."
+      },
+      {
+        "id": 2007,
+        "contenido": "a!richTextDisplayField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra texto enriquecido."
+      },
+      {
+        "id": 2008,
+        "contenido": "a!imageField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra imágenes."
+      }
+    ]
+  },
+  {
+    "id": 626,
+    "contenido": "Which components allow users to input data?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2009,
+        "contenido": "a!textField",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite introducir texto."
+      },
+      {
+        "id": 2010,
+        "contenido": "a!dropdownField",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite seleccionar una opción de una lista."
+      },
+      {
+        "id": 2011,
+        "contenido": "a!paragraphField",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite introducir texto largo."
+      },
+      {
+        "id": 2012,
+        "contenido": "a!richTextDisplayField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra texto, no permite entrada."
+      }
+    ]
+  },
+  {
+    "id": 627,
+    "contenido": "What property makes an input field mandatory?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2013,
+        "contenido": "required",
+        "correcta": true,
+        "explicacion": "CORRECTO: required: true obliga al usuario a introducir un valor."
+      },
+      {
+        "id": 2014,
+        "contenido": "mandatory",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No existe este parámetro en Appian."
+      },
+      {
+        "id": 2015,
+        "contenido": "validate",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es una propiedad válida para este propósito."
+      },
+      {
+        "id": 2016,
+        "contenido": "saveInto",
+        "correcta": false,
+        "explicacion": "INCORRECTO: saveInto solo guarda el valor."
+      }
+    ]
+  },
+  {
+    "id": 628,
+    "contenido": "Which layout component is typically used as the root of a form interface?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2017,
+        "contenido": "a!formLayout",
+        "correcta": true,
+        "explicacion": "CORRECTO: Es el contenedor principal de interfaces tipo formulario."
+      },
+      {
+        "id": 2018,
+        "contenido": "a!columnsLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa dentro del layout."
+      },
+      {
+        "id": 2019,
+        "contenido": "a!sectionLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Agrupa contenido dentro de otros layouts."
+      },
+      {
+        "id": 2020,
+        "contenido": "a!gridField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Muestra datos."
+      }
+    ]
+  },
+  {
+    "id": 629,
+    "contenido": "Which features help improve interface performance?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2021,
+        "contenido": "Using a!refreshVariable",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite controlar cuándo recalcular datos."
+      },
+      {
+        "id": 2022,
+        "contenido": "Avoiding unnecessary queries",
+        "correcta": true,
+        "explicacion": "CORRECTO: Reduce procesamiento innecesario."
+      },
+      {
+        "id": 2023,
+        "contenido": "Executing queries on every evaluation",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Puede degradar el rendimiento."
+      },
+      {
+        "id": 2024,
+        "contenido": "Using local variables efficiently",
+        "correcta": true,
+        "explicacion": "CORRECTO: Mejora la gestión de datos en la interfaz."
+      }
+    ]
+  },
+  {
+    "id": 630,
+    "contenido": "Which component displays formatted text in an interface?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2025,
+        "contenido": "a!richTextDisplayField",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite mostrar texto con formato."
+      },
+      {
+        "id": 2026,
+        "contenido": "a!textField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Permite introducir texto."
+      },
+      {
+        "id": 2027,
+        "contenido": "a!paragraphField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Es un campo de entrada."
+      },
+      {
+        "id": 2028,
+        "contenido": "a!gridField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Muestra tablas."
+      }
+    ]
+  },
+  {
+    "id": 631,
+    "contenido": "Which parameter is used to define the label of an input component?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2029,
+        "contenido": "label",
+        "correcta": true,
+        "explicacion": "CORRECTO: Define el texto visible para el usuario."
+      },
+      {
+        "id": 2030,
+        "contenido": "title",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es el parámetro estándar."
+      },
+      {
+        "id": 2031,
+        "contenido": "name",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No define la etiqueta visible."
+      },
+      {
+        "id": 2032,
+        "contenido": "caption",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es un parámetro estándar."
+      }
+    ]
+  },
+  {
+    "id": 632,
+    "contenido": "Which component allows selecting multiple options from a list?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2033,
+        "contenido": "a!checkboxField",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite seleccionar múltiples opciones."
+      },
+      {
+        "id": 2034,
+        "contenido": "a!dropdownField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Normalmente permite solo una selección."
+      },
+      {
+        "id": 2035,
+        "contenido": "a!radioButtonField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo permite una selección."
+      },
+      {
+        "id": 2036,
+        "contenido": "a!textField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Es un campo de texto."
+      }
+    ]
+  },
+  {
+    "id": 633,
+    "contenido": "Which functions are commonly used to retrieve data in interfaces?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2037,
+        "contenido": "a!queryRecordType",
+        "correcta": true,
+        "explicacion": "CORRECTO: Consulta datos desde record types."
+      },
+      {
+        "id": 2038,
+        "contenido": "a!queryEntity",
+        "correcta": true,
+        "explicacion": "CORRECTO: Consulta entidades de base de datos."
+      },
+      {
+        "id": 2039,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Guarda valores."
+      },
+      {
+        "id": 2040,
+        "contenido": "a!startProcess",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia procesos."
+      }
+    ]
+  },
+  {
+    "id": 634,
+    "contenido": "Which parameter is used to define validation logic in input components?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2041,
+        "contenido": "validations",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite mostrar mensajes de validación."
+      },
+      {
+        "id": 2042,
+        "contenido": "required",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo indica si el campo es obligatorio."
+      },
+      {
+        "id": 2043,
+        "contenido": "saveInto",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Guarda el valor introducido."
+      },
+      {
+        "id": 2044,
+        "contenido": "labelPosition",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla la posición del label."
+      }
+    ]
+  },
+  {
+    "id": 635,
+    "contenido": "Which component is used to display images in an interface?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2045,
+        "contenido": "a!imageField",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite mostrar imágenes en la interfaz."
+      },
+      {
+        "id": 2046,
+        "contenido": "a!documentViewerField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa para documentos."
+      },
+      {
+        "id": 2047,
+        "contenido": "a!richTextDisplayField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Es para texto enriquecido."
+      },
+      {
+        "id": 2048,
+        "contenido": "a!textField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Es un campo de entrada."
+      }
+    ]
+  },
+  {
+    "id": 636,
+    "contenido": "Which features are related to interface reactivity in Appian?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2049,
+        "contenido": "a!refreshVariable",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite actualizar valores cuando cambian dependencias."
+      },
+      {
+        "id": 2050,
+        "contenido": "saveInto",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite actualizar variables cuando el usuario interactúa."
+      },
+      {
+        "id": 2051,
+        "contenido": "a!startProcess",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa para iniciar procesos."
+      },
+      {
+        "id": 2052,
+        "contenido": "a!queryEntity",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo consulta datos."
+      }
+    ]
+  },
+  {
+    "id": 637,
+    "contenido": "Which component allows users to upload documents?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2053,
+        "contenido": "a!fileUploadField",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite subir archivos."
+      },
+      {
+        "id": 2054,
+        "contenido": "a!imageField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra imágenes."
+      },
+      {
+        "id": 2055,
+        "contenido": "a!documentViewerField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo visualiza documentos."
+      },
+      {
+        "id": 2056,
+        "contenido": "a!richTextDisplayField",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Muestra texto."
+      }
+    ]
+  },
+  {
+    "id": 638,
+    "contenido": "Which layout allows placing small elements side by side inline?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2057,
+        "contenido": "a!sideBySideLayout",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite colocar elementos pequeños en línea."
+      },
+      {
+        "id": 2058,
+        "contenido": "a!columnsLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa para estructurar columnas más grandes."
+      },
+      {
+        "id": 2059,
+        "contenido": "a!formLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Es el layout principal."
+      },
+      {
+        "id": 2060,
+        "contenido": "a!sectionLayout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Agrupa contenido."
+      }
+    ]
+  },
+  {
+    "id": 639,
+    "contenido": "Which interface elements support the parameter saveInto?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2061,
+        "contenido": "Input components",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los componentes de entrada usan saveInto para guardar datos."
+      },
+      {
+        "id": 2062,
+        "contenido": "Buttons",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los botones pueden usar saveInto para ejecutar acciones."
+      },
+      {
+        "id": 2063,
+        "contenido": "Display fields",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los campos de visualización no guardan valores."
+      },
+      {
+        "id": 2064,
+        "contenido": "Layouts",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los layouts solo organizan contenido."
+      }
+    ]
+  },
+
+  //PROCESS MODEL
+    {
+    "id": 640,
+    "contenido": "Which component starts a process in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1993,
+        "contenido": "Start Event",
+        "correcta": true,
+        "explicacion": "CORRECTO: El Start Event inicia un proceso en un modelo de proceso."
+      },
+      {
+        "id": 1994,
+        "contenido": "End Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Termina un proceso, no lo inicia."
+      },
+      {
+        "id": 1995,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo representa tareas de usuario dentro del proceso."
+      },
+      {
+        "id": 1996,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla el flujo del proceso."
+      }
+    ]
+  },
+  {
+    "id": 641,
+    "contenido": "Which element allows branching based on conditions?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 1997,
+        "contenido": "Gateway",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los gateways permiten ramificar el flujo según condiciones."
+      },
+      {
+        "id": 1998,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo inicia el proceso."
+      },
+      {
+        "id": 1999,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Es una tarea de usuario, no controla el flujo."
+      },
+      {
+        "id": 2000,
+        "contenido": "End Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Termina el flujo."
+      }
+    ]
+  },
+  {
+    "id": 642,
+    "contenido": "Which nodes can send email notifications in a process?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2001,
+        "contenido": "Send Message",
+        "correcta": true,
+        "explicacion": "CORRECTO: El nodo Send Message permite enviar notificaciones."
+      },
+      {
+        "id": 2002,
+        "contenido": "User Task",
+        "correcta": true,
+        "explicacion": "CORRECTO: Con configuraciones de notificación puede enviar emails."
+      },
+      {
+        "id": 2003,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No envía mensajes por sí mismo."
+      },
+      {
+        "id": 2004,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No envía notificaciones."
+      }
+    ]
+  },
+  {
+    "id": 643,
+    "contenido": "Which expression function is commonly used in process models?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2005,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa en interfaces, no directamente en modelos de proceso."
+      },
+      {
+        "id": 2006,
+        "contenido": "a!startProcess",
+        "correcta": true,
+        "explicacion": "CORRECTO: Inicia otro proceso desde un modelo."
+      },
+      {
+        "id": 2007,
+        "contenido": "a!queryRecordType",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa en interfaces para consultar datos."
+      },
+      {
+        "id": 2008,
+        "contenido": "a!localVariables",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo en interfaces."
+      }
+    ]
+  },
+  {
+    "id": 644,
+    "contenido": "Which task type requires user interaction?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2009,
+        "contenido": "User Task",
+        "correcta": true,
+        "explicacion": "CORRECTO: Solo las tareas de usuario requieren acción humana."
+      },
+      {
+        "id": 2010,
+        "contenido": "Service Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se ejecuta automáticamente."
+      },
+      {
+        "id": 2011,
+        "contenido": "Script Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se ejecuta automáticamente con scripts."
+      },
+      {
+        "id": 2012,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla flujo."
+      }
+    ]
+  },
+  {
+    "id": 645,
+    "contenido": "Which node ends a process?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2013,
+        "contenido": "End Event",
+        "correcta": true,
+        "explicacion": "CORRECTO: Marca el final del proceso."
+      },
+      {
+        "id": 2014,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia el proceso."
+      },
+      {
+        "id": 2015,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo representa una tarea de usuario."
+      },
+      {
+        "id": 2016,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla el flujo."
+      }
+    ]
+  },
+  {
+    "id": 646,
+    "contenido": "Which feature allows a process to pause until an external signal is received?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2017,
+        "contenido": "Receive Message Event",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite que un proceso espere hasta recibir un mensaje externo."
+      },
+      {
+        "id": 2018,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo inicia el proceso."
+      },
+      {
+        "id": 2019,
+        "contenido": "End Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Termina el proceso."
+      },
+      {
+        "id": 2020,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Controla flujo, no espera señales."
+      }
+    ]
+  },
+  {
+    "id": 647,
+    "contenido": "Which process node executes automated scripts or integrations?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2021,
+        "contenido": "Service Task",
+        "correcta": true,
+        "explicacion": "CORRECTO: Ejecuta integraciones o scripts automáticamente."
+      },
+      {
+        "id": 2022,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Requiere acción de usuario."
+      },
+      {
+        "id": 2023,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla flujo."
+      },
+      {
+        "id": 2024,
+        "contenido": "End Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Termina el proceso."
+      }
+    ]
+  },
+  {
+    "id": 648,
+    "contenido": "Which property defines who can perform a User Task?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2025,
+        "contenido": "Assignment",
+        "correcta": true,
+        "explicacion": "CORRECTO: Define los usuarios o grupos asignados."
+      },
+      {
+        "id": 2026,
+        "contenido": "Task Name",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo da un nombre a la tarea."
+      },
+      {
+        "id": 2027,
+        "contenido": "Due Date",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo establece fecha límite."
+      },
+      {
+        "id": 2028,
+        "contenido": "Description",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo texto descriptivo."
+      }
+    ]
+  },
+  {
+    "id": 649,
+    "contenido": "Which node allows sending a message after certain conditions?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2029,
+        "contenido": "Send Message",
+        "correcta": true,
+        "explicacion": "CORRECTO: Envía mensajes condicionalmente."
+      },
+      {
+        "id": 2030,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No envía mensajes por sí solo."
+      },
+      {
+        "id": 2031,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Controla flujo, no envía mensajes."
+      },
+      {
+        "id": 2032,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia el proceso."
+      }
+    ]
+  },
+  {
+    "id": 650,
+    "contenido": "Which task type runs automatically without human interaction?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2033,
+        "contenido": "Service Task",
+        "correcta": true,
+        "explicacion": "CORRECTO: Ejecuta automáticamente integraciones o scripts."
+      },
+      {
+        "id": 2034,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Requiere usuario."
+      },
+      {
+        "id": 2035,
+        "contenido": "Script Task",
+        "correcta": true,
+        "explicacion": "CORRECTO: Ejecuta scripts automáticamente."
+      },
+      {
+        "id": 2036,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Controla flujo."
+      }
+    ]
+  },
+  {
+    "id": 651,
+    "contenido": "Which property sets the deadline for a task?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2037,
+        "contenido": "Due Date",
+        "correcta": true,
+        "explicacion": "CORRECTO: Define la fecha límite de la tarea."
+      },
+      {
+        "id": 2038,
+        "contenido": "Assignment",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Define quién realiza la tarea."
+      },
+      {
+        "id": 2039,
+        "contenido": "Task Name",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo es el nombre."
+      },
+      {
+        "id": 2040,
+        "contenido": "Description",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo texto explicativo."
+      }
+    ]
+  },
+  {
+    "id": 652,
+    "contenido": "Which element is used to connect nodes in a process?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2041,
+        "contenido": "Sequence Flow",
+        "correcta": true,
+        "explicacion": "CORRECTO: Conecta nodos para definir el flujo del proceso."
+      },
+      {
+        "id": 2042,
+        "contenido": "Message Flow",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Envía mensajes entre procesos."
+      },
+      {
+        "id": 2043,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Controla ramificaciones, no conecta nodos en línea."
+      },
+      {
+        "id": 2044,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo inicia procesos."
+      }
+    ]
+  },
+  {
+    "id": 653,
+    "contenido": "Which node allows a process to wait for a time period?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2045,
+        "contenido": "Timer Event",
+        "correcta": true,
+        "explicacion": "CORRECTO: Hace que el proceso espere un tiempo definido."
+      },
+      {
+        "id": 2046,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia procesos."
+      },
+      {
+        "id": 2047,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Espera interacción de usuario."
+      },
+      {
+        "id": 2048,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Controla flujo."
+      }
+    ]
+  },
+  {
+    "id": 654,
+    "contenido": "Which function can start another process model from an expression?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2049,
+        "contenido": "a!startProcess",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite iniciar otro proceso desde expresiones."
+      },
+      {
+        "id": 2050,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Guarda valores en interfaces."
+      },
+      {
+        "id": 2051,
+        "contenido": "a!queryRecordType",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo consulta datos."
+      },
+      {
+        "id": 2052,
+        "contenido": "a!localVariables",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo define variables locales."
+      }
+    ]
+  },
+  {
+    "id": 655,
+    "contenido": "Which event marks the end of a process flow?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2053,
+        "contenido": "End Event",
+        "correcta": true,
+        "explicacion": "CORRECTO: Finaliza el flujo de un proceso."
+      },
+      {
+        "id": 2054,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia el proceso."
+      },
+      {
+        "id": 2055,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla flujo."
+      },
+      {
+        "id": 2056,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo tarea de usuario."
+      }
+    ]
+  },
+  {
+    "id": 656,
+    "contenido": "Which node type allows triggering a subprocess?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2057,
+        "contenido": "Call Subprocess",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite ejecutar un modelo de proceso secundario."
+      },
+      {
+        "id": 2058,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No inicia subprocessos."
+      },
+      {
+        "id": 2059,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla flujo."
+      },
+      {
+        "id": 2060,
+        "contenido": "Service Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Ejecuta acciones, no inicia procesos completos."
+      }
+    ]
+  },
+  {
+    "id": 657,
+    "contenido": "Which node allows attaching a script to automate tasks?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2061,
+        "contenido": "Script Task",
+        "correcta": true,
+        "explicacion": "CORRECTO: Ejecuta scripts para automatizar acciones."
+      },
+      {
+        "id": 2062,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Requiere interacción de usuario."
+      },
+      {
+        "id": 2063,
+        "contenido": "Service Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Ejecuta integraciones, no scripts internos."
+      },
+      {
+        "id": 2064,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Controla flujo."
+      }
+    ]
+  },
+  {
+    "id": 658,
+    "contenido": "Which property defines the assignee dynamically using an expression?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2065,
+        "contenido": "Assignment",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se puede usar expresión para asignar dinámicamente."
+      },
+      {
+        "id": 2066,
+        "contenido": "Due Date",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Define fecha límite."
+      },
+      {
+        "id": 2067,
+        "contenido": "Task Name",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo nombre."
+      },
+      {
+        "id": 2068,
+        "contenido": "Description",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo texto."
+      }
+    ]
+  },
+  {
+    "id": 659,
+    "contenido": "Which nodes are used to handle errors in a process?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2069,
+        "contenido": "Error Event",
+        "correcta": true,
+        "explicacion": "CORRECTO: Captura errores durante la ejecución."
+      },
+      {
+        "id": 2070,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No maneja errores."
+      },
+      {
+        "id": 2071,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo tarea de usuario."
+      },
+      {
+        "id": 2072,
+        "contenido": "Service Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Ejecuta acciones, pero no captura errores automáticamente."
+      }
+    ]
+  },
+
+
+  //RECORDS
+
+    {
+    "id": 660,
+    "contenido": "What is a Record Type in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2013,
+        "contenido": "A data structure representing business entities",
+        "correcta": true,
+        "explicacion": "CORRECTO: Un record type define estructuras de datos para entidades de negocio."
+      },
+      {
+        "id": 2014,
+        "contenido": "A process that runs automatically",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Esto describe un proceso, no un record type."
+      },
+      {
+        "id": 2015,
+        "contenido": "A user interface layout",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es un layout de interfaz."
+      },
+      {
+        "id": 2016,
+        "contenido": "A security rule",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No gestiona seguridad por sí mismo."
+      }
+    ]
+  },
+  {
+    "id": 661,
+    "contenido": "Which function is used to query a Record Type?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2017,
+        "contenido": "a!queryRecordType",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se usa para consultar datos de un record type."
+      },
+      {
+        "id": 2018,
+        "contenido": "a!queryEntity",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Se usa para entidades de base de datos, no record types directamente."
+      },
+      {
+        "id": 2019,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo guarda valores."
+      },
+      {
+        "id": 2020,
+        "contenido": "a!startProcess",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia procesos, no consulta record types."
+      }
+    ]
+  },
+  {
+    "id": 662,
+    "contenido": "Which views can be created in a Record Type?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2021,
+        "contenido": "List View",
+        "correcta": true,
+        "explicacion": "CORRECTO: Muestra múltiples registros en una lista."
+      },
+      {
+        "id": 2022,
+        "contenido": "Record View",
+        "correcta": true,
+        "explicacion": "CORRECTO: Muestra detalles de un registro individual."
+      },
+      {
+        "id": 2023,
+        "contenido": "Form View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es un tipo de vista de record type."
+      },
+      {
+        "id": 2024,
+        "contenido": "Chart View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es una vista estándar de record type."
+      }
+    ]
+  },
+  {
+    "id": 663,
+    "contenido": "Which component allows actions on a record?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2025,
+        "contenido": "Action",
+        "correcta": true,
+        "explicacion": "CORRECTO: Define acciones que se pueden ejecutar sobre un registro."
+      },
+      {
+        "id": 2026,
+        "contenido": "Record Action",
+        "correcta": true,
+        "explicacion": "CORRECTO: Específicamente asociado a records."
+      },
+      {
+        "id": 2027,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es un record action."
+      },
+      {
+        "id": 2028,
+        "contenido": "Process Model",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No define acciones directas sobre records."
+      }
+    ]
+  },
+  {
+    "id": 664,
+    "contenido": "Which expression function returns the details of a single record?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2029,
+        "contenido": "a!recordData",
+        "correcta": true,
+        "explicacion": "CORRECTO: Devuelve los datos de un registro específico."
+      },
+      {
+        "id": 2030,
+        "contenido": "a!queryRecordType",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Retorna múltiples registros o listas, no un solo registro."
+      },
+      {
+        "id": 2031,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Guarda valores, no consulta registros."
+      },
+      {
+        "id": 2032,
+        "contenido": "a!startProcess",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia procesos."
+      }
+    ]
+  },
+  {
+    "id": 665,
+    "contenido": "Which property defines the source of data for a Record Type?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2033,
+        "contenido": "Data Store Entity",
+        "correcta": true,
+        "explicacion": "CORRECTO: Define la entidad de base de datos usada como fuente de datos."
+      },
+      {
+        "id": 2034,
+        "contenido": "Record Action",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Define acciones, no fuente de datos."
+      },
+      {
+        "id": 2035,
+        "contenido": "List View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra datos, no los define."
+      },
+      {
+        "id": 2036,
+        "contenido": "Security",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No define la fuente de datos."
+      }
+    ]
+  },
+  {
+    "id": 666,
+    "contenido": "Which of the following can be filtered in a Record Type?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2037,
+        "contenido": "List View",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite aplicar filtros sobre la lista de registros."
+      },
+      {
+        "id": 2038,
+        "contenido": "Record View",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se puede filtrar la vista de detalles según reglas."
+      },
+      {
+        "id": 2039,
+        "contenido": "Record Action",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se filtra, ejecuta acciones."
+      },
+      {
+        "id": 2040,
+        "contenido": "Start Event",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es parte del record type."
+      }
+    ]
+  },
+  {
+    "id": 667,
+    "contenido": "Which security feature can be applied to Record Types?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2041,
+        "contenido": "Role-based access",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se puede restringir el acceso según roles."
+      },
+      {
+        "id": 2042,
+        "contenido": "User-based access",
+        "correcta": true,
+        "explicacion": "CORRECTO: También se puede asignar acceso específico a usuarios."
+      },
+      {
+        "id": 2043,
+        "contenido": "Start Process",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia procesos, no controla seguridad de records."
+      },
+      {
+        "id": 2044,
+        "contenido": "Local Variables",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo se usa en interfaces."
+      }
+    ]
+  },
+  {
+    "id": 668,
+    "contenido": "Which function retrieves a list of records with optional filters?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2045,
+        "contenido": "a!queryRecordType",
+        "correcta": true,
+        "explicacion": "CORRECTO: Devuelve múltiples registros y permite filtros."
+      },
+      {
+        "id": 2046,
+        "contenido": "a!recordData",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Devuelve solo un registro específico."
+      },
+      {
+        "id": 2047,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No consulta datos."
+      },
+      {
+        "id": 2048,
+        "contenido": "a!startProcess",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia procesos."
+      }
+    ]
+  },
+  {
+    "id": 669,
+    "contenido": "Which type of Record Type view shows a chart of the data?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2049,
+        "contenido": "Chart View",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite visualizar datos de manera gráfica."
+      },
+      {
+        "id": 2050,
+        "contenido": "List View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra registros en tabla o lista."
+      },
+      {
+        "id": 2051,
+        "contenido": "Record View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Muestra detalles de un registro individual."
+      },
+      {
+        "id": 2052,
+        "contenido": "Form View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es tipo de vista en record types."
+      }
+    ]
+  },
+  {
+    "id": 670,
+    "contenido": "Which expression is used to get the ID of a record?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2053,
+        "contenido": "ri!recordId",
+        "correcta": true,
+        "explicacion": "CORRECTO: El parámetro ri!recordId contiene el ID del registro."
+      },
+      {
+        "id": 2054,
+        "contenido": "a!recordData",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Devuelve los datos completos, no solo el ID."
+      },
+      {
+        "id": 2055,
+        "contenido": "a!queryRecordType",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Retorna registros, no un ID directamente."
+      },
+      {
+        "id": 2056,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo guarda valores."
+      }
+    ]
+  },
+  {
+    "id": 671,
+    "contenido": "Which type of action can be added to a Record Type?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2057,
+        "contenido": "Quick Action",
+        "correcta": true,
+        "explicacion": "CORRECTO: Acción rápida sobre un registro."
+      },
+      {
+        "id": 2058,
+        "contenido": "Open Process",
+        "correcta": true,
+        "explicacion": "CORRECTO: Puede iniciar un proceso relacionado al registro."
+      },
+      {
+        "id": 2059,
+        "contenido": "Query Record Type",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es una acción directa sobre un registro."
+      },
+      {
+        "id": 2060,
+        "contenido": "List View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No es acción, es vista."
+      }
+    ]
+  },
+  {
+    "id": 672,
+    "contenido": "Which property defines a record type's default view?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2061,
+        "contenido": "Default View",
+        "correcta": true,
+        "explicacion": "CORRECTO: Establece qué vista se muestra por defecto al abrir un record."
+      },
+      {
+        "id": 2062,
+        "contenido": "List View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No define default, solo muestra lista."
+      },
+      {
+        "id": 2063,
+        "contenido": "Record Action",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo acciones sobre registros."
+      },
+      {
+        "id": 2064,
+        "contenido": "Data Source",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo define la fuente de datos."
+      }
+    ]
+  },
+  {
+    "id": 673,
+    "contenido": "Which feature allows combining multiple sources in a record?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2065,
+        "contenido": "Record Relationships",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite enlazar datos de distintas entidades."
+      },
+      {
+        "id": 2066,
+        "contenido": "Record Actions",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo define acciones sobre el registro."
+      },
+      {
+        "id": 2067,
+        "contenido": "List View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra registros."
+      },
+      {
+        "id": 2068,
+        "contenido": "Record Views",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra un registro."
+      }
+    ]
+  },
+  {
+    "id": 674,
+    "contenido": "Which type of view is used for detailed data entry?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2069,
+        "contenido": "Form View",
+        "correcta": true,
+        "explicacion": "CORRECTO: Se usa para capturar datos detallados de un registro."
+      },
+      {
+        "id": 2070,
+        "contenido": "List View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo muestra múltiples registros."
+      },
+      {
+        "id": 2071,
+        "contenido": "Record View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Muestra información, no captura nuevos datos."
+      },
+      {
+        "id": 2072,
+        "contenido": "Chart View",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo visualización gráfica."
+      }
+    ]
+  },
+  {
+    "id": 675,
+    "contenido": "Which function retrieves related data from another record?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2073,
+        "contenido": "a!relatedRecords",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite obtener registros relacionados."
+      },
+      {
+        "id": 2074,
+        "contenido": "a!recordData",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo devuelve datos de un registro."
+      },
+      {
+        "id": 2075,
+        "contenido": "a!queryRecordType",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Consulta principal, no relaciones."
+      },
+      {
+        "id": 2076,
+        "contenido": "a!save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No consulta datos."
+      }
+    ]
+  },
+  {
+    "id": 676,
+    "contenido": "Which node type can execute actions from a record?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2077,
+        "contenido": "Record Action",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite ejecutar acciones directamente desde el record."
+      },
+      {
+        "id": 2078,
+        "contenido": "User Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No ejecuta acciones desde un record."
+      },
+      {
+        "id": 2079,
+        "contenido": "Service Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Automatiza procesos, no acciones de record."
+      },
+      {
+        "id": 2080,
+        "contenido": "Gateway",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla flujo."
+      }
+    ]
+  },
+  {
+    "id": 677,
+    "contenido": "Which function defines filters for a Record Type view?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2081,
+        "contenido": "filters",
+        "correcta": true,
+        "explicacion": "CORRECTO: Define qué registros se muestran según criterios."
+      },
+      {
+        "id": 2082,
+        "contenido": "columns",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Define columnas visibles, no filtros."
+      },
+      {
+        "id": 2083,
+        "contenido": "actions",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Define acciones, no filtros."
+      },
+      {
+        "id": 2084,
+        "contenido": "security",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo controla acceso."
+      }
+    ]
+  },
+  {
+    "id": 678,
+    "contenido": "Which parameter controls the columns displayed in a list view?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2085,
+        "contenido": "columns",
+        "correcta": true,
+        "explicacion": "CORRECTO: Define qué campos se muestran en la lista de registros."
+      },
+      {
+        "id": 2086,
+        "contenido": "filters",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo define criterios de filtrado."
+      },
+      {
+        "id": 2087,
+        "contenido": "actions",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo define acciones disponibles."
+      },
+      {
+        "id": 2088,
+        "contenido": "defaultView",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo define vista inicial."
+      }
+    ]
+  },
+  {
+    "id": 679,
+    "contenido": "Which security configuration can restrict record access by user role?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2089,
+        "contenido": "Record Type Security",
+        "correcta": true,
+        "explicacion": "CORRECTO: Permite restringir acceso a registros según roles."
+      },
+      {
+        "id": 2090,
+        "contenido": "Start Process",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Inicia procesos, no controla seguridad de records."
+      },
+      {
+        "id": 2091,
+        "contenido": "Local Variables",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Solo se usan en interfaces."
+      },
+      {
+        "id": 2092,
+        "contenido": "Action Assignments",
+        "correcta": true,
+        "explicacion": "CORRECTO: Puede restringir qué usuarios pueden ejecutar ciertas acciones sobre el registro."
+      }
+    ]
+  },
+
+
+  // CDTs
+  {
+    "id": 680,
+    "contenido": "What is a CDT (Complex Data Type) in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2033, "contenido": "A custom data structure representing business entities", "correcta": true, "explicacion": "CORRECTO: CDT permite definir estructuras de datos complejas para entidades de negocio."},
+      {"id": 2034, "contenido": "A process model template", "correcta": false, "explicacion": "INCORRECTO: No tiene relación con procesos."},
+      {"id": 2035, "contenido": "A security rule", "correcta": false, "explicacion": "INCORRECTO: No controla seguridad."},
+      {"id": 2036, "contenido": "An interface layout", "correcta": false, "explicacion": "INCORRECTO: No define layouts."}
+    ]
+  },
+  {
+    "id": 681,
+    "contenido": "Where are CDTs typically defined?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2037, "contenido": "Data Types", "correcta": true, "explicacion": "CORRECTO: Se definen dentro de la sección Data Types de Appian."},
+      {"id": 2038, "contenido": "Record Types", "correcta": false, "explicacion": "INCORRECTO: Los record types usan CDTs, pero no los definen."},
+      {"id": 2039, "contenido": "Process Models", "correcta": false, "explicacion": "INCORRECTO: No se definen CDTs en procesos."},
+      {"id": 2040, "contenido": "Interfaces", "correcta": false, "explicacion": "INCORRECTO: Las interfaces usan CDTs, pero no los definen."}
+    ]
+  },
+  {
+    "id": 682,
+    "contenido": "Which function is used to create a CDT instance?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2041, "contenido": "type!MyCDT()", "correcta": true, "explicacion": "CORRECTO: Se utiliza type!NombreCDT() para crear una instancia de CDT."},
+      {"id": 2042, "contenido": "a!localVariables", "correcta": false, "explicacion": "INCORRECTO: Solo define variables locales, no CDT directamente."},
+      {"id": 2043, "contenido": "a!queryRecordType", "correcta": false, "explicacion": "INCORRECTO: Consulta datos de record types."},
+      {"id": 2044, "contenido": "a!startProcess", "correcta": false, "explicacion": "INCORRECTO: Inicia procesos."}
+    ]
+  },
+  {
+    "id": 683,
+    "contenido": "Which of the following can be fields in a CDT?",
+    "multiple": true,
+    "respuestas": [
+      {"id": 2045, "contenido": "Text", "correcta": true, "explicacion": "CORRECTO: Campos de tipo texto se pueden definir en un CDT."},
+      {"id": 2046, "contenido": "Integer", "correcta": true, "explicacion": "CORRECTO: Campos numéricos también se pueden definir."},
+      {"id": 2047, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: No se usa un record type como campo directamente."},
+      {"id": 2048, "contenido": "Boolean", "correcta": true, "explicacion": "CORRECTO: Campos lógicos son válidos en un CDT."}
+    ]
+  },
+  {
+    "id": 684,
+    "contenido": "Which property defines the relationship between CDTs?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2049, "contenido": "Parent-Child Relationship", "correcta": true, "explicacion": "CORRECTO: Permite anidar CDTs unos dentro de otros."},
+      {"id": 2050, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Es para tareas de usuario."},
+      {"id": 2051, "contenido": "Due Date", "correcta": false, "explicacion": "INCORRECTO: Solo en tareas."},
+      {"id": 2052, "contenido": "List View", "correcta": false, "explicacion": "INCORRECTO: Solo muestra registros, no define relaciones."}
+    ]
+  },
+  {
+    "id": 685,
+    "contenido": "Which feature ensures a CDT field cannot be null?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2053, "contenido": "Required", "correcta": true, "explicacion": "CORRECTO: Required:true obliga a que el campo tenga valor."},
+      {"id": 2054, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad, no obligatoriedad."},
+      {"id": 2055, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna valor por defecto."},
+      {"id": 2056, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
+    ]
+  },
+  {
+    "id": 686,
+    "contenido": "Which type of CDT can store multiple records?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2057, "contenido": "List of CDT", "correcta": true, "explicacion": "CORRECTO: Un campo puede ser una lista de instancias de CDT."},
+      {"id": 2058, "contenido": "Single CDT", "correcta": false, "explicacion": "INCORRECTO: Solo almacena un registro."},
+      {"id": 2059, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: No almacena múltiples registros."},
+      {"id": 2060, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: No almacena múltiples registros."}
+    ]
+  },
+  {
+    "id": 687,
+    "contenido": "Which CDT feature allows inheritance from another CDT?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2061, "contenido": "Extends", "correcta": true, "explicacion": "CORRECTO: Un CDT puede extender otro para heredar campos."},
+      {"id": 2062, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Obligatoriedad de campos, no herencia."},
+      {"id": 2063, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna valor por defecto."},
+      {"id": 2064, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
+    ]
+  },
+  {
+    "id": 688,
+    "contenido": "Which expression function maps CDT data into an interface?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2065, "contenido": "a!localVariables", "correcta": true, "explicacion": "CORRECTO: Permite almacenar instancias de CDT en interfaces."},
+      {"id": 2066, "contenido": "a!startProcess", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos."},
+      {"id": 2067, "contenido": "a!queryRecordType", "correcta": false, "explicacion": "INCORRECTO: Consulta registros, no crea instancias en interfaz."},
+      {"id": 2068, "contenido": "a!save", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
+    ]
+  },
+  {
+    "id": 689,
+    "contenido": "Which data type is NOT valid in a CDT field?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2069, "contenido": "Color", "correcta": true, "explicacion": "CORRECTO: No existe tipo 'Color' en CDTs."},
+      {"id": 2070, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Es válido."},
+      {"id": 2071, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Es válido."},
+      {"id": 2072, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Es válido."}
+    ]
+  },
+  {
+    "id": 690,
+    "contenido": "Which property allows defining default values for CDT fields?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2073, "contenido": "Default Value", "correcta": true, "explicacion": "CORRECTO: Se puede asignar un valor inicial a un campo."},
+      {"id": 2074, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a que el campo tenga valor."},
+      {"id": 2075, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad."},
+      {"id": 2076, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Solo para tareas de usuario."}
+    ]
+  },
+  {
+    "id": 691,
+    "contenido": "Which function converts CDT to JSON for integrations?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2077, "contenido": "a!toJson", "correcta": true, "explicacion": "CORRECTO: Convierte instancias de CDT a JSON."},
+      {"id": 2078, "contenido": "a!fromJson", "correcta": false, "explicacion": "INCORRECTO: Convierte JSON a CDT."},
+      {"id": 2079, "contenido": "type!MyCDT()", "correcta": false, "explicacion": "INCORRECTO: Crea instancias de CDT, no las convierte."},
+      {"id": 2080, "contenido": "a!save", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
+    ]
+  },
+  {
+    "id": 692,
+    "contenido": "Which field type allows referencing another CDT?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2081, "contenido": "Data Type", "correcta": true, "explicacion": "CORRECTO: Se puede definir un campo que sea de otro CDT."},
+      {"id": 2082, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Campo numérico, no referencia CDT."},
+      {"id": 2083, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Campo texto, no referencia CDT."},
+      {"id": 2084, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Campo lógico, no referencia CDT."}
+    ]
+  },
+  {
+    "id": 693,
+    "contenido": "Which CDT property ensures field values are unique?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2085, "contenido": "Unique", "correcta": true, "explicacion": "CORRECTO: Unique:true garantiza que los valores no se repitan."},
+      {"id": 2086, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo hace obligatorio un valor."},
+      {"id": 2087, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna un valor inicial."},
+      {"id": 2088, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Solo para tareas de usuario."}
+    ]
+  },
+  {
+    "id": 694,
+    "contenido": "Which type of CDT field stores a single date value?",
+    "multiple": true,
+    "respuestas": [
+      {"id": 2089, "contenido": "Date", "correcta": true, "explicacion": "CORRECTO: Campo de tipo Date almacena un valor de fecha."},
+      {"id": 2090, "contenido": "DateTime", "correcta": true, "explicacion": "CORRECTO: También almacena fecha y hora."},
+      {"id": 2091, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Solo números enteros."},
+      {"id": 2092, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Solo texto."}
+    ]
+  },
+  {
+    "id": 695,
+    "contenido": "Which property defines a list field in a CDT?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2093, "contenido": "Multiple", "correcta": true, "explicacion": "CORRECTO: Indica que el campo almacena múltiples valores."},
+      {"id": 2094, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a tener valor."},
+      {"id": 2095, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad."},
+      {"id": 2096, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo valor inicial."}
+    ]
+  },
+  {
+    "id": 696,
+    "contenido": "Which CDT feature is useful for integrations with external systems?",
+    "multiple": true,
+    "respuestas": [
+      {"id": 2097, "contenido": "ToJSON conversion", "correcta": true, "explicacion": "CORRECTO: Permite enviar datos a APIs externas en formato JSON."},
+      {"id": 2098, "contenido": "FromJSON", "correcta": true, "explicacion": "CORRECTO: Permite recibir datos JSON y mapearlos a CDT."},
+      {"id": 2099, "contenido": "Local Variables", "correcta": false, "explicacion": "INCORRECTO: Solo en interfaces."},
+      {"id": 2100, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores locales."}
+    ]
+  },
+  {
+    "id": 697,
+    "contenido": "Which property defines a fixed set of values for a CDT field?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2101, "contenido": "Constraint", "correcta": true, "explicacion": "CORRECTO: Limita los valores posibles a un conjunto definido."},
+      {"id": 2102, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a que exista valor."},
+      {"id": 2103, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo valor inicial."},
+      {"id": 2104, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: No restringe valores, solo garantiza no repetición."}
+    ]
+  },
+  {
+    "id": 698,
+    "contenido": "Which field type stores decimal numbers in a CDT?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2105, "contenido": "Decimal", "correcta": true, "explicacion": "CORRECTO: Se usa para valores decimales."},
+      {"id": 2106, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Solo números enteros."},
+      {"id": 2107, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Solo texto."},
+      {"id": 2108, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Solo true/false."}
+    ]
+  },
+  {
+    "id": 699,
+    "contenido": "Which feature allows a CDT to evolve without breaking existing interfaces?",
+    "multiple": true,
+    "respuestas": [
+      {"id": 2109, "contenido": "Optional Fields", "correcta": true, "explicacion": "CORRECTO: Hacer campos opcionales permite mantener compatibilidad."},
+      {"id": 2110, "contenido": "Required Fields", "correcta": false, "explicacion": "INCORRECTO: Cambiarlos puede romper interfaces."},
+      {"id": 2111, "contenido": "Default Values", "correcta": true, "explicacion": "CORRECTO: Asignar valores por defecto mantiene compatibilidad."},
+      {"id": 2112, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: No afecta compatibilidad de interfaces."}
+    ]
+  },
+
+
+
+  // SECURITY
+  {
+    "id": 700,
+    "contenido": "Which type of security in Appian restricts access based on user role?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2113, "contenido": "Role-based security", "correcta": true, "explicacion": "CORRECTO: Permite limitar el acceso según los roles asignados a los usuarios."},
+      {"id": 2114, "contenido": "User-based security", "correcta": false, "explicacion": "INCORRECTO: Esto es más específico, pero no aplica a roles generales."},
+      {"id": 2115, "contenido": "Local variable security", "correcta": false, "explicacion": "INCORRECTO: No controla acceso global, solo variables locales."},
+      {"id": 2116, "contenido": "Process-based security", "correcta": false, "explicacion": "INCORRECTO: Se aplica a procesos, no a roles de acceso."}
+    ]
+  },
+  {
+    "id": 701,
+    "contenido": "Which security setting controls who can view or edit a Record Type?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2117, "contenido": "Record Type Security", "correcta": true, "explicacion": "CORRECTO: Permite definir quién puede acceder y qué acciones realizar sobre un record type."},
+      {"id": 2118, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Solo controla el acceso a interfaces, no a record types."},
+      {"id": 2119, "contenido": "Process Model Security", "correcta": false, "explicacion": "INCORRECTO: Controla acceso a procesos, no records."},
+      {"id": 2120, "contenido": "CDT Security", "correcta": false, "explicacion": "INCORRECTO: CDTs no tienen seguridad propia."}
+    ]
+  },
+  {
+    "id": 702,
+    "contenido": "Which type of user can execute actions in a Record Type?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2121, "contenido": "Users with Action Assignments", "correcta": true, "explicacion": "CORRECTO: Solo los usuarios asignados a una acción pueden ejecutarla."},
+      {"id": 2122, "contenido": "All users", "correcta": false, "explicacion": "INCORRECTO: No todos los usuarios tienen permisos por defecto."},
+      {"id": 2123, "contenido": "Administrators only", "correcta": false, "explicacion": "INCORRECTO: No necesariamente, depende de la asignación."},
+      {"id": 2124, "contenido": "Record Creator only", "correcta": false, "explicacion": "INCORRECTO: No solo el creador puede ejecutar acciones."}
+    ]
+  },
+  {
+    "id": 703,
+    "contenido": "Which function is used to check a user’s group membership?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2125, "contenido": "a!isUserMemberOfGroup()", "correcta": true, "explicacion": "CORRECTO: Permite verificar si un usuario pertenece a un grupo determinado."},
+      {"id": 2126, "contenido": "a!userRoles()", "correcta": false, "explicacion": "INCORRECTO: No existe esa función en Appian."},
+      {"id": 2127, "contenido": "a!hasAccess()", "correcta": false, "explicacion": "INCORRECTO: Controla acceso a interfaces o reglas, no grupos."},
+      {"id": 2128, "contenido": "a!queryUser()", "correcta": false, "explicacion": "INCORRECTO: Solo devuelve datos de usuario, no su grupo."}
+    ]
+  },
+  {
+    "id": 704,
+    "contenido": "Which security type is applied to interfaces?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2129, "contenido": "Interface Security", "correcta": true, "explicacion": "CORRECTO: Permite controlar quién puede abrir o ejecutar una interfaz."},
+      {"id": 2130, "contenido": "Record Security", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a record types."},
+      {"id": 2131, "contenido": "Process Security", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a procesos."},
+      {"id": 2132, "contenido": "CDT Security", "correcta": false, "explicacion": "INCORRECTO: Los CDTs no tienen seguridad propia."}
+    ]
+  },
+  {
+    "id": 705,
+    "contenido": "Which permission is required to modify a Record Type schema?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2133, "contenido": "Designer", "correcta": true, "explicacion": "CORRECTO: Solo los usuarios con rol Designer pueden modificar la estructura de un record type."},
+      {"id": 2134, "contenido": "Viewer", "correcta": false, "explicacion": "INCORRECTO: Viewer solo puede ver información, no modificarla."},
+      {"id": 2135, "contenido": "Administrator", "correcta": false, "explicacion": "INCORRECTO: Puede gestionar seguridad, pero no necesariamente modificar schema de records."},
+      {"id": 2136, "contenido": "Contributor", "correcta": false, "explicacion": "INCORRECTO: Contribuidor puede editar contenido de procesos, pero no el schema de record type."}
+    ]
+  },
+  {
+    "id": 706,
+    "contenido": "Who can define security for an Interface in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2137, "contenido": "Interface Designer", "correcta": true, "explicacion": "CORRECTO: Solo los diseñadores de interfaz pueden establecer reglas de acceso a la misma."},
+      {"id": 2138, "contenido": "Record Type Designer", "correcta": false, "explicacion": "INCORRECTO: No controla seguridad de interfaces."},
+      {"id": 2139, "contenido": "Process Modeler", "correcta": false, "explicacion": "INCORRECTO: Solo diseña procesos, no seguridad de interfaces."},
+      {"id": 2140, "contenido": "End User", "correcta": false, "explicacion": "INCORRECTO: El usuario final no puede definir seguridad."}
+    ]
+  },
+  {
+    "id": 707,
+    "contenido": "Which function verifies if the logged-in user can execute a specific action?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2141, "contenido": "a!isUserAuthorized()", "correcta": true, "explicacion": "CORRECTO: Permite verificar permisos de un usuario para ejecutar acciones definidas en seguridad."},
+      {"id": 2142, "contenido": "a!canExecute()", "correcta": false, "explicacion": "INCORRECTO: No existe esta función en Appian."},
+      {"id": 2143, "contenido": "a!hasRole()", "correcta": false, "explicacion": "INCORRECTO: Devuelve roles, no permisos específicos."},
+      {"id": 2144, "contenido": "a!validateUser()", "correcta": false, "explicacion": "INCORRECTO: No existe para validar permisos de acciones."}
+    ]
+  },
+  {
+    "id": 708,
+    "contenido": "What is the purpose of 'Record Type Security'?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2145, "contenido": "To control which users can view or modify records", "correcta": true, "explicacion": "CORRECTO: Permite asignar permisos de lectura, edición o acciones sobre registros específicos."},
+      {"id": 2146, "contenido": "To manage interface visibility", "correcta": false, "explicacion": "INCORRECTO: Esto lo hace Interface Security."},
+      {"id": 2147, "contenido": "To define CDT structures", "correcta": false, "explicacion": "INCORRECTO: No gestiona la estructura de datos."},
+      {"id": 2148, "contenido": "To set process start permissions", "correcta": false, "explicacion": "INCORRECTO: Esto es parte de Process Security."}
+    ]
+  },
+  {
+    "id": 709,
+    "contenido": "Which Appian security type allows controlling access to process models?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2149, "contenido": "Process Security", "correcta": true, "explicacion": "CORRECTO: Permite asignar quién puede ver, modificar o ejecutar procesos."},
+      {"id": 2150, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a interfaces."},
+      {"id": 2151, "contenido": "Record Type Security", "correcta": false, "explicacion": "INCORRECTO: Solo controla acceso a records."},
+      {"id": 2152, "contenido": "CDT Security", "correcta": false, "explicacion": "INCORRECTO: Los CDTs no tienen seguridad propia."}
+    ]
+  },
+  {
+    "id": 710,
+    "contenido": "Which permission allows a user to delete a record?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2153, "contenido": "Delete", "correcta": true, "explicacion": "CORRECTO: El permiso Delete permite que un usuario elimine registros."},
+      {"id": 2154, "contenido": "Edit", "correcta": false, "explicacion": "INCORRECTO: Solo permite modificar, no eliminar."},
+      {"id": 2155, "contenido": "View", "correcta": false, "explicacion": "INCORRECTO: Solo permite visualizar registros."},
+      {"id": 2156, "contenido": "Execute", "correcta": false, "explicacion": "INCORRECTO: Ejecutar acciones no incluye borrar registros."}
+    ]
+  },
+  {
+    "id": 711,
+    "contenido": "Which security type ensures only specific users can start a process?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2157, "contenido": "Process Security", "correcta": true, "explicacion": "CORRECTO: Define quién puede iniciar o ejecutar procesos."},
+      {"id": 2158, "contenido": "Record Security", "correcta": false, "explicacion": "INCORRECTO: Controla acceso a records, no a procesos."},
+      {"id": 2159, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Solo controla interfaces."},
+      {"id": 2160, "contenido": "CDT Security", "correcta": false, "explicacion": "INCORRECTO: Los CDTs no tienen seguridad."}
+    ]
+  },
+  {
+    "id": 712,
+    "contenido": "Which function checks if the current user can edit a specific record?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2161, "contenido": "a!isUserAuthorized()", "correcta": true, "explicacion": "CORRECTO: Permite verificar permisos para acciones específicas, como editar registros."},
+      {"id": 2162, "contenido": "a!canEdit()", "correcta": false, "explicacion": "INCORRECTO: No existe esta función en Appian."},
+      {"id": 2163, "contenido": "a!hasRole()", "correcta": false, "explicacion": "INCORRECTO: Devuelve roles pero no permisos concretos."},
+      {"id": 2164, "contenido": "a!checkAccess()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."}
+    ]
+  },
+  {
+    "id": 713,
+    "contenido": "Which security type allows hiding a record type from certain users?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2165, "contenido": "Record Type Security", "correcta": true, "explicacion": "CORRECTO: Permite controlar la visibilidad de registros a grupos o usuarios."},
+      {"id": 2166, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a interfaces."},
+      {"id": 2167, "contenido": "Process Security", "correcta": false, "explicacion": "INCORRECTO: Solo a procesos."},
+      {"id": 2168, "contenido": "CDT Security", "correcta": false, "explicacion": "INCORRECTO: Los CDTs no tienen seguridad propia."}
+    ]
+  },
+  {
+    "id": 714,
+    "contenido": "Who can manage security roles in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2169, "contenido": "Administrators", "correcta": true, "explicacion": "CORRECTO: Los administradores pueden definir roles y asignarlos a usuarios."},
+      {"id": 2170, "contenido": "Designers", "correcta": false, "explicacion": "INCORRECTO: No pueden gestionar roles globales."},
+      {"id": 2171, "contenido": "End Users", "correcta": false, "explicacion": "INCORRECTO: No tienen permisos para gestionar roles."},
+      {"id": 2172, "contenido": "Record Creators", "correcta": false, "explicacion": "INCORRECTO: Solo crean registros, no roles."}
+    ]
+  },
+  {
+    "id": 715,
+    "contenido": "Which permission type allows a user to perform all actions on a record?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2173, "contenido": "Full Control", "correcta": true, "explicacion": "CORRECTO: Permite leer, modificar, borrar y ejecutar acciones."},
+      {"id": 2174, "contenido": "Read Only", "correcta": false, "explicacion": "INCORRECTO: Solo permite visualizar."},
+      {"id": 2175, "contenido": "Execute Only", "correcta": false, "explicacion": "INCORRECTO: Solo ejecutar acciones, no modificar ni borrar."},
+      {"id": 2176, "contenido": "Custom", "correcta": false, "explicacion": "INCORRECTO: Depende de la configuración, no otorga todo automáticamente."}
+    ]
+  },
+  {
+    "id": 716,
+    "contenido": "Which Appian feature allows temporary delegation of security permissions?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2177, "contenido": "Delegation", "correcta": true, "explicacion": "CORRECTO: Permite que un usuario temporalmente actúe con los permisos de otro."},
+      {"id": 2178, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Asigna tareas, no seguridad."},
+      {"id": 2179, "contenido": "Role Override", "correcta": false, "explicacion": "INCORRECTO: No existe esa función exacta en Appian."},
+      {"id": 2180, "contenido": "Temporary Access", "correcta": false, "explicacion": "INCORRECTO: No es la funcionalidad formal de Appian."}
+    ]
+  },
+  {
+    "id": 717,
+    "contenido": "Which security type is applied to actions defined in Record Types?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2181, "contenido": "Action Security", "correcta": true, "explicacion": "CORRECTO: Permite definir quién puede ejecutar acciones específicas de un record type."},
+      {"id": 2182, "contenido": "Record Security", "correcta": false, "explicacion": "INCORRECTO: Controla visibilidad y acceso general, no acciones individuales."},
+      {"id": 2183, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Solo para interfaces."},
+      {"id": 2184, "contenido": "Process Security", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a procesos."}
+    ]
+  },
+  {
+    "id": 718,
+    "contenido": "Which function checks if a user has permission to start a process?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2185, "contenido": "a!isUserAuthorized()", "correcta": true, "explicacion": "CORRECTO: Permite verificar si el usuario tiene permisos para iniciar un proceso específico."},
+      {"id": 2186, "contenido": "a!canStartProcess()", "correcta": false, "explicacion": "INCORRECTO: No existe esa función en Appian."},
+      {"id": 2187, "contenido": "a!hasRole()", "correcta": false, "explicacion": "INCORRECTO: Solo devuelve roles, no permisos de inicio."},
+      {"id": 2188, "contenido": "a!checkAccess()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."}
+    ]
+  },
+  {
+    "id": 719,
+    "contenido": "Who can override permissions temporarily in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2189, "contenido": "Administrators", "correcta": true, "explicacion": "CORRECTO: Solo los administradores pueden delegar temporalmente permisos a otros usuarios."},
+      {"id": 2190, "contenido": "Designers", "correcta": false, "explicacion": "INCORRECTO: No pueden delegar permisos globales."},
+      {"id": 2191, "contenido": "End Users", "correcta": false, "explicacion": "INCORRECTO: No tienen esa capacidad."},
+      {"id": 2192, "contenido": "Contributors", "correcta": false, "explicacion": "INCORRECTO: Solo participan en procesos, no gestionan permisos."}
+    ]
+  },
+
+
+  // PROCESS MODEL
+  {
+    "id": 720,
+    "contenido": "Which object in Appian defines the flow of tasks and decisions?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2193, "contenido": "Process Model", "correcta": true, "explicacion": "CORRECTO: Los modelos de proceso definen el flujo de tareas, decisiones y eventos."},
+      {"id": 2194, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: Solo gestiona datos de entidades, no flujo de tareas."},
+      {"id": 2195, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Solo define pantallas, no flujos."},
+      {"id": 2196, "contenido": "CDT", "correcta": false, "explicacion": "INCORRECTO: Define estructuras de datos, no procesos."}
+    ]
+  },
+  {
+    "id": 721,
+    "contenido": "Which type of security controls who can start a process?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2197, "contenido": "Process Security", "correcta": true, "explicacion": "CORRECTO: Define qué usuarios o grupos pueden iniciar o ejecutar un proceso."},
+      {"id": 2198, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Solo controla acceso a interfaces."},
+      {"id": 2199, "contenido": "Record Security", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a records."},
+      {"id": 2200, "contenido": "CDT Security", "correcta": false, "explicacion": "INCORRECTO: Los CDTs no tienen seguridad propia."}
+    ]
+  },
+  {
+    "id": 722,
+    "contenido": "Which object defines automated actions within a process?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2201, "contenido": "Service Task", "correcta": true, "explicacion": "CORRECTO: Permite ejecutar acciones automáticas sin intervención de usuario."},
+      {"id": 2202, "contenido": "User Task", "correcta": false, "explicacion": "INCORRECTO: Requiere interacción del usuario."},
+      {"id": 2203, "contenido": "Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia un proceso, no realiza acciones automáticas."},
+      {"id": 2204, "contenido": "Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo decide flujo, no ejecuta acciones."}
+    ]
+  },
+  {
+    "id": 723,
+    "contenido": "Which object in a process model requires a user to complete a task?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2205, "contenido": "User Task", "correcta": true, "explicacion": "CORRECTO: Tarea que debe ser completada por un usuario asignado."},
+      {"id": 2206, "contenido": "Service Task", "correcta": false, "explicacion": "INCORRECTO: Es automático, no requiere usuario."},
+      {"id": 2207, "contenido": "Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia el proceso."},
+      {"id": 2208, "contenido": "Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo define rutas de flujo."}
+    ]
+  },
+  {
+    "id": 724,
+    "contenido": "Which type of gateway routes a process based on a condition?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2209, "contenido": "Exclusive Gateway", "correcta": true, "explicacion": "CORRECTO: Solo una ruta se toma según la condición evaluada."},
+      {"id": 2210, "contenido": "Parallel Gateway", "correcta": false, "explicacion": "INCORRECTO: Ejecuta múltiples rutas simultáneamente, no condicionalmente."},
+      {"id": 2211, "contenido": "Inclusive Gateway", "correcta": false, "explicacion": "INCORRECTO: Puede tomar múltiples rutas, no solo una."},
+      {"id": 2212, "contenido": "Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos, no enruta."}
+    ]
+  },
+  {
+    "id": 725,
+    "contenido": "Which feature ensures a process is only executed by authorized users?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2213, "contenido": "Process Security", "correcta": true, "explicacion": "CORRECTO: Permite definir qué usuarios pueden iniciar o ejecutar un proceso."},
+      {"id": 2214, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Solo protege la interfaz, no el flujo del proceso."},
+      {"id": 2215, "contenido": "Record Security", "correcta": false, "explicacion": "INCORRECTO: Solo protege registros."},
+      {"id": 2216, "contenido": "CDT Security", "correcta": false, "explicacion": "INCORRECTO: Los CDTs no tienen seguridad."}
+    ]
+  },
+  {
+    "id": 726,
+    "contenido": "Which type of start event triggers a process based on external input?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2217, "contenido": "Message Start Event", "correcta": true, "explicacion": "CORRECTO: Inicia un proceso cuando recibe un mensaje o input externo."},
+      {"id": 2218, "contenido": "Timer Start Event", "correcta": false, "explicacion": "INCORRECTO: Inicia basado en tiempo, no input externo."},
+      {"id": 2219, "contenido": "User Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia un usuario manualmente."},
+      {"id": 2220, "contenido": "Conditional Start Event", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian como tipo de evento inicial."}
+    ]
+  },
+  {
+    "id": 727,
+    "contenido": "Which task type allows integration with external systems?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2221, "contenido": "Service Task", "correcta": true, "explicacion": "CORRECTO: Permite llamar servicios externos como APIs o web services."},
+      {"id": 2222, "contenido": "User Task", "correcta": false, "explicacion": "INCORRECTO: Solo requiere acción de usuario."},
+      {"id": 2223, "contenido": "Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo enruta flujo."},
+      {"id": 2224, "contenido": "Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos."}
+    ]
+  },
+  {
+    "id": 728,
+    "contenido": "Which property defines who can be assigned to a User Task?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2225, "contenido": "Task Assignment", "correcta": true, "explicacion": "CORRECTO: Permite asignar usuarios o grupos responsables de completar la tarea."},
+      {"id": 2226, "contenido": "Process Security", "correcta": false, "explicacion": "INCORRECTO: Controla inicio y ejecución de procesos, no tareas específicas."},
+      {"id": 2227, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Protege interfaces, no tareas."},
+      {"id": 2228, "contenido": "Record Security", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a registros."}
+    ]
+  },
+  {
+    "id": 729,
+    "contenido": "Which feature allows automatic notification when a task is assigned?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2229, "contenido": "Task Notification", "correcta": true, "explicacion": "CORRECTO: Configura alertas automáticas cuando se asigna una tarea."},
+      {"id": 2230, "contenido": "Process Security", "correcta": false, "explicacion": "INCORRECTO: Solo controla permisos, no notificaciones."},
+      {"id": 2231, "contenido": "Interface Rule", "correcta": false, "explicacion": "INCORRECTO: Solo controla comportamiento de interfaz."},
+      {"id": 2232, "contenido": "CDT Constraint", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a datos, no tareas."}
+    ]
+  },
+  {
+    "id": 730,
+    "contenido": "Which gateway allows multiple paths to be executed simultaneously?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2233, "contenido": "Parallel Gateway", "correcta": true, "explicacion": "CORRECTO: Permite que varias rutas se ejecuten al mismo tiempo."},
+      {"id": 2234, "contenido": "Exclusive Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo toma una ruta según la condición."},
+      {"id": 2235, "contenido": "Inclusive Gateway", "correcta": false, "explicacion": "INCORRECTO: Puede ejecutar múltiples rutas, pero depende de condiciones, no simultáneamente siempre."},
+      {"id": 2236, "contenido": "Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos, no enruta múltiples flujos."}
+    ]
+  },
+  {
+    "id": 731,
+    "contenido": "Which object defines a conditional split in a process?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2237, "contenido": "Gateway", "correcta": true, "explicacion": "CORRECTO: Las gateways permiten enrutar el flujo según condiciones."},
+      {"id": 2238, "contenido": "User Task", "correcta": false, "explicacion": "INCORRECTO: Solo requiere acción de usuario."},
+      {"id": 2239, "contenido": "Service Task", "correcta": false, "explicacion": "INCORRECTO: Solo ejecuta acciones automáticas."},
+      {"id": 2240, "contenido": "End Event", "correcta": false, "explicacion": "INCORRECTO: Solo termina el proceso."}
+    ]
+  },
+  {
+    "id": 732,
+    "contenido": "Which type of task can call an integration or web service?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2241, "contenido": "Service Task", "correcta": true, "explicacion": "CORRECTO: Permite interactuar con sistemas externos automáticamente."},
+      {"id": 2242, "contenido": "User Task", "correcta": false, "explicacion": "INCORRECTO: Solo ejecutada por un usuario."},
+      {"id": 2243, "contenido": "Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo define flujo."},
+      {"id": 2244, "contenido": "Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos."}
+    ]
+  },
+  {
+    "id": 733,
+    "contenido": "Which property defines who receives a task assignment?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2245, "contenido": "Task Assignment", "correcta": true, "explicacion": "CORRECTO: Determina los usuarios o grupos asignados a la tarea."},
+      {"id": 2246, "contenido": "Process Security", "correcta": false, "explicacion": "INCORRECTO: Solo controla inicio y ejecución de procesos."},
+      {"id": 2247, "contenido": "Interface Security", "correcta": false, "explicacion": "INCORRECTO: Solo protege interfaces."},
+      {"id": 2248, "contenido": "Record Security", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a records."}
+    ]
+  },
+  {
+    "id": 734,
+    "contenido": "Which event signals the completion of a process?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2249, "contenido": "End Event", "correcta": true, "explicacion": "CORRECTO: Marca el final de un proceso."},
+      {"id": 2250, "contenido": "Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos."},
+      {"id": 2251, "contenido": "Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo enruta flujo."},
+      {"id": 2252, "contenido": "User Task", "correcta": false, "explicacion": "INCORRECTO: Solo requiere acción de usuario."}
+    ]
+  },
+  {
+    "id": 735,
+    "contenido": "Which property defines a timer to trigger process events?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2253, "contenido": "Timer", "correcta": true, "explicacion": "CORRECTO: Permite iniciar o ejecutar acciones basadas en tiempo."},
+      {"id": 2254, "contenido": "Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo enruta flujo."},
+      {"id": 2255, "contenido": "User Task", "correcta": false, "explicacion": "INCORRECTO: Solo requiere acción de usuario."},
+      {"id": 2256, "contenido": "Service Task", "correcta": false, "explicacion": "INCORRECTO: Ejecuta acciones automáticas, no dispara según tiempo."}
+    ]
+  },
+  {
+    "id": 736,
+    "contenido": "Which object can generate multiple tasks simultaneously?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2257, "contenido": "Parallel Gateway", "correcta": true, "explicacion": "CORRECTO: Permite generar múltiples rutas y tareas en paralelo."},
+      {"id": 2258, "contenido": "Exclusive Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo toma una ruta."},
+      {"id": 2259, "contenido": "User Task", "correcta": false, "explicacion": "INCORRECTO: Solo una tarea por asignación."},
+      {"id": 2260, "contenido": "End Event", "correcta": false, "explicacion": "INCORRECTO: Termina el proceso, no genera tareas."}
+    ]
+  },
+  {
+    "id": 737,
+    "contenido": "Which type of gateway can route to multiple paths based on conditions?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2261, "contenido": "Inclusive Gateway", "correcta": true, "explicacion": "CORRECTO: Puede tomar múltiples rutas según las condiciones evaluadas."},
+      {"id": 2262, "contenido": "Exclusive Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo permite una ruta por condición."},
+      {"id": 2263, "contenido": "Parallel Gateway", "correcta": false, "explicacion": "INCORRECTO: Ejecuta todas las rutas simultáneamente sin condicionales."},
+      {"id": 2264, "contenido": "User Task", "correcta": false, "explicacion": "INCORRECTO: No enruta flujos."}
+    ]
+  },
+  {
+    "id": 738,
+    "contenido": "Which task type requires a user to approve or complete it?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2265, "contenido": "User Task", "correcta": true, "explicacion": "CORRECTO: Requiere intervención humana para completar la tarea."},
+      {"id": 2266, "contenido": "Service Task", "correcta": false, "explicacion": "INCORRECTO: Es automático, no requiere usuario."},
+      {"id": 2267, "contenido": "Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo define flujo."},
+      {"id": 2268, "contenido": "Start Event", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos."}
+    ]
+  },
+  {
+    "id": 739,
+    "contenido": "Which object in a process ensures tasks are assigned according to rules?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2269, "contenido": "Task Assignment Rules", "correcta": true, "explicacion": "CORRECTO: Permiten asignar tareas automáticamente según criterios definidos."},
+      {"id": 2270, "contenido": "Process Security", "correcta": false, "explicacion": "INCORRECTO: Controla acceso al proceso, no asignación de tareas."},
+      {"id": 2271, "contenido": "Gateway", "correcta": false, "explicacion": "INCORRECTO: Solo enruta flujo."},
+      {"id": 2272, "contenido": "Service Task", "correcta": false, "explicacion": "INCORRECTO: Ejecuta acciones automáticas, no asigna tareas según reglas."}
+    ]
+  },
+
+
+  // REPORTS
+  {
+    "id": 740,
+    "contenido": "Which object allows you to create a visual representation of record data?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2273, "contenido": "Report", "correcta": true, "explicacion": "CORRECTO: Los reports permiten visualizar datos de records en gráficos o tablas."},
+      {"id": 2274, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: Solo define la estructura de los datos, no los muestra visualmente."},
+      {"id": 2275, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Una interfaz puede mostrar reportes, pero el objeto report es específico para datos."},
+      {"id": 2276, "contenido": "Process Model", "correcta": false, "explicacion": "INCORRECTO: Los procesos gestionan flujos, no reportes."}
+    ]
+  },
+  {
+    "id": 741,
+    "contenido": "Which component is used to filter data in a report?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2277, "contenido": "Filter", "correcta": true, "explicacion": "CORRECTO: Permite restringir qué datos se muestran según criterios definidos."},
+      {"id": 2278, "contenido": "Column", "correcta": false, "explicacion": "INCORRECTO: Solo muestra un atributo de los datos, no filtra."},
+      {"id": 2279, "contenido": "Chart", "correcta": false, "explicacion": "INCORRECTO: Solo representa datos gráficamente, no filtra."},
+      {"id": 2280, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: Define datos, no filtra visualizaciones."}
+    ]
+  },
+  {
+    "id": 742,
+    "contenido": "Which type of report displays data as rows and columns?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2281, "contenido": "Grid Report", "correcta": true, "explicacion": "CORRECTO: Permite visualizar datos tabulados en filas y columnas."},
+      {"id": 2282, "contenido": "Chart Report", "correcta": false, "explicacion": "INCORRECTO: Solo muestra gráficos, no filas y columnas."},
+      {"id": 2283, "contenido": "Record Report", "correcta": false, "explicacion": "INCORRECTO: No es un tipo de reporte, solo un objeto de datos."},
+      {"id": 2284, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Puede mostrar un reporte, pero no es un tipo en sí."}
+    ]
+  },
+  {
+    "id": 743,
+    "contenido": "Which type of report visualizes trends over time?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2285, "contenido": "Line Chart", "correcta": true, "explicacion": "CORRECTO: Un line chart muestra la evolución de datos a lo largo del tiempo."},
+      {"id": 2286, "contenido": "Pie Chart", "correcta": false, "explicacion": "INCORRECTO: Solo muestra proporciones, no tendencias temporales."},
+      {"id": 2287, "contenido": "Grid Report", "correcta": false, "explicacion": "INCORRECTO: Tabula datos, no muestra tendencias gráficas."},
+      {"id": 2288, "contenido": "Gauge", "correcta": false, "explicacion": "INCORRECTO: Solo indica valor puntual, no evolución temporal."}
+    ]
+  },
+  {
+    "id": 744,
+    "contenido": "Which function allows you to retrieve records for a report?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2289, "contenido": "a!queryRecordType()", "correcta": true, "explicacion": "CORRECTO: Permite consultar los datos de un record type para mostrarlos en un report."},
+      {"id": 2290, "contenido": "a!getRecords()", "correcta": false, "explicacion": "INCORRECTO: No existe esa función exacta en Appian."},
+      {"id": 2291, "contenido": "a!readData()", "correcta": false, "explicacion": "INCORRECTO: No es la función para reportes de records."},
+      {"id": 2292, "contenido": "a!fetch()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."}
+    ]
+  },
+  {
+    "id": 745,
+    "contenido": "Which report type shows parts of a whole as slices?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2293, "contenido": "Pie Chart", "correcta": true, "explicacion": "CORRECTO: Representa proporciones de un total como porciones de un círculo."},
+      {"id": 2294, "contenido": "Line Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra evolución de datos, no proporciones."},
+      {"id": 2295, "contenido": "Grid Report", "correcta": false, "explicacion": "INCORRECTO: Solo muestra datos tabulados."},
+      {"id": 2296, "contenido": "Gauge", "correcta": false, "explicacion": "INCORRECTO: Solo indica un valor puntual."}
+    ]
+  },
+  {
+    "id": 746,
+    "contenido": "Which report element allows sorting data by a column?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2297, "contenido": "Sortable Column", "correcta": true, "explicacion": "CORRECTO: Permite ordenar los datos de la columna ascendente o descendente."},
+      {"id": 2298, "contenido": "Filter", "correcta": false, "explicacion": "INCORRECTO: Solo restringe los datos mostrados."},
+      {"id": 2299, "contenido": "Chart", "correcta": false, "explicacion": "INCORRECTO: No permite ordenar datos."},
+      {"id": 2300, "contenido": "CDT", "correcta": false, "explicacion": "INCORRECTO: Es solo estructura de datos, no interfaz de reportes."}
+    ]
+  },
+  {
+    "id": 747,
+    "contenido": "Which property in a report controls which fields are visible?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2301, "contenido": "Columns", "correcta": true, "explicacion": "CORRECTO: Determina qué campos de los datos se muestran en el reporte."},
+      {"id": 2302, "contenido": "Filter", "correcta": false, "explicacion": "INCORRECTO: Solo restringe registros, no campos."},
+      {"id": 2303, "contenido": "Sort", "correcta": false, "explicacion": "INCORRECTO: Solo ordena registros, no controla visibilidad de columnas."},
+      {"id": 2304, "contenido": "Row", "correcta": false, "explicacion": "INCORRECTO: Se refiere a los registros, no a los campos visibles."}
+    ]
+  },
+  {
+    "id": 748,
+    "contenido": "Which type of chart is best for comparing categories?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2305, "contenido": "Bar Chart", "correcta": true, "explicacion": "CORRECTO: Ideal para comparar cantidades entre distintas categorías."},
+      {"id": 2306, "contenido": "Line Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra tendencias, no comparaciones de categorías."},
+      {"id": 2307, "contenido": "Pie Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra proporciones de un total, no comparación directa."},
+      {"id": 2308, "contenido": "Gauge", "correcta": false, "explicacion": "INCORRECTO: Indica valor puntual, no compara categorías."}
+    ]
+  },
+  {
+    "id": 749,
+    "contenido": "Which function aggregates record data for reporting purposes?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2309, "contenido": "a!queryRecordType()", "correcta": true, "explicacion": "CORRECTO: Permite consultar y agregar datos para reportes."},
+      {"id": 2310, "contenido": "a!getRecords()", "correcta": false, "explicacion": "INCORRECTO: No existe esta función en Appian."},
+      {"id": 2311, "contenido": "a!aggregateData()", "correcta": false, "explicacion": "INCORRECTO: No es función válida de Appian."},
+      {"id": 2312, "contenido": "a!readReport()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."}
+    ]
+  },
+  {
+    "id": 750,
+    "contenido": "Which feature allows exporting report data to Excel?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2313, "contenido": "Export", "correcta": true, "explicacion": "CORRECTO: Permite que los usuarios descarguen los datos mostrados en Excel."},
+      {"id": 2314, "contenido": "Filter", "correcta": false, "explicacion": "INCORRECTO: Solo restringe datos, no exporta."},
+      {"id": 2315, "contenido": "Sort", "correcta": false, "explicacion": "INCORRECTO: Solo ordena, no exporta."},
+      {"id": 2316, "contenido": "Chart", "correcta": false, "explicacion": "INCORRECTO: Solo visualiza gráficamente."}
+    ]
+  },
+  {
+    "id": 751,
+    "contenido": "Which report element summarizes data visually in a single value?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2317, "contenido": "KPI / Gauge", "correcta": true, "explicacion": "CORRECTO: Muestra un valor clave de manera visual y destacada."},
+      {"id": 2318, "contenido": "Grid", "correcta": false, "explicacion": "INCORRECTO: Muestra datos tabulados, no un único valor destacado."},
+      {"id": 2319, "contenido": "Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra datos, no un valor resumido único."},
+      {"id": 2320, "contenido": "Filter", "correcta": false, "explicacion": "INCORRECTO: Solo restringe datos, no muestra resumen."}
+    ]
+  },
+  {
+    "id": 752,
+    "contenido": "Which component allows users to drill down into report data?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2321, "contenido": "Drill Down / Detail Link", "correcta": true, "explicacion": "CORRECTO: Permite acceder a más detalles de un dato desde un reporte."},
+      {"id": 2322, "contenido": "Filter", "correcta": false, "explicacion": "INCORRECTO: Solo restringe datos, no permite navegación detallada."},
+      {"id": 2323, "contenido": "Sort", "correcta": false, "explicacion": "INCORRECTO: Solo ordena datos."},
+      {"id": 2324, "contenido": "CDT", "correcta": false, "explicacion": "INCORRECTO: Solo define estructura de datos."}
+    ]
+  },
+  {
+    "id": 753,
+    "contenido": "Which report type best shows proportions between categories?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2325, "contenido": "Pie Chart", "correcta": true, "explicacion": "CORRECTO: Muestra cada categoría como porcentaje del total."},
+      {"id": 2326, "contenido": "Bar Chart", "correcta": false, "explicacion": "INCORRECTO: Compara cantidades, no proporciones de un total."},
+      {"id": 2327, "contenido": "Line Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra tendencias temporales."},
+      {"id": 2328, "contenido": "Grid", "correcta": false, "explicacion": "INCORRECTO: Muestra datos tabulados, no proporciones gráficas."}
+    ]
+  },
+  {
+    "id": 754,
+    "contenido": "Which property allows grouping data in a report?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2329, "contenido": "Group By", "correcta": true, "explicacion": "CORRECTO: Agrupa registros por un campo para análisis resumido."},
+      {"id": 2330, "contenido": "Sort", "correcta": false, "explicacion": "INCORRECTO: Solo ordena, no agrupa."},
+      {"id": 2331, "contenido": "Filter", "correcta": false, "explicacion": "INCORRECTO: Solo restringe registros."},
+      {"id": 2332, "contenido": "CDT", "correcta": false, "explicacion": "INCORRECTO: Solo estructura datos, no agrupa."}
+    ]
+  },
+  {
+    "id": 755,
+    "contenido": "Which feature allows users to refresh report data in real-time?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2333, "contenido": "Refresh / Auto-refresh", "correcta": true, "explicacion": "CORRECTO: Permite que el reporte se actualice con los datos más recientes."},
+      {"id": 2334, "contenido": "Filter", "correcta": false, "explicacion": "INCORRECTO: Solo restringe datos, no actualiza automáticamente."},
+      {"id": 2335, "contenido": "Sort", "correcta": false, "explicacion": "INCORRECTO: Solo ordena datos, no actualiza."},
+      {"id": 2336, "contenido": "Chart", "correcta": false, "explicacion": "INCORRECTO: Solo visualiza, no refresca automáticamente."}
+    ]
+  },
+  {
+    "id": 756,
+    "contenido": "Which type of report element can visualize trends for multiple categories over time?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2337, "contenido": "Line Chart", "correcta": true, "explicacion": "CORRECTO: Muestra series de datos para múltiples categorías a lo largo del tiempo."},
+      {"id": 2338, "contenido": "Pie Chart", "correcta": false, "explicacion": "INCORRECTO: Solo muestra proporciones estáticas."},
+      {"id": 2339, "contenido": "Grid", "correcta": false, "explicacion": "INCORRECTO: Solo tabula datos, no muestra tendencias gráficas."},
+      {"id": 2340, "contenido": "Gauge", "correcta": false, "explicacion": "INCORRECTO: Solo un valor puntual."}
+    ]
+  },
+  {
+    "id": 757,
+    "contenido": "Which function supports pagination in a report?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2341, "contenido": "pagingInfo in a!queryRecordType()", "correcta": true, "explicacion": "CORRECTO: Permite limitar y paginar resultados en reportes de records."},
+      {"id": 2342, "contenido": "a!paginate()", "correcta": false, "explicacion": "INCORRECTO: No existe esa función."},
+      {"id": 2343, "contenido": "a!pageRecords()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."},
+      {"id": 2344, "contenido": "pagingData()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."}
+    ]
+  },
+  {
+    "id": 758,
+    "contenido": "Which report type is best to display the completion rate of a process?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2345, "contenido": "Gauge / KPI", "correcta": true, "explicacion": "CORRECTO: Permite mostrar un valor resumen, como porcentaje completado de un proceso."},
+      {"id": 2346, "contenido": "Grid", "correcta": false, "explicacion": "INCORRECTO: Solo tabula datos, no muestra un indicador visual resumido."},
+      {"id": 2347, "contenido": "Line Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra evolución temporal, no un valor puntual resumido."},
+      {"id": 2348, "contenido": "Pie Chart", "correcta": false, "explicacion": "INCORRECTO: Solo muestra proporciones de un total, no porcentaje de completado."}
+    ]
+  },
+  {
+    "id": 759,
+    "contenido": "Which feature allows exporting filtered data from a report?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2349, "contenido": "Export", "correcta": true, "explicacion": "CORRECTO: Permite descargar los datos mostrados en el reporte, incluyendo filtros aplicados."},
+      {"id": 2350, "contenido": "Sort", "correcta": false, "explicacion": "INCORRECTO: Solo ordena, no exporta."},
+      {"id": 2351, "contenido": "Filter", "correcta": false, "explicacion": "INCORRECTO: Solo restringe, no exporta."},
+      {"id": 2352, "contenido": "Chart", "correcta": false, "explicacion": "INCORRECTO: Solo visualiza datos gráficamente."}
+    ]
+  },
+
+
+  // INTEGRATIONS
+  {
+    "id": 760,
+    "contenido": "Which object allows Appian to connect to external systems via APIs?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2353, "contenido": "Integration", "correcta": true, "explicacion": "CORRECTO: Las integraciones permiten conectar Appian con sistemas externos usando APIs."},
+      {"id": 2354, "contenido": "Process Model", "correcta": false, "explicacion": "INCORRECTO: Los procesos controlan flujos, no conexiones externas directas."},
+      {"id": 2355, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: Solo maneja datos de registros internos."},
+      {"id": 2356, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Solo muestra datos, no conecta sistemas externos."}
+    ]
+  },
+  {
+    "id": 761,
+    "contenido": "Which function is used to call an integration in Appian expressions?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2357, "contenido": "a!integration()", "correcta": true, "explicacion": "CORRECTO: Permite invocar integraciones desde expresiones en Appian."},
+      {"id": 2358, "contenido": "a!callAPI()", "correcta": false, "explicacion": "INCORRECTO: No existe esta función exacta en Appian."},
+      {"id": 2359, "contenido": "a!executeIntegration()", "correcta": false, "explicacion": "INCORRECTO: No es la sintaxis válida."},
+      {"id": 2360, "contenido": "a!runIntegration()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."}
+    ]
+  },
+  {
+    "id": 762,
+    "contenido": "Which object stores reusable expressions in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2361, "contenido": "Expression Rule", "correcta": true, "explicacion": "CORRECTO: Las Expression Rules permiten almacenar funciones o cálculos reutilizables."},
+      {"id": 2362, "contenido": "Process Model", "correcta": false, "explicacion": "INCORRECTO: No almacena expresiones reutilizables."},
+      {"id": 2363, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Solo define pantallas y visualización."},
+      {"id": 2364, "contenido": "CDT", "correcta": false, "explicacion": "INCORRECTO: Solo estructura datos, no expresiones."}
+    ]
+  },
+  {
+    "id": 763,
+    "contenido": "Which integration type retrieves data from external systems?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2365, "contenido": "Read / GET", "correcta": true, "explicacion": "CORRECTO: Permite obtener datos de sistemas externos."},
+      {"id": 2366, "contenido": "Write / POST", "correcta": false, "explicacion": "INCORRECTO: Envía datos, no los recupera."},
+      {"id": 2367, "contenido": "Update / PUT", "correcta": false, "explicacion": "INCORRECTO: Modifica datos existentes, no los lee."},
+      {"id": 2368, "contenido": "Delete / DELETE", "correcta": false, "explicacion": "INCORRECTO: Solo elimina datos, no los lee."}
+    ]
+  },
+  {
+    "id": 764,
+    "contenido": "Which integration type sends data to external systems?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2369, "contenido": "Write / POST", "correcta": true, "explicacion": "CORRECTO: Permite enviar datos a sistemas externos."},
+      {"id": 2370, "contenido": "Read / GET", "correcta": false, "explicacion": "INCORRECTO: Solo obtiene datos."},
+      {"id": 2371, "contenido": "Query / SELECT", "correcta": false, "explicacion": "INCORRECTO: No es un tipo de integración en Appian."},
+      {"id": 2372, "contenido": "Delete / DELETE", "correcta": false, "explicacion": "INCORRECTO: Solo elimina datos."}
+    ]
+  },
+  {
+    "id": 765,
+    "contenido": "Which object allows storing credentials securely for an integration?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2373, "contenido": "Connected System", "correcta": true, "explicacion": "CORRECTO: Los Connected Systems guardan credenciales y configuraciones para integraciones externas."},
+      {"id": 2374, "contenido": "Expression Rule", "correcta": false, "explicacion": "INCORRECTO: No almacena credenciales."},
+      {"id": 2375, "contenido": "CDT", "correcta": false, "explicacion": "INCORRECTO: Solo estructura datos."},
+      {"id": 2376, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: No almacena información de conexión."}
+    ]
+  },
+  {
+    "id": 766,
+    "contenido": "Which function invokes a process via integration?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2377, "contenido": "a!startProcess()", "correcta": true, "explicacion": "CORRECTO: Permite iniciar un proceso desde una integración o expresión."},
+      {"id": 2378, "contenido": "a!callProcess()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."},
+      {"id": 2379, "contenido": "a!runProcess()", "correcta": false, "explicacion": "INCORRECTO: No es función válida."},
+      {"id": 2380, "contenido": "a!invokeProcess()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."}
+    ]
+  },
+  {
+    "id": 767,
+    "contenido": "Which object allows mapping data between Appian and external systems?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2381, "contenido": "Integration Mapping / Input & Output", "correcta": true, "explicacion": "CORRECTO: Permite definir cómo los datos se transfieren hacia y desde Appian."},
+      {"id": 2382, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: Solo define estructura de datos."},
+      {"id": 2383, "contenido": "Process Model", "correcta": false, "explicacion": "INCORRECTO: Controla flujos, no mapea datos externos."},
+      {"id": 2384, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Solo muestra datos, no mapea integraciones."}
+    ]
+  },
+  {
+    "id": 768,
+    "contenido": "Which type of integration can update data in an external system?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2385, "contenido": "Write / PUT", "correcta": true, "explicacion": "CORRECTO: Permite modificar o actualizar datos existentes en sistemas externos."},
+      {"id": 2386, "contenido": "Read / GET", "correcta": false, "explicacion": "INCORRECTO: Solo obtiene datos."},
+      {"id": 2387, "contenido": "Delete / DELETE", "correcta": false, "explicacion": "INCORRECTO: Solo elimina datos, no actualiza."},
+      {"id": 2388, "contenido": "Query / SELECT", "correcta": false, "explicacion": "INCORRECTO: No es tipo de integración en Appian."}
+    ]
+  },
+  {
+    "id": 769,
+    "contenido": "Which object defines reusable logic for multiple processes or interfaces?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2389, "contenido": "Expression Rule", "correcta": true, "explicacion": "CORRECTO: Permite centralizar cálculos y lógica reutilizable en varias partes de la aplicación."},
+      {"id": 2390, "contenido": "Integration", "correcta": false, "explicacion": "INCORRECTO: Solo conecta con sistemas externos, no almacena lógica reutilizable general."},
+      {"id": 2391, "contenido": "CDT", "correcta": false, "explicacion": "INCORRECTO: Solo define estructura de datos."},
+      {"id": 2392, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Solo define visualización."}
+    ]
+  },
+  {
+    "id": 770,
+    "contenido": "Which function retrieves a specific record via integration?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2393, "contenido": "a!queryRecordType()", "correcta": true, "explicacion": "CORRECTO: Permite obtener registros específicos para mostrar o procesar."},
+      {"id": 2394, "contenido": "a!getRecord()", "correcta": false, "explicacion": "INCORRECTO: No existe esta función exacta."},
+      {"id": 2395, "contenido": "a!readRecord()", "correcta": false, "explicacion": "INCORRECTO: No existe en Appian."},
+      {"id": 2396, "contenido": "a!fetchRecord()", "correcta": false, "explicacion": "INCORRECTO: No es función válida."}
+    ]
+  },
+  {
+    "id": 771,
+    "contenido": "Which type of integration deletes data in an external system?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2397, "contenido": "Delete / DELETE", "correcta": true, "explicacion": "CORRECTO: Permite eliminar datos en sistemas externos."},
+      {"id": 2398, "contenido": "Write / POST", "correcta": false, "explicacion": "INCORRECTO: Solo agrega datos, no elimina."},
+      {"id": 2399, "contenido": "Update / PUT", "correcta": false, "explicacion": "INCORRECTO: Modifica datos, no los elimina."},
+      {"id": 2400, "contenido": "Read / GET", "correcta": false, "explicacion": "INCORRECTO: Solo obtiene datos."}
+    ]
+  },
+  {
+    "id": 772,
+    "contenido": "Which object allows defining authentication for external services?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2401, "contenido": "Connected System", "correcta": true, "explicacion": "CORRECTO: Almacena credenciales y configura autenticación para integraciones."},
+      {"id": 2402, "contenido": "Integration", "correcta": false, "explicacion": "INCORRECTO: Solo define la llamada al servicio, no la autenticación en sí."},
+      {"id": 2403, "contenido": "Expression Rule", "correcta": false, "explicacion": "INCORRECTO: No gestiona autenticación externa."},
+      {"id": 2404, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Solo visualiza datos."}
+    ]
+  },
+  {
+    "id": 773,
+    "contenido": "Which type of integration sends a single record to an external system?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2405, "contenido": "Write / POST Single Record", "correcta": true, "explicacion": "CORRECTO: Permite enviar un solo registro al sistema externo."},
+      {"id": 2406, "contenido": "Read / GET Single Record", "correcta": false, "explicacion": "INCORRECTO: Solo obtiene datos, no envía."},
+      {"id": 2407, "contenido": "Update / PUT Multiple Records", "correcta": false, "explicacion": "INCORRECTO: Modifica múltiples registros, no envía uno solo."},
+      {"id": 2408, "contenido": "Delete / DELETE Multiple", "correcta": false, "explicacion": "INCORRECTO: Solo elimina registros, no envía datos."}
+    ]
+  },
+  {
+    "id": 774,
+    "contenido": "Which feature allows testing an integration before using it in a process?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2409, "contenido": "Test Integration / Run Test", "correcta": true, "explicacion": "CORRECTO: Permite verificar que la integración funciona correctamente antes de usarla."},
+      {"id": 2410, "contenido": "Validate Rule", "correcta": false, "explicacion": "INCORRECTO: Solo valida expresiones, no integraciones."},
+      {"id": 2411, "contenido": "Run Process", "correcta": false, "explicacion": "INCORRECTO: Ejecuta procesos, no prueba integraciones."},
+      {"id": 2412, "contenido": "Execute Interface", "correcta": false, "explicacion": "INCORRECTO: No prueba integraciones directamente."}
+    ]
+  },
+  {
+    "id": 775,
+    "contenido": "Which object allows reusing an integration in multiple processes?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2413, "contenido": "Integration Object", "correcta": true, "explicacion": "CORRECTO: Permite definir la integración una sola vez y reutilizarla en diferentes procesos."},
+      {"id": 2414, "contenido": "Expression Rule", "correcta": false, "explicacion": "INCORRECTO: Reutiliza lógica, no llamadas externas."},
+      {"id": 2415, "contenido": "Process Model", "correcta": false, "explicacion": "INCORRECTO: Solo gestiona el flujo de procesos."},
+      {"id": 2416, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Solo muestra datos, no integra sistemas."}
+    ]
+  },
+  {
+    "id": 776,
+    "contenido": "Which property defines the endpoint URL in an integration?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2417, "contenido": "Endpoint", "correcta": true, "explicacion": "CORRECTO: Es la URL a la que se envían o de la que se obtienen datos."},
+      {"id": 2418, "contenido": "Base URL", "correcta": false, "explicacion": "INCORRECTO: No siempre define el endpoint exacto."},
+      {"id": 2419, "contenido": "Target", "correcta": false, "explicacion": "INCORRECTO: No es propiedad estándar de Appian."},
+      {"id": 2420, "contenido": "Source", "correcta": false, "explicacion": "INCORRECTO: Solo indica origen de datos, no endpoint."}
+    ]
+  },
+  {
+    "id": 777,
+    "contenido": "Which object defines input and output parameters for an integration?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2421, "contenido": "Integration Inputs & Outputs", "correcta": true, "explicacion": "CORRECTO: Permite mapear los datos que entran y salen de la integración."},
+      {"id": 2422, "contenido": "Expression Rule Parameters", "correcta": false, "explicacion": "INCORRECTO: Solo aplica a reglas, no integraciones."},
+      {"id": 2423, "contenido": "CDT Fields", "correcta": false, "explicacion": "INCORRECTO: Solo define estructura de datos, no parámetros de integración."},
+      {"id": 2424, "contenido": "Interface Inputs", "correcta": false, "explicacion": "INCORRECTO: Solo para pantallas, no integraciones."}
+    ]
+  },
+  {
+    "id": 778,
+    "contenido": "Which type of integration requires authentication credentials?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2425, "contenido": "All Connected Integrations", "correcta": true, "explicacion": "CORRECTO: Todas las integraciones que acceden a sistemas externos necesitan credenciales seguras."},
+      {"id": 2426, "contenido": "Public Integrations", "correcta": false, "explicacion": "INCORRECTO: Las integraciones públicas no existen como tal en Appian."},
+      {"id": 2427, "contenido": "Expression Rule", "correcta": false, "explicacion": "INCORRECTO: No se conectan a sistemas externos."},
+      {"id": 2428, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: No necesita autenticación para mostrar datos locales."}
+    ]
+  },
+  {
+    "id": 779,
+    "contenido": "Which object allows scheduling an integration to run automatically?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2429, "contenido": "Process Model + Timer Event", "correcta": true, "explicacion": "CORRECTO: Combinando un proceso y un evento temporizador, la integración puede ejecutarse automáticamente."},
+      {"id": 2430, "contenido": "Expression Rule", "correcta": false, "explicacion": "INCORRECTO: No permite ejecución automática por tiempo."},
+      {"id": 2431, "contenido": "Interface", "correcta": false, "explicacion": "INCORRECTO: Solo muestra datos, no programa integraciones."},
+      {"id": 2432, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: Solo define datos, no ejecución automática."}
+    ]
+  },
+
+  // AGILE
+  {
+    "id": 780,
+    "contenido": "Which Agile principle emphasizes delivering working software frequently?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2433, "contenido": "Deliver working software frequently", "correcta": true, "explicacion": "CORRECTO: Una de las principales prácticas ágiles es entregar software funcional en iteraciones cortas."},
+      {"id": 2434, "contenido": "Document everything upfront", "correcta": false, "explicacion": "INCORRECTO: Agile valora la documentación suficiente, no exhaustiva upfront."},
+      {"id": 2435, "contenido": "Follow a strict plan", "correcta": false, "explicacion": "INCORRECTO: Agile permite adaptarse a cambios, no seguir planes rígidos."},
+      {"id": 2436, "contenido": "Avoid customer feedback", "correcta": false, "explicacion": "INCORRECTO: Agile valora mucho el feedback del cliente."}
+    ]
+  },
+  {
+    "id": 781,
+    "contenido": "Which role is responsible for managing the product backlog in Agile?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2437, "contenido": "Product Owner", "correcta": true, "explicacion": "CORRECTO: El Product Owner prioriza y mantiene actualizado el backlog del producto."},
+      {"id": 2438, "contenido": "Scrum Master", "correcta": false, "explicacion": "INCORRECTO: Facilita el proceso, no gestiona el backlog."},
+      {"id": 2439, "contenido": "Developer", "correcta": false, "explicacion": "INCORRECTO: Los desarrolladores implementan, pero no gestionan el backlog."},
+      {"id": 2440, "contenido": "Stakeholder", "correcta": false, "explicacion": "INCORRECTO: Puede dar feedback, pero no gestiona el backlog."}
+    ]
+  },
+  {
+    "id": 782,
+    "contenido": "Which Agile ceremony focuses on reviewing completed work and planning next steps?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2441, "contenido": "Sprint Review", "correcta": true, "explicacion": "CORRECTO: La Sprint Review permite mostrar el trabajo completado y ajustar el plan según feedback."},
+      {"id": 2442, "contenido": "Daily Standup", "correcta": false, "explicacion": "INCORRECTO: Es para coordinación diaria, no revisión de entregables."},
+      {"id": 2443, "contenido": "Sprint Retrospective", "correcta": false, "explicacion": "INCORRECTO: Se centra en mejorar procesos, no en revisar entregables."},
+      {"id": 2444, "contenido": "Backlog Refinement", "correcta": false, "explicacion": "INCORRECTO: Ajusta backlog, no revisa entregables completados."}
+    ]
+  },
+  {
+    "id": 783,
+    "contenido": "Which Agile role removes impediments for the team?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2445, "contenido": "Scrum Master", "correcta": true, "explicacion": "CORRECTO: El Scrum Master facilita y elimina obstáculos que afectan al equipo."},
+      {"id": 2446, "contenido": "Product Owner", "correcta": false, "explicacion": "INCORRECTO: Prioriza el backlog, no elimina impedimentos diarios."},
+      {"id": 2447, "contenido": "Developer", "correcta": false, "explicacion": "INCORRECTO: Implementa, pero no facilita procesos ni quita impedimentos."},
+      {"id": 2448, "contenido": "Stakeholder", "correcta": false, "explicacion": "INCORRECTO: Solo proporciona feedback o requerimientos."}
+    ]
+  },
+  {
+    "id": 784,
+    "contenido": "Which Agile artifact lists all work items prioritized for development?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2449, "contenido": "Product Backlog", "correcta": true, "explicacion": "CORRECTO: Contiene todas las historias de usuario, priorizadas por valor para el negocio."},
+      {"id": 2450, "contenido": "Sprint Backlog", "correcta": false, "explicacion": "INCORRECTO: Contiene solo el trabajo seleccionado para un sprint."},
+      {"id": 2451, "contenido": "Burndown Chart", "correcta": false, "explicacion": "INCORRECTO: Solo muestra progreso, no lista trabajo pendiente."},
+      {"id": 2452, "contenido": "Definition of Done", "correcta": false, "explicacion": "INCORRECTO: Define criterios de completitud, no lista tareas."}
+    ]
+  },
+  {
+    "id": 785,
+    "contenido": "Which Agile ceremony is used to plan tasks for the upcoming sprint?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2453, "contenido": "Sprint Planning", "correcta": true, "explicacion": "CORRECTO: En Sprint Planning el equipo decide qué trabajo se realizará en el próximo sprint."},
+      {"id": 2454, "contenido": "Daily Standup", "correcta": false, "explicacion": "INCORRECTO: Solo coordina el trabajo diario, no planifica sprint."},
+      {"id": 2455, "contenido": "Sprint Review", "correcta": false, "explicacion": "INCORRECTO: Revisa trabajo ya completado, no planifica próximo sprint."},
+      {"id": 2456, "contenido": "Retrospective", "correcta": false, "explicacion": "INCORRECTO: Busca mejorar procesos, no planifica tareas."}
+    ]
+  },
+  {
+    "id": 786,
+    "contenido": "Which metric shows remaining work in a sprint?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2457, "contenido": "Burndown Chart", "correcta": true, "explicacion": "CORRECTO: Visualiza cuánto trabajo queda en el sprint."},
+      {"id": 2458, "contenido": "Velocity Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra capacidad del equipo, no trabajo pendiente en el sprint actual."},
+      {"id": 2459, "contenido": "Product Backlog", "correcta": false, "explicacion": "INCORRECTO: Contiene todas las historias del producto, no el progreso de sprint."},
+      {"id": 2460, "contenido": "Definition of Done", "correcta": false, "explicacion": "INCORRECTO: Es un criterio de completitud, no métrica de progreso."}
+    ]
+  },
+  {
+    "id": 787,
+    "contenido": "Which Agile principle emphasizes collaboration with customers?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2461, "contenido": "Customer collaboration over contract negotiation", "correcta": true, "explicacion": "CORRECTO: Agile prioriza la interacción continua con clientes para asegurar valor."},
+      {"id": 2462, "contenido": "Following a plan strictly", "correcta": false, "explicacion": "INCORRECTO: Agile permite adaptarse a cambios, no seguir un plan rígido."},
+      {"id": 2463, "contenido": "Contract negotiation first", "correcta": false, "explicacion": "INCORRECTO: Agile valora colaboración sobre contratos estrictos."},
+      {"id": 2464, "contenido": "Individual processes over teams", "correcta": false, "explicacion": "INCORRECTO: Agile prioriza equipos colaborativos."}
+    ]
+  },
+  {
+    "id": 788,
+    "contenido": "Which Agile practice encourages regular reflection to improve processes?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2465, "contenido": "Retrospective", "correcta": true, "explicacion": "CORRECTO: Permite al equipo analizar qué funcionó y qué mejorar en el proceso."},
+      {"id": 2466, "contenido": "Daily Standup", "correcta": false, "explicacion": "INCORRECTO: Solo coordina tareas diarias, no reflexiona sobre procesos."},
+      {"id": 2467, "contenido": "Sprint Review", "correcta": false, "explicacion": "INCORRECTO: Solo revisa entregables."},
+      {"id": 2468, "contenido": "Product Backlog Refinement", "correcta": false, "explicacion": "INCORRECTO: Mejora el backlog, no la retrospectiva del proceso."}
+    ]
+  },
+  {
+    "id": 789,
+    "contenido": "Which term describes small, incremental releases in Agile?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2469, "contenido": "Iterations / Sprints", "correcta": true, "explicacion": "CORRECTO: Agile entrega software en ciclos cortos y manejables llamados sprints o iteraciones."},
+      {"id": 2470, "contenido": "Milestones", "correcta": false, "explicacion": "INCORRECTO: Son hitos de proyecto, no ciclos de entrega ágil."},
+      {"id": 2471, "contenido": "Waterfall Phases", "correcta": false, "explicacion": "INCORRECTO: Pertenece a metodologías tradicionales, no ágiles."},
+      {"id": 2472, "contenido": "Releases only at end", "correcta": false, "explicacion": "INCORRECTO: Agile entrega continuamente, no solo al final."}
+    ]
+  },
+  {
+    "id": 790,
+    "contenido": "Which Agile artifact is used to visualize team workload during a sprint?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2473, "contenido": "Task Board / Kanban Board", "correcta": true, "explicacion": "CORRECTO: Muestra las tareas asignadas y su estado durante el sprint."},
+      {"id": 2474, "contenido": "Product Backlog", "correcta": false, "explicacion": "INCORRECTO: Contiene todas las historias, no visualiza estado diario del sprint."},
+      {"id": 2475, "contenido": "Burndown Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra progreso, pero no detalle de cada tarea visualmente."},
+      {"id": 2476, "contenido": "Definition of Done", "correcta": false, "explicacion": "INCORRECTO: Solo define criterios de completitud, no estado de tareas."}
+    ]
+  },
+  {
+    "id": 791,
+    "contenido": "Which Agile practice ensures continuous integration and testing?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2477, "contenido": "Continuous Integration / CI", "correcta": true, "explicacion": "CORRECTO: Permite integrar cambios frecuentemente y ejecutar pruebas automáticas para garantizar calidad."},
+      {"id": 2478, "contenido": "Sprint Planning", "correcta": false, "explicacion": "INCORRECTO: Planifica tareas, no integra ni prueba continuamente."},
+      {"id": 2479, "contenido": "Daily Standup", "correcta": false, "explicacion": "INCORRECTO: Coordina equipo, no integra cambios automáticamente."},
+      {"id": 2480, "contenido": "Product Backlog Refinement", "correcta": false, "explicacion": "INCORRECTO: Mejora backlog, no integración continua."}
+    ]
+  },
+  {
+    "id": 792,
+    "contenido": "Which term refers to a cross-functional team that delivers increments in Agile?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2481, "contenido": "Scrum Team", "correcta": true, "explicacion": "CORRECTO: Equipo multidisciplinar responsable de entregar incrementos de producto."},
+      {"id": 2482, "contenido": "Stakeholders", "correcta": false, "explicacion": "INCORRECTO: Solo proporcionan feedback, no entregan incrementos."},
+      {"id": 2483, "contenido": "Project Manager", "correcta": false, "explicacion": "INCORRECTO: Coordina, no entrega incrementos directamente."},
+      {"id": 2484, "contenido": "Product Owner", "correcta": false, "explicacion": "INCORRECTO: Gestiona backlog, no entrega incrementos."}
+    ]
+  },
+  {
+    "id": 793,
+    "contenido": "Which Agile principle encourages welcoming changing requirements?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2485, "contenido": "Responding to change over following a plan", "correcta": true, "explicacion": "CORRECTO: Agile prioriza adaptarse a cambios en lugar de seguir planes rígidos."},
+      {"id": 2486, "contenido": "Following a strict project plan", "correcta": false, "explicacion": "INCORRECTO: Agile permite flexibilidad ante cambios."},
+      {"id": 2487, "contenido": "Contract negotiation over collaboration", "correcta": false, "explicacion": "INCORRECTO: Agile valora la colaboración con el cliente."},
+      {"id": 2488, "contenido": "Deliver everything at the end", "correcta": false, "explicacion": "INCORRECTO: Agile entrega incrementos frecuentes, no al final."}
+    ]
+  },
+  {
+    "id": 794,
+    "contenido": "Which Agile metric helps estimate team capacity for future sprints?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2489, "contenido": "Velocity", "correcta": true, "explicacion": "CORRECTO: Mide la cantidad de trabajo completado en sprints anteriores para estimar capacidad futura."},
+      {"id": 2490, "contenido": "Burndown Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra trabajo restante, no capacidad futura."},
+      {"id": 2491, "contenido": "Product Backlog", "correcta": false, "explicacion": "INCORRECTO: Contiene historias, no capacidad estimada."},
+      {"id": 2492, "contenido": "Definition of Done", "correcta": false, "explicacion": "INCORRECTO: Solo define completitud, no capacidad del equipo."}
+    ]
+  },
+  {
+    "id": 795,
+    "contenido": "Which ceremony allows the team to synchronize daily?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2493, "contenido": "Daily Standup", "correcta": true, "explicacion": "CORRECTO: Reunión diaria breve para coordinar tareas y resolver bloqueos."},
+      {"id": 2494, "contenido": "Sprint Review", "correcta": false, "explicacion": "INCORRECTO: Solo revisa entregables, no sincroniza equipo diariamente."},
+      {"id": 2495, "contenido": "Sprint Retrospective", "correcta": false, "explicacion": "INCORRECTO: Reflexiona sobre proceso, no sincroniza tareas diarias."},
+      {"id": 2496, "contenido": "Backlog Refinement", "correcta": false, "explicacion": "INCORRECTO: Ajusta backlog, no sincroniza equipo."}
+    ]
+  },
+  {
+    "id": 796,
+    "contenido": "Which Agile artifact defines completion criteria for work items?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2497, "contenido": "Definition of Done", "correcta": true, "explicacion": "CORRECTO: Establece condiciones necesarias para considerar una tarea completada."},
+      {"id": 2498, "contenido": "Burndown Chart", "correcta": false, "explicacion": "INCORRECTO: Muestra progreso, no criterios de completitud."},
+      {"id": 2499, "contenido": "Product Backlog", "correcta": false, "explicacion": "INCORRECTO: Lista trabajo pendiente, no define completitud."},
+      {"id": 2500, "contenido": "Task Board", "correcta": false, "explicacion": "INCORRECTO: Visualiza tareas, no define criterios de completitud."}
+    ]
+  },
+  {
+    "id": 797,
+    "contenido": "Which practice involves delivering small increments to get early feedback?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2501, "contenido": "Incremental Delivery", "correcta": true, "explicacion": "CORRECTO: Permite obtener feedback temprano y ajustar el producto."},
+      {"id": 2502, "contenido": "Big Bang Delivery", "correcta": false, "explicacion": "INCORRECTO: Entrega todo al final, contrario a Agile."},
+      {"id": 2503, "contenido": "Waterfall Phase", "correcta": false, "explicacion": "INCORRECTO: No es una práctica ágil."},
+      {"id": 2504, "contenido": "Documentation Only", "correcta": false, "explicacion": "INCORRECTO: Agile valora software funcional sobre documentación exhaustiva."}
+    ]
+  },
+  {
+    "id": 798,
+    "contenido": "Which role ensures the team follows Agile principles?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2505, "contenido": "Scrum Master", "correcta": true, "explicacion": "CORRECTO: Facilita que el equipo cumpla prácticas y principios ágiles."},
+      {"id": 2506, "contenido": "Product Owner", "correcta": false, "explicacion": "INCORRECTO: Gestiona backlog y prioridades, no supervisa cumplimiento de principios."},
+      {"id": 2507, "contenido": "Developer", "correcta": false, "explicacion": "INCORRECTO: Implementa, no asegura adherencia a Agile."},
+      {"id": 2508, "contenido": "Stakeholder", "correcta": false, "explicacion": "INCORRECTO: Solo provee feedback."}
+    ]
+  },
+  {
+    "id": 799,
+    "contenido": "Which term describes Agile work broken into small, manageable units?",
+    "multiple": false,
+    "respuestas": [
+      {"id": 2509, "contenido": "User Stories", "correcta": true, "explicacion": "CORRECTO: Historias de usuario representan trabajo pequeño y comprensible dentro de Agile."},
+      {"id": 2510, "contenido": "Milestones", "correcta": false, "explicacion": "INCORRECTO: Son hitos de proyecto, no unidades de trabajo pequeñas."},
+      {"id": 2511, "contenido": "Phases", "correcta": false, "explicacion": "INCORRECTO: Típico de Waterfall, no Agile."},
+      {"id": 2512, "contenido": "Tasks Only", "correcta": false, "explicacion": "INCORRECTO: Una historia puede contener varias tareas, no solo tasks."}
+    ]
   }
+
+
 
 //==========================================================
   // =====================================================
