@@ -292,18 +292,18 @@ export const QUESTIONS_EXTRA: Question[] = [
       correcta: false,
       explicacion: 'INCORRECTO: Esto no es una best practice específica para llamar reglas de interfaz.'
     },
-    {
-      id: 337,
-      contenido: 'Use keyword syntax.',
-      correcta: false,
-      explicacion: 'INCORRECTO: Mientras keyword syntax es buena práctica, no es la principal mencionada para interfaces.'
-    },
-    {
-      id: 338,
-      contenido: 'Always use consistent ordering of rule parameters.',
-      correcta: true,
-      explicacion: 'CORRECTO: El orden consistente de parámetros mejora la legibilidad y mantenibilidad de las interfaces.'
-    }
+      {
+        id: 337,
+        contenido: 'Use keyword syntax.',
+        correcta: true,
+        explicacion: 'CORRECTO: Usar keyword syntax (ri!param: valor) al invocar interfaces es la práctica recomendada por Appian, ya que hace el código más legible y evita errores de orden de parámetros.'
+      },
+      {
+        id: 338,
+        contenido: 'Always use consistent ordering of rule parameters.',
+        correcta: false,
+        explicacion: 'INCORRECTO: El orden consistente de parámetros es buena práctica al definir reglas, pero no es la práctica principal al llamar/invocar interfaces.'
+      }
   ]
 },
 {
@@ -794,8 +794,8 @@ export const QUESTIONS_EXTRA: Question[] = [
     {
       id: 398,
       contenido: 'Go to File > Properties > Alerts. Configure the Custom Alert settings.',
-      correcta: true,
-      explicacion: 'CORRECTO: Los triggers de email se configuran en File > Properties > Alerts mediante Custom Alert settings.'
+      correcta: false,
+      explicacion: 'INCORRECTO: La sección Alerts es para notificaciones de error, no para configurar triggers de email que inician un proceso.'
     },
     {
       id: 399,
@@ -808,6 +808,12 @@ export const QUESTIONS_EXTRA: Question[] = [
       contenido: 'Go to File > Properties. Select the Public Events checkbox to allow anyone to fire triggers.',
       correcta: false,
       explicacion: 'INCORRECTO: Public Events no es para configurar triggers de email.'
+    },
+    {
+      "id": 796,
+      "contenido": "Go to File > Properties > Start Events. Add an Email Event to start the process automatically.",
+      "correcta": true,
+      "explicacion": "CORRECTO: Los email start triggers se configuran en Process Model Properties > Start Events, agregando un Email Event que inicia el proceso al recibir un correo entrante."
     }
   ]
 },
@@ -2577,20 +2583,20 @@ export const QUESTIONS_EXTRA: Question[] = [
       {
         "id": 625,
         "contenido": "Use your web browser to change sizing.",
-        "correcta": false,
-        "explicacion": "INCORRECTO: Redimensionar manualmente la ventana del navegador es una forma básica de verificar la capacidad de respuesta, pero no es el método específico o integrado que Appian proporciona para verificar diseños en diferentes anchos de pantalla."
+        "correcta": true,
+        "explicacion": "CORRECTO: La forma más común de verificar que una interfaz se vea bien en diferentes dispositivos es redimensionar el navegador usando las herramientas de desarrollo (dev tools) para simular distintos tamaños de pantalla durante el desarrollo."
       },
       {
         "id": 626,
         "contenido": "Click on the different preview options in the Interface Designer.",
         "correcta": false,
-        "explicacion": "INCORRECTO: El Interface Designer de Appian no tiene opciones de vista previa preestablecidas para diferentes tamaños de dispositivo (como teléfono, tableta)."
+        "explicacion": "INCORRECTO: El Interface Designer de Appian no tiene opciones de vista previa preestablecidas para diferentes tamaños de dispositivo."
       },
       {
         "id": 627,
         "contenido": "Wrap SAIL code in a!isPageWidth().",
-        "correcta": true,
-        "explicacion": "CORRECTO: La función `a!isPageWidth()` es el mecanismo principal en Appian SAIL para crear interfaces responsivas. Permite a los desarrolladores mostrar u ocultar componentes, o cambiar su disposición, basándose en el ancho actual de la página, asegurando así la legibilidad en diferentes dispositivos. Esta es la práctica estándar."
+        "correcta": false,
+        "explicacion": "INCORRECTO: a!isPageWidth() se usa para IMPLEMENTAR diseño responsivo (condicionar componentes según el ancho), no para VERIFICAR/CHECK que la interfaz sea legible. La pregunta es sobre cómo se verifican los diseños."
       }
     ]
   },
@@ -2707,14 +2713,14 @@ export const QUESTIONS_EXTRA: Question[] = [
       {
         "id": 642,
         "contenido": "Daily Sync",
-        "correcta": true,
-        "explicacion": "CORRECTO: Al igual que 'Hourly Sync', 'Daily Sync' define la frecuencia, como no tengo acceso continuo es una opción apropiada.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'Daily Sync' es una frecuencia de sincronización (24h) que no está diseñada específicamente para escenarios de solo lectura. Aunque Appian no tenga acceso de escritura, 'Immediate Sync' es la opción más apropiada porque se diseñó expresamente para modo de solo lectura."
       },
       {
         "id": 643,
         "contenido": "Immediate Sync",
-        "correcta": false,
-        "explicacion": "INCORRECTO: 'Immediate Sync' es el modo de sincronización de datos diseñado para escenarios de **solo lectura**. Cuando se selecciona este modo, Appian sincroniza automáticamente los datos desde la base de datos de origen (lectura), pero **no** intentará escribir los cambios realizados en Appian de vuelta a la base de datos fuente, lo que coincide perfectamente con la restricción de no tener acceso de escritura."
+        "correcta": true,
+        "explicacion": "CORRECTO: 'Immediate Sync' es el modo de sincronización de datos diseñado específicamente para escenarios de **solo lectura**. Cuando se selecciona este modo, Appian sincroniza automáticamente los datos desde la base de datos de origen (lectura), pero **no** intentará escribir los cambios realizados en Appian de vuelta a la base de datos fuente, lo que coincide perfectamente con la restricción de no tener acceso de escritura."
       }
     ]
   },
@@ -2754,15 +2760,1218 @@ export const QUESTIONS_EXTRA: Question[] = [
         "explicacion": "INCORRECTO: La seguridad a nivel de aplicación controla el acceso a la aplicación en su conjunto. Si un usuario puede acceder a la aplicación, las reglas de visibilidad más específicas (record type, acción, proceso) toman el control. No es uno de los tres factores directos para la visibilidad de una acción específica."
       }
     ]
-  }
+  },
+
+  {
+    "id": 156,
+    "contenido": "During CDT creation, when should you select the option to Create New Version from XSD?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 649,
+        "contenido": "When the data type (cdt) contains more than 12 fields",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La cantidad de campos no determina si debes usar XSD. La opción correcta es cuando el diseñador de CDT no permite acceder a las configuraciones."
+      },
+      {
+        "id": 650,
+        "contenido": "When the data type (cdt) is created through a Web Service",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Crear un CDT mediante Web Service no implica que debas usar XSD para nuevas versiones. El XSD se usa cuando el diseñador visual no permite hacer cambios directamente."
+      },
+      {
+        "id": 651,
+        "contenido": "When the data type (cdt) Designer docs not allow you to identify your Primary Key field",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La clave primaria se puede identificar desde el diseñador de CDT. El XSD es necesario cuando el diseñador no permite acceder a ninguna configuración del CDT."
+      },
+      {
+        "id": 652,
+        "contenido": "When the data type (cdt) configurations are not accessible through the Data Type (CDT) Designer",
+        "correcta": true,
+        "explicacion": "CORRECTO: Cuando la auto-actualización está deshabilitada y el diseñador de CDT no permite modificar configuraciones, debes descargar el XSD, editarlo offline y re-subirlo para crear una nueva versión del CDT."
+      }
+    ]
+  },
+
+  {
+    "id": 157,
+    "contenido": "In a rule, there is a variable named local!numberOfCustomers which will eventually change value. You are tasked with creating a variable that captures the original value so that you can later compare the original and new value. Which parameter settings should you use for your new variable",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 653,
+        "contenido": "refreshAlways: true",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshAlways: true haría que la variable se re-evalúe constantemente, no que capture el valor original. Necesitas que NO se re-evalúe cuando cambie la variable referenciada."
+      },
+      {
+        "id": 654,
+        "contenido": "refreshOnReferencedVarChange: false",
+        "correcta": true,
+        "explicacion": "CORRECTO: Al establecer refreshOnReferencedVarChange: false, la variable no se re-evalúa cuando cambian las variables de las que depende, permitiendo capturar y conservar el valor original de local!numberOfCustomers."
+      },
+      {
+        "id": 655,
+        "contenido": "refreshOnReferencedVarChange: true",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Con refreshOnReferencedVarChange: true, la variable se re-evaluaría cada vez que local!numberOfCustomers cambie, perdiendo el valor original que se quiere capturar."
+      },
+      {
+        "id": 656,
+        "contenido": "refreshOnVarChange: local!numberOfCustomers",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshOnVarChange: local!numberOfCustomers haría que la variable se re-evalúe precisamente cuando local!numberOfCustomers cambie, justo lo contrario de lo que necesitas para capturar el valor original."
+      }
+    ]
+  },
+
+  {
+    "id": 158,
+    "contenido": "Which two statements are true about the Primary Key constraint in SQL (Choose two)",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 657,
+        "contenido": "A Primary Key must be on integer.ax",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Una clave primaria no tiene que ser de tipo integer; puede ser de cualquier tipo de dato, como string o GUID. La restricción es que debe ser única y no nula."
+      },
+      {
+        "id": 658,
+        "contenido": "A primary Key must contain UNIQUE values",
+        "correcta": true,
+        "explicacion": "CORRECTO: Una Primary Key debe contener valores UNIQUE para cada registro. Esta es una de las propiedades fundamentales de las claves primarias en SQL: no pueden haber dos filas con el mismo valor de PK."
+      },
+      {
+        "id": 659,
+        "contenido": "A Primary key must be mode of a single column only",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Una Primary Key puede estar compuesta por una o varias columnas (clave compuesta). No es obligatorio que sea de una sola columna."
+      },
+      {
+        "id": 660,
+        "contenido": "A Primary Key uniquely identifies each record in a SQL database table",
+        "correcta": true,
+        "explicacion": "CORRECTO: La función principal de una Primary Key es identificar de forma única cada registro en una tabla. Combinado con UNIQUE values, esta es la segunda propiedad fundamental de las claves primarias."
+      }
+    ]
+  },
+
+  {
+    "id": 159,
+    "contenido": "You connected multiple input paths to an XOR gateway in a loop. What will happen when the second input flow reaches the gateway?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 661,
+        "contenido": "All input flows will execute",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Un gateway XOR solo permite que UN flujo pase. No es posible que todos los flujos se ejecuten simultáneamente."
+      },
+      {
+        "id": 662,
+        "contenido": "The first flow executes successfully, and the remaining will wait indefinitely",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los flujos restantes no quedan en espera indefinida. El gateway XOR, al ser exclusivo, simplemente ignora las entradas adicionales después de la primera."
+      },
+      {
+        "id": 663,
+        "contenido": "The first flow executes successfully, and the remaining will throw an error",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No se lanza ningún error. El XOR simplemente salta los flujos restantes sin ejecutarlos ni generar excepciones."
+      },
+      {
+        "id": 664,
+        "contenido": "The first flow executes successfully, and the remaining will be skipped",
+        "correcta": true,
+        "explicacion": "CORRECTO: Un gateway XOR (O exclusivo) solo toma UN camino. Cuando el primer flujo llega y se ejecuta, los flujos restantes que lleguen después son ignorados y saltados automáticamente."
+      }
+    ]
+  },
+
+  {
+    "id": 160,
+    "contenido": "Where can an Appian Developer connect with and share their expertise with other Appian Developers.",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 665,
+        "contenido": "Appian Learning Paths via Appian Academy",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Appian Academy ofrece rutas de aprendizaje, pero no es el sitio diseñado para que desarrolladores compartan experiencia entre sí."
+      },
+      {
+        "id": 666,
+        "contenido": "Appian Knowledge Base",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La Knowledge Base es una base de documentación oficial, no un foro de discusión entre desarrolladores."
+      },
+      {
+        "id": 667,
+        "contenido": "Appian Community discussions",
+        "correcta": true,
+        "explicacion": "CORRECTO: Appian Community es el foro oficial donde los desarrolladores de Appian pueden conectarse, compartir experiencia, hacer preguntas y colaborar en soluciones."
+      }
+    ]
+  },
+
+  {
+    "id": 161,
+    "contenido": "You created and published a new process model. The model has a start from with two synchronous subprocesses with 40 and 66 nodes each. All nodes are chained from the start node through the subprocesses to the end node. After the tasks and subprocesses, there is a second User Input Task in which the user can confirm the entries and add a comment. When testing a normal Acme business user, you see that the confirmation screen is not shown to you. What might be the reason for this behaviour?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 668,
+        "contenido": "The maximum number of activity chained nodes is exceeded and breaks.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Appian tiene un límite de nodos encadenados por actividad (106 por defecto). Si la suma de nodos en la cadena excede este límite, la cadena se rompe y los nodos posteriores no se ejecutan, explicando por qué la pantalla de confirmación no se muestra."
+      },
+      {
+        "id": 669,
+        "contenido": "The second User Input Task is assigned to the process initiator",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El problema no es la asignación, sino que el nodo nunca se alcanza por la ruptura de la cadena de actividades. La asignación no impediría que el nodo aparezca."
+      },
+      {
+        "id": 670,
+        "contenido": "The second User Input Task is assigned to the Acme business user group",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Asignarlo al grupo correcto no resolvería el problema. La causa real es que 40 + 66 nodos superan el límite de nodos encadenados, rompiendo el flujo antes de llegar a la segunda tarea."
+      }
+    ]
+  },
+
+  {
+    "id": 162,
+    "contenido": "Your customer wants to change the name of a field on an existing CDT to match a renamed database field. The CDT is backed by a database entity, whose data store has the Automatically Update Database Schema disabled. The old column name was BIRTHDATE and the new column name is DATE_OF_BIRTH. How should you proceed?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 671,
+        "contenido": "Download the CDT as XSD, make the appropiate changes, and reupload the XSD. Verify and publish the data store.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Con la actualización automática deshabilitada, debes descargar el CDT como XSD, editarlo para renombrar el campo, re-subir el XSD, y luego verificar y publicar el data store para que los cambios surtan efecto."
+      },
+      {
+        "id": 672,
+        "contenido": "Rename the field in the record type in Appian to automatically update the CDT field.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Renombrar el campo en el record type no modifica el CDT subyacente. Con auto-update deshabilitado, los cambios deben hacerse a través del XSD."
+      },
+      {
+        "id": 673,
+        "contenido": "Rename the field in the CDT in Appian. Verify and publish the data store.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Con auto-update deshabilitado, no puedes renombrar directamente en el diseñador de CDT. Debes descargar el XSD, editarlo manualmente y re-subirlo."
+      }
+    ]
+  },
+
+  {
+    "id": 163,
+    "contenido": "Which step can be critical in passing information from a form back to a process model?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 674,
+        "contenido": "Configure the Data Management tab",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La pestaña Data Management no existe en un User Input Task. La configuración de datos de entrada/salida se hace en la pestaña Data."
+      },
+      {
+        "id": 675,
+        "contenido": "Configure the activity class parameters of a Write to Data Store Entity node",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Esto configura una escritura a BD, no el paso de datos desde un formulario al proceso. La comunicación formulario-proceso se gestiona desde el User Input Task."
+      },
+      {
+        "id": 676,
+        "contenido": "Configure inputs on the Data tab of a User Input Task",
+        "correcta": true,
+        "explicacion": "CORRECTO: La pestaña Data del User Input Task es donde se configuran los inputs y outputs que permiten pasar datos entre el formulario (interfaz) y el modelo de proceso."
+      }
+    ]
+  },
+
+  {
+    "id": 164,
+    "contenido": "You configured a CDT, ACME_video. You need to set up a node in your process model to weite a new video as a row in the CDT's corresponding database table. Which set of inputs must you configure on your Write to Data Stor smart service node?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 677,
+        "contenido": "The data store and an input corresponding to each field of the ACME_video CDT",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El nodo Write to Data Store Entity no acepta inputs campo por campo. Necesita una entidad de data store y un único input del tipo CDT completo."
+      },
+      {
+        "id": 678,
+        "contenido": "The data store entity and an input of type ACME_video",
+        "correcta": true,
+        "explicacion": "CORRECTO: El nodo Write to Data Store Entity requiere dos inputs: la entidad del data store destino y un único input del tipo CDT (ACME_video) que contiene todos los valores a insertar."
+      },
+      {
+        "id": 679,
+        "contenido": "The data store and an input of type ACME_video",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Necesitas la entidad del data store (Data Store Entity), no el data store genérico. La entidad apunta a la tabla específica donde se insertará el registro."
+      }
+    ]
+  },
+
+  {
+    "id": 165,
+    "contenido": "Review the following code snippet:\ndisplayvalue( 1, {0,1,2}, {\"Low\", \"Medium\", \"High\"}, \"Unknown\" )\nThe definition of displayvalue is: Tries to match a value in a given array with a value at the same index in a replacement array and returns either the value at the same index or a default value if the value is not found. What does this code snippet return?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 680,
+        "contenido": "Low",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Low está en el índice 0 del array de reemplazo, pero el valor a buscar es 1, no 0. El primer array busca el valor 1, que está en el índice 1, correspondiente a Medium."
+      },
+      {
+        "id": 681,
+        "contenido": "Medium",
+        "correcta": true,
+        "explicacion": "CORRECTO: displayvalue busca el valor 1 en el array {0,1,2}. Lo encuentra en el índice 1, y devuelve el valor en el mismo índice del array de reemplazo: \"Medium\"."
+      },
+      {
+        "id": 682,
+        "contenido": "High",
+        "correcta": false,
+        "explicacion": "INCORRECTO: High está en el índice 2, que corresponde al valor 2 en el array de búsqueda. Como el valor a buscar es 1, no se alcanza este índice."
+      }
+    ]
+  },
+
+  {
+    "id": 166,
+    "contenido": "You are creating a new interface objetc to display a pie chart. The data for the chart is stored in a local variable in the parent interface object which references your child interface. In terms of performance, what is the most efficient to access the data required for the pie chart?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 683,
+        "contenido": "Create a rule input on the child interface and pass the local variables data from the parent interface",
+        "correcta": true,
+        "explicacion": "CORRECTO: Pasar datos a través de un rule input evita tener que volver a consultar (query) los datos en la interfaz hija, lo que es más eficiente en términos de rendimiento."
+      },
+      {
+        "id": 684,
+        "contenido": "Reference the local variable directly from the child interface using a process report",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No puedes referenciar variables locales de otra interfaz directamente. Un process report no es relevante aquí; la forma correcta es pasar los datos como rule input."
+      },
+      {
+        "id": 685,
+        "contenido": "Query the data separately in the child interface to avoid passing it from the parent interface",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Consultar los datos nuevamente en la interfaz hija es ineficiente. Es mejor pasar los datos ya obtenidos desde la interfaz padre mediante un rule input."
+      }
+    ]
+  },
+
+  {
+    "id": 167,
+    "contenido": "You are configuring a local variable on an interface to store the date and time that the username field was last modified. The local variables are currently configured as follows:\n\nlocal!username,\nlocal!usernameLastModified: a!refreshVariable(\n       value :now()\n)\n\nWhich a!refreshVariable configuration should be added so that local!usernameLastModified stores the correct timestamp?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 686,
+        "contenido": "refreshInterval: 0",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshInterval: 0 desactiva la actualización por intervalo, pero no vincula la actualización al cambio de local!username. No actualizaría el timestamp cuando username cambie."
+      },
+      {
+        "id": 687,
+        "contenido": "refreshOnVarChange: local!username",
+        "correcta": true,
+        "explicacion": "CORRECTO: refreshOnVarChange: local!username hace que a!refreshVariable se re-evalúe cada vez que local!username cambie, actualizando local!usernameLastModified con la fecha y hora actual."
+      },
+      {
+        "id": 688,
+        "contenido": "refreshAlways: true",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshAlways: true refresca la variable continuamente, no solo cuando cambia el username. Esto es innecesario e ineficiente para capturar el momento exacto del cambio."
+      }
+    ]
+  },
+
+  {
+    "id": 168,
+    "contenido": "How do you refer to metadata of a process model object within process model expressions? For example: the creator, name, or description",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 689,
+        "contenido": "Process Properties, referred to in process model expressions using the pp!domain",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No existe el prefijo pp! en Appian. Las propiedades del proceso se referencian con pm! (process model), no pp!."
+      },
+      {
+        "id": 690,
+        "contenido": "Process Variables, referred to in process model expressions using the pv!domain",
+        "correcta": false,
+        "explicacion": "INCORRECTO: pv! se usa para variables de proceso, no para metadatos del modelo. Los metadatos como creador, nombre o descripción son propiedades del modelo y se accede con pm!."
+      },
+      {
+        "id": 691,
+        "contenido": "Process Model Properties, referred to in process model expressions using the pm!domain",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las propiedades del modelo de proceso (Process Model Properties) como el creador, nombre o descripción se referencian con el prefijo pm! en las expresiones de Appian."
+      }
+    ]
+  },
+
+  {
+    "id": 169,
+    "contenido": "What could be the problem of the following error message after creating a dropdown field?\n\nA dropdown component has an invalid vlaue for choiceValues. The choiceLabels and choiceValues arrays must be the same length, but choiceLabels was length 12 and choiceValues was length 7.",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 692,
+        "contenido": "The choiceLabels and choiceValues datatypes do not match",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El error no menciona problemas de tipos de datos. El mensaje indica claramente que los arrays tienen longitudes diferentes: 12 labels vs 7 values."
+      },
+      {
+        "id": 693,
+        "contenido": "The choiceValues has too few values",
+        "correcta": true,
+        "explicacion": "CORRECTO: choiceLabels tiene 12 elementos pero choiceValues solo tiene 7. Appian requiere que ambos arrays tengan la misma longitud para que cada etiqueta tenga un valor asociado."
+      },
+      {
+        "id": 694,
+        "contenido": "The choiceLabels has too few labels",
+        "correcta": false,
+        "explicacion": "INCORRECTO: choiceLabels tiene 12 elementos, que son más que los 7 de choiceValues. El problema es que faltan valores (choiceValues), no labels."
+      }
+    ]
+  },
+
+  {
+    "id": 170,
+    "contenido": "You are working on a process model \"VIM Update Vehicle\". You want to call another process \"VIM Get Service Date\" that accepts pv!vehicleId as a process parameter and sets a value for pv!serviceDate. The next node in VIM Update Vehicle depends on the value of pv!serviceDate. Which node should you use to execute \"VIM Get Service Date\" from VIM Update Vehicle?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 695,
+        "contenido": "Start Process smart service",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Start Process inicia un proceso independiente y asíncrono. No permite obtener un valor de retorno ni esperar a que termine, por lo que no sirve cuando el nodo siguiente depende del resultado."
+      },
+      {
+        "id": 696,
+        "contenido": "Asynchronous subprocess with activity chaining",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Un subproceso asíncrono no espera a que termine antes de continuar. Para que el proceso llamante dependa del resultado, necesitas un subproceso síncrono."
+      },
+      {
+        "id": 697,
+        "contenido": "Synchronous subprocess with input and output variables configured",
+        "correcta": true,
+        "explicacion": "CORRECTO: Un subproceso síncrono espera a que termine antes de continuar, y mediante variables de entrada/salida puedes pasar pv!vehicleId y recibir pv!serviceDate para usarlo en el siguiente nodo."
+      }
+    ]
+  },
+
+  {
+    "id": 171,
+    "contenido": "Which two scenarios are ideal for using Appian Portals? (Choose two.)",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 698,
+        "contenido": "A manager wants to obtain a view of their team's performance",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Appian Portals está diseñado para usuarios externos sin cuenta, no para que un manager vea el rendimiento del equipo. Eso se haría con reportes internos de Tempo."
+      },
+      {
+        "id": 699,
+        "contenido": "A retail customer wants to conduct a public survey for their recently launched product",
+        "correcta": true,
+        "explicacion": "CORRECTO: Appian Portals permite a usuarios externos sin necesidad de inicio de sesión interactuar con la aplicación, ideal para encuestas públicas donde cualquier persona puede participar."
+      },
+      {
+        "id": 700,
+        "contenido": "An employee who does not have an account wants to register for their company's vehicle fleet a management system",
+        "correcta": true,
+        "explicacion": "CORRECTO: Appian Portals permite que usuarios externos se auto-registren sin necesidad de tener una cuenta Appian pre-existente, facilitando el acceso a empleados sin cuenta."
+      },
+      {
+        "id": 701,
+        "contenido": "A user needs to submit support requests when they are using their mobile device in areas with bad network coverage",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Appian Portals no está diseñado para manejar problemas de conectividad. La cobertura de red es un problema de infraestructura, no un caso de uso de Portals."
+      }
+    ]
+  },
+
+  {
+    "id": 172,
+    "contenido": "You have two CDTs: ACME_invoice and ACME_invoiceItem that have a flat relationship. The invoice item table has a field that is a foreign key to the incoive table. You are leveraging the database to automatically generate their primary keys. How should you structure the process model to add a new invoice and the new invoice items to the system?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 702,
+        "contenido": "1 - Write to Multiple Data Store Entitites smart service (Writing to the ACME_invoiceItem table and ACME_invoice table)",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Este nodo escribe en múltiples entidades a la vez, pero no puedes controlar el orden de escritura. Necesitas escribir la factura primero para obtener su PK auto-generada antes de escribir los items."
+      },
+      {
+        "id": 703,
+        "contenido": "1 - Write to Data Store Entity smart service (Writing to the ACME_invoiceItem table). 2 - Script Task to update foreign keys. 3 - Write to Data Store Entity smart service (Writing to the ACME_invoice table)",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El orden es incorrecto. Primero debes escribir la factura (invoice) para obtener el PK auto-generado, luego actualizar las FK en los items, y finalmente escribir los items."
+      },
+      {
+        "id": 704,
+        "contenido": "1 - Write to Data Store Entity smart service (Writing to the ACME_invoice table). 2 - Script Task to update foreign keys. 3 - Write to Data Store Entity smart service (Writing to the ACME_invoiceItem table)",
+        "correcta": true,
+        "explicacion": "CORRECTO: Primero se escribe la factura para obtener su PK auto-generado, luego un Script Task actualiza las FK en los items, y finalmente se escriben los items con las FK correctas."
+      }
+    ]
+  },
+
+  {
+    "id": 173,
+    "contenido": "After selecting a record, a user wants to initiate an activity in the context of that selected record. You start by creating the process model that implements this activity. What should you do next?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 705,
+        "contenido": "Add the process model as a record list action to that record",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Una Record List Action se ejecuta desde la lista de registros, no en el contexto de un registro específico. Para acciones en contexto de un registro concreto se usa Related Action."
+      },
+      {
+        "id": 706,
+        "contenido": "Configure a site page as an action to kick off the process model",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Una página de Site no es el mecanismo apropiado para iniciar una acción en el contexto de un registro específico. Se debe usar una Related Action asociada al record type."
+      },
+      {
+        "id": 707,
+        "contenido": "Add the process model as a record related action to that record",
+        "correcta": true,
+        "explicacion": "CORRECTO: Una Record Related Action se asocia a un record type y se ejecuta en el contexto de un registro específico, permitiendo iniciar actividades relacionadas con ese registro."
+      }
+    ]
+  },
+
+  {
+    "id": 174,
+    "contenido": "After identifying groups, what should you do next?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 708,
+        "contenido": "List each group's primary activities in using the application",
+        "correcta": true,
+        "explicacion": "CORRECTO: Después de identificar los grupos de usuarios, el siguiente paso es documentar sus actividades principales en la aplicación para poder diseñar los procesos y funcionalidades que necesitan."
+      },
+      {
+        "id": 709,
+        "contenido": "Create an organizational chart",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Un organigrama no es el siguiente paso. Primero debes entender qué actividades realiza cada grupo para planificar la aplicación correctamente."
+      },
+      {
+        "id": 710,
+        "contenido": "Create login credentials for each group members",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las credenciales se gestionan a nivel de administración de usuarios, no son parte del proceso de planificación de la aplicación."
+      },
+      {
+        "id": 711,
+        "contenido": "Delete the All Users group",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Eliminar el grupo All Users no tiene sentido en la planificación. Este grupo existe por defecto y no debe eliminarse."
+      }
+    ]
+  },
+
+  {
+    "id": 175,
+    "contenido": "Write an expression that tests a rule input value, IF it is null, then the message \"Null value\" should be displayed. Otherwise, the rule input value should be displayed.",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 712,
+        "contenido": "if( isnull(ri!value), \"Null value\", ri!value )",
+        "correcta": true,
+        "explicacion": "CORRECTO: La función isnull() es la función correcta para comprobar valores nulos en Appian, y ri!value es la sintaxis correcta para referenciar un rule input."
+      },
+      {
+        "id": 713,
+        "contenido": "if( isnull(), \"Null value\", ri!value )",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La función isnull() requiere un argumento. Esta expresión no especifica qué valor comprobar. La forma correcta es isnull(ri!value)."
+      },
+      {
+        "id": 714,
+        "contenido": "if( isnull(value), \"Null value\", value )",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Aunque isnull() es correcto, value sin el prefijo ri! no es un rule input. En Appian, los rule inputs se referencian con el prefijo ri!."
+      },
+      {
+        "id": 715,
+        "contenido": "if( null(ri!value), \"Null value\", ri!value )",
+        "correcta": false,
+        "explicacion": "INCORRECTO: No existe la función null() en Appian. La función correcta para comprobar si un valor es nulo es isnull(), no null()."
+      }
+    ]
+  },
+
+  {
+    "id": 176,
+    "contenido": "Which properties of a component can you modify in the Component Configuration pane? (Choose two.)",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 716,
+        "contenido": "Where the component is placed on the canvas",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La posición en el canvas se controla arrastrando el componente, no desde el panel de configuración."
+      },
+      {
+        "id": 717,
+        "contenido": "Conditions that determine whether the component is visible",
+        "correcta": true,
+        "explicacion": "CORRECTO: Desde el panel de Component Configuration puedes modificar la condición de visibilidad, permitiendo mostrar u ocultar el componente según una expresión."
+      },
+      {
+        "id": 718,
+        "contenido": "Where the component's label is located in relation to it",
+        "correcta": true,
+        "explicacion": "CORRECTO: El panel de configuración permite cambiar la ubicación de la etiqueta del componente (ej. arriba, izquierda, derecha, abajo) sin modificar el código."
+      },
+      {
+        "id": 719,
+        "contenido": "Whether the component is required",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La propiedad required no se configura en el panel de Component Configuration. Se configura mediante una expresión en el propio componente."
+      }
+    ]
+  },
+
+  {
+    "id": 177,
+    "contenido": "What is the primary purpose of process parameters?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 720,
+        "contenido": "To capture data throughout a process",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Capturar datos a lo largo del proceso es función de las variables de proceso (pv!), no de los parámetros de proceso."
+      },
+      {
+        "id": 721,
+        "contenido": "To receive values at the beginning of a process",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los parámetros de proceso (process parameters) están diseñados para recibir valores cuando se inicia un proceso, ya sea desde otro proceso, una interfaz o un evento."
+      },
+      {
+        "id": 722,
+        "contenido": "To capture data in a node",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Capturar datos en un nodo específico se hace mediante variables de nodo o variables de proceso, no con parámetros de proceso."
+      },
+      {
+        "id": 723,
+        "contenido": "To enable node inputs",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los node inputs son una característica diferente. Los parámetros de proceso sirven para recibir datos al inicio, no para habilitar entradas de nodo."
+      }
+    ]
+  },
+
+  {
+    "id": 178,
+    "contenido": "Why should you use escalations and exceptions for user input tasks?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 724,
+        "contenido": "To set a deadline for the entire process to complete by",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las escalations no establecen una fecha límite para todo el proceso, sino para tareas específicas que no se completan a tiempo."
+      },
+      {
+        "id": 725,
+        "contenido": "To automatically change the security permissions for the process model",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las escalations no modifican permisos de seguridad. Su propósito es manejar tareas que no se completan dentro del tiempo esperado."
+      },
+      {
+        "id": 726,
+        "contenido": "To ensure the process does not stay open indefinitely",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las escalations y excepciones evitan que un proceso quede abierto indefinidamente al re-asignar tareas, enviar notificaciones o ejecutar acciones cuando se vence un plazo."
+      },
+      {
+        "id": 727,
+        "contenido": "To skip the User Input task if a user is part of a particular application group",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las escalations no saltan tareas basadas en grupos. Esto se manejaría con una condición de salida o una expresión de visibilidad."
+      }
+    ]
+  },
+
+  {
+    "id": 179,
+    "contenido": "You are reviewing the Process Model Metrics tab to determine the memory footprint of your process models. Which setting of Process Model Properties does NOT have a direct impact on the total memory usage of a process model?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 728,
+        "contenido": "Average Process Instance Memory (AMU)",
+        "correcta": true,
+        "explicacion": "CORRECTO: AMU es una métrica que MIDE el uso de memoria por instancia, no es una configuración que IMPACTE la memoria. Las métricas reportan, no afectan."
+      },
+      {
+        "id": 729,
+        "contenido": "Clean-up Days",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Clean-up Days determina cuánto tiempo se retienen las instancias antes de limpiarlas, lo que impacta directamente la memoria al mantener más o menos instancias activas."
+      },
+      {
+        "id": 730,
+        "contenido": "Clean-up Type",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Clean-up Type define qué hacer después de la limpieza (archivar, eliminar o conservar), lo que impacta directamente la memoria al determinar si los datos se eliminan o permanecen."
+      },
+      {
+        "id": 731,
+        "contenido": "Instances",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El número de instancias SÍ impacta directamente en el uso de memoria, ya que cada instancia activa consume recursos."
+      }
+    ]
+  },
+
+  {
+    "id": 180,
+    "contenido": "How can you check the data type returned by an expression?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 732,
+        "contenido": "By checking the Appian docs",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La documentación describe los tipos de retorno esperados, pero no te permite probar el resultado real de una expresión específica."
+      },
+      {
+        "id": 733,
+        "contenido": "Check for red flags in the numbered editor lines",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las banderas rojas indican errores de sintaxis, no el tipo de dato que devuelve una expresión."
+      },
+      {
+        "id": 734,
+        "contenido": "By using the pagingInfo() function",
+        "correcta": false,
+        "explicacion": "INCORRECTO: pagingInfo() es una función para paginación, no para determinar tipos de retorno de expresiones."
+      },
+      {
+        "id": 735,
+        "contenido": "By testing the expression",
+        "correcta": true,
+        "explicacion": "CORRECTO: El editor de expresiones de Appian tiene un botón Test que permite ejecutar la expresión y ver el tipo de dato del resultado, además del valor devuelto."
+      }
+    ]
+  },
+
+  {
+    "id": 181,
+    "contenido": "What are the key components of application planning?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 736,
+        "contenido": "Data points, records, forms, scheduling process models",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los formularios (forms) y la programación de procesos no son componentes clave de la planificación de aplicaciones a alto nivel."
+      },
+      {
+        "id": 737,
+        "contenido": "Databases, web APIs, users, forms, process models, reports",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Aunque estos elementos son importantes, la planificación de aplicaciones se centra en personas, datos, procesos y reportes, no en detalles técnicos como APIs o bases de datos."
+      },
+      {
+        "id": 738,
+        "contenido": "Personas, data points, records, process models, reports",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los componentes clave de la planificación de aplicaciones en Appian son: Personas (usuarios), data points (puntos de datos), records (registros), process models (modelos de proceso) y reports (reportes)."
+      },
+      {
+        "id": 739,
+        "contenido": "Personas, project budget, data points, records, reports",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El presupuesto del proyecto (project budget) es parte de la gestión del proyecto, no un componente clave de la planificación técnica de la aplicación en Appian."
+      }
+    ]
+  },
+
+  {
+    "id": 182,
+    "contenido": "You should consider creating a custom Task Report when users...",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 740,
+        "contenido": "want to see basic Task information",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La información básica de tareas ya se muestra en la vista de Tasks por defecto. Un reporte personalizado se necesita cuando la vista estándar no es suficiente."
+      },
+      {
+        "id": 741,
+        "contenido": "want to see Tasks in a list",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las tareas ya se muestran en forma de lista por defecto en Tempo. No necesitas un reporte personalizado solo para verlas en lista."
+      },
+      {
+        "id": 742,
+        "contenido": "are using a Site",
+        "correcta": true,
+        "explicacion": "CORRECTO: Cuando usas un Site, las capacidades de reporte de tareas son limitadas. Un Custom Task Report te permite mostrar las tareas de forma personalizada dentro del Site."
+      },
+      {
+        "id": 743,
+        "contenido": "want to send Tasks to other Users",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Enviar tareas a otros usuarios se maneja mediante la asignación de tareas, no con un Task Report."
+      }
+    ]
+  },
+
+  {
+    "id": 183,
+    "contenido": "Which gateway is used most frequently?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 744,
+        "contenido": "Complex",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los gateways Complex se usan para lógica condicional avanzada, no son los más usados. El más frecuente es el XOR."
+      },
+      {
+        "id": 745,
+        "contenido": "OR",
+        "correcta": false,
+        "explicacion": "INCORRECTO: OR gateway se usa cuando uno o más caminos pueden activarse, pero no es el más común. El XOR es el más usado por su simplicidad."
+      },
+      {
+        "id": 746,
+        "contenido": "AND",
+        "correcta": false,
+        "explicacion": "INCORRECTO: AND gateway se usa para paralelismo, no es el más frecuente. El XOR es el gateway más utilizado en modelos de proceso."
+      },
+      {
+        "id": 747,
+        "contenido": "XOR",
+        "correcta": true,
+        "explicacion": "CORRECTO: El gateway XOR (O exclusivo) es el tipo de gateway más utilizado porque permite la bifurcación exclusiva, donde solo un camino se toma basado en una condición."
+      }
+    ]
+  },
+
+  {
+    "id": 184,
+    "contenido": "Which method can be used to return values from a specific field in an array?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 748,
+        "contenido": ").customer.name",
+        "correcta": false,
+        "explicacion": "INCORRECTO: ).customer.name no usa la sintaxis correcta. Para acceder a campos de un array en Appian se usa ).data.nombreDelCampo."
+      },
+      {
+        "id": 749,
+        "contenido": ").customer.Name",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La sintaxis correcta requiere .data antes del nombre del campo. Además, Appian es sensible a mayúsculas/minúsculas, pero el problema es la estructura."
+      },
+      {
+        "id": 750,
+        "contenido": ")data.customerName",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Falta el punto después del paréntesis de cierre. La sintaxis correcta es ).data.nombreDelCampo."
+      },
+      {
+        "id": 751,
+        "contenido": ").data.customerName",
+        "correcta": true,
+        "explicacion": "CORRECTO: En Appian, para acceder a un campo específico de un array de CDT se usa la sintaxis ).data.nombreDelCampo, donde data es la propiedad que contiene los registros."
+      }
+    ]
+  },
+
+  {
+    "id": 185,
+    "contenido": "What should you click to create a new version fo your process model?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 752,
+        "contenido": "Save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Save solo guarda los cambios en el modelo de proceso pero no crea una nueva versión publicada."
+      },
+      {
+        "id": 753,
+        "contenido": "Properties",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Properties muestra las propiedades del modelo de proceso, no crea una nueva versión."
+      },
+      {
+        "id": 754,
+        "contenido": "Start Process for Debugging",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Start Process for Debugging inicia una instancia para depuración, no publica ni versiona el modelo."
+      },
+      {
+        "id": 755,
+        "contenido": "Save and Publish",
+        "correcta": true,
+        "explicacion": "CORRECTO: Save and Publish guarda los cambios Y crea una nueva versión publicada del modelo de proceso, disponible para ser ejecutada por los usuarios."
+      }
+    ]
+  },
+
+  {
+    "id": 186,
+    "contenido": "Your test plan for a user interface should contain the happy path and steps that try to break your work including which of the following?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 756,
+        "contenido": "Cancelling an action",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Cancelar una acción es uno de los casos borde que debe incluirse, pero no es el único. El plan de pruebas debe incluir todos los casos extremos."
+      },
+      {
+        "id": 757,
+        "contenido": "Submitting an incomplete form",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Enviar un formulario incompleto es un caso de prueba importante, pero la respuesta correcta es que TODAS las opciones deben incluirse."
+      },
+      {
+        "id": 758,
+        "contenido": "All the options are correct",
+        "correcta": true,
+        "explicacion": "CORRECTO: Un plan de pruebas completo debe incluir el camino feliz y todos los casos borde: cancelar acción, enviar formulario incompleto y valores fuera de rango."
+      },
+      {
+        "id": 759,
+        "contenido": "Testing entered values that are out of bounds",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Probar valores fuera de rango es necesario, pero no es el único caso borde. El plan debe incluir todas las opciones mencionadas."
+      }
+    ]
+  },
+
+  {
+    "id": 187,
+    "contenido": "Which of the following practices helps you to create scalable process models?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 760,
+        "contenido": "Build unitary models that include between 100-300 activities",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los modelos con 100-300 actividades son demasiado grandes y monolíticos. Para escalabilidad, es mejor diseñar procesos más pequeños y modulares."
+      },
+      {
+        "id": 761,
+        "contenido": "Activity chain flows between Script Tasks and End Events",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las cadenas de actividad extensas entre Script Tasks y End Events pueden romperse por el límite de nodos encadenados. No es una práctica escalable."
+      },
+      {
+        "id": 762,
+        "contenido": "Design short-lived processes",
+        "correcta": true,
+        "explicacion": "CORRECTO: Diseñar procesos de corta duración mejora la escalabilidad porque liberan recursos más rápido, reducen la contención y permiten manejar más instancias concurrentes."
+      },
+      {
+        "id": 763,
+        "contenido": "Archive processes after 8 or more days",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Archivar procesos después de 8 días ayuda a la gestión de datos, pero no es una práctica que mejore directamente la escalabilidad durante la ejecución."
+      }
+    ]
+  },
+
+  {
+    "id": 188,
+    "contenido": "Which of the following objects are not permitted in pages of a Site?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 764,
+        "contenido": "Record Type",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los Record Types sí se pueden incluir en páginas de un Site para mostrar registros a los usuarios."
+      },
+      {
+        "id": 765,
+        "contenido": "News Feed",
+        "correcta": true,
+        "explicacion": "CORRECTO: El News Feed (muro de noticias) no está permitido en las páginas de un Site. Los Sites tienen componentes limitados en comparación con Tempo."
+      },
+      {
+        "id": 766,
+        "contenido": "Task Report",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los Task Reports sí se pueden agregar a un Site para mostrar tareas a los usuarios del sitio."
+      },
+      {
+        "id": 767,
+        "contenido": "An Interface saved as a Report",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Una interfaz guardada como Reporte sí se puede incluir en un Site para mostrar contenido personalizado."
+      }
+    ]
+  },
+
+  {
+    "id": 189,
+    "contenido": "Task Reports are displayed on which tab, in Tempo?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 768,
+        "contenido": "Tasks",
+        "correcta": true,
+        "explicacion": "CORRECTO: En Tempo, los Task Reports se muestran en la pestaña Tasks, donde los usuarios pueden ver y filtrar sus tareas asignadas."
+      },
+      {
+        "id": 769,
+        "contenido": "News",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La pestaña News muestra el muro de noticias y actualizaciones, no los task reports."
+      },
+      {
+        "id": 770,
+        "contenido": "Reports",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La pestaña Reports muestra reportes de aplicación, no task reports específicamente."
+      },
+      {
+        "id": 771,
+        "contenido": "Records",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La pestaña Records muestra los registros (record types), no los task reports."
+      }
+    ]
+  },
+
+  {
+    "id": 190,
+    "contenido": "From which location do you create an application?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 772,
+        "contenido": "The Knowledge Center",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The Knowledge Center es un centro de documentación y aprendizaje, no el lugar para crear aplicaciones."
+      },
+      {
+        "id": 773,
+        "contenido": "The Process Modeler",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El Process Modeler es donde se diseñan modelos de proceso, pero las aplicaciones se crean desde Appian Designer."
+      },
+      {
+        "id": 774,
+        "contenido": "The Administration Console",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La Administration Console es para tareas administrativas del sistema, no para crear aplicaciones."
+      },
+      {
+        "id": 775,
+        "contenido": "The Appian Designer",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las aplicaciones se crean desde Appian Designer, que es el entorno de desarrollo integrado de Appian donde se gestionan todos los objetos de la aplicación."
+      }
+    ]
+  },
+
+  {
+    "id": 191,
+    "contenido": "Verifying a Data Store Entity allows a developer to download which structural type of file?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 776,
+        "contenido": "XLS",
+        "correcta": false,
+        "explicacion": "INCORRECTO: XLS (Microsoft Excel) no es un formato estructural para describir entidades de datos. Appian no genera archivos XLS al verificar un DSE, sino que usa XSD para definir la estructura."
+      },
+      {
+        "id": 777,
+        "contenido": "XSD",
+        "correcta": true,
+        "explicacion": "CORRECTO: Al verificar un Data Store Entity, Appian permite descargar un archivo XSD (XML Schema Definition) que describe la estructura de la entidad, incluyendo sus campos y tipos de datos. Este archivo se usa para compartir la definición de la CDT con otros entornos o desarrolladores."
+      },
+      {
+        "id": 778,
+        "contenido": "SQL",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La verificación de un Data Store Entity no genera un archivo SQL. La opción correcta es XSD, que es el formato de esquema XML que Appian utiliza para describir la estructura de la entidad."
+      },
+      {
+        "id": 779,
+        "contenido": "XML",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Aunque XSD es un tipo de XML, Appian específicamente descarga un archivo XSD (XML Schema Definition), no un archivo XML genérico. El XSD define formalmente la estructura y tipos de datos de la entidad."
+      }
+    ]
+  },
+
+  {
+    "id": 192,
+    "contenido": "To display data from a CDT in a read only text field, what do you need to configure?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 780,
+        "contenido": "Save Input to",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Save Input to se usa para guardar el valor ingresado en una variable, no para mostrar datos de un CDT en modo solo lectura."
+      },
+      {
+        "id": 781,
+        "contenido": "Display Value",
+        "correcta": true,
+        "explicacion": "CORRECTO: Display Value permite mostrar el valor de un campo de CDT en un campo de texto de solo lectura, sin permitir edición por parte del usuario."
+      },
+      {
+        "id": 782,
+        "contenido": "Contents",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Contents no es una propiedad de configuración para mostrar datos de CDT en campos de texto. La propiedad correcta es Display Value."
+      },
+      {
+        "id": 783,
+        "contenido": "Visibility",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Visibility controla si el componente se muestra u oculta, no qué dato se muestra en el campo de texto."
+      }
+    ]
+  },
+
+  {
+    "id": 193,
+    "contenido": "Which prefix should an Appian query expression typically use for enhanced readability?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 784,
+        "contenido": "Go",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Go no es un prefijo estándar en Appian para expresiones de consulta. El prefijo recomendado es Get."
+      },
+      {
+        "id": 785,
+        "contenido": "Get",
+        "correcta": true,
+        "explicacion": "CORRECTO: El prefijo Get se usa convencionalmente en Appian para nombres de expresiones de consulta (ej. getCustomersByName), mejorando la legibilidad del código."
+      },
+      {
+        "id": 786,
+        "contenido": "DTO",
+        "correcta": false,
+        "explicacion": "INCORRECTO: DTO (Data Transfer Object) es un patrón de diseño, no un prefijo para expresiones de consulta en Appian."
+      },
+      {
+        "id": 787,
+        "contenido": "SqlCornmand",
+        "correcta": false,
+        "explicacion": "INCORRECTO: SqlCommand no es un prefijo estándar en Appian. La convención es usar Get para expresiones de consulta."
+      }
+    ]
+  },
+
+  {
+    "id": 194,
+    "contenido": "Which Process Model ACtivities designate a task completed by the system?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 788,
+        "contenido": "Sub-processes",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los subprocesos pueden ser síncronos o asíncronos, pero no son actividades completadas por el sistema. Implican otro modelo de proceso completo."
+      },
+      {
+        "id": 789,
+        "contenido": "User Input Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: User Input Task es completada por un usuario humano, no por el sistema. La actividad completada por el sistema es Script Task."
+      },
+      {
+        "id": 790,
+        "contenido": "Script Tasks",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los Script Tasks son ejecutados automáticamente por el sistema sin intervención del usuario, utilizados para lógica de backend, actualización de variables o integraciones."
+      },
+      {
+        "id": 791,
+        "contenido": "Rules",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Rules son expresiones reutilizables, no actividades de proceso. La actividad del sistema es Script Task."
+      }
+    ]
+  },
+
+  {
+    "id": 195,
+    "contenido": "Which of the following cannot be exported from one instance to another?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 792,
+        "contenido": "Groups",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los grupos se pueden exportar e importar entre instancias de Appian mediante paquetes."
+      },
+      {
+        "id": 793,
+        "contenido": "CDTs",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los CDTs se exportan como parte de los paquetes de aplicación. Los usuarios no se pueden exportar por razones de seguridad."
+      },
+      {
+        "id": 794,
+        "contenido": "Users",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los usuarios no se pueden exportar entre instancias de Appian por razones de seguridad. Cada instancia gestiona sus propios usuarios de forma independiente."
+      },
+      {
+        "id": 795,
+        "contenido": "Process Models",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los modelos de proceso se exportan como parte de los paquetes de aplicación. Solo los usuarios no son exportables entre instancias."
+      }
+    ]
+  },
 
   // =====================================================
-  // PRÓXIMAS PREGUNTAS EXTRA A AÑADIR (IDs 66 en adelante)
+  // PRÓXIMAS PREGUNTAS EXTRA A AÑADIR (IDs 156 en adelante)
   // =====================================================
   // Para añadir más preguntas extra:
-  // 1. Continuar desde ID 66
+  // 1. Continuar desde ID 156
   // 2. Mantener preguntas en inglés
   // 3. Explicaciones en castellano
-  // 4. IDs de respuestas consecutivos desde 321
+  // 4. IDs de respuestas consecutivos desde 649
   // =====================================================
+
 ];

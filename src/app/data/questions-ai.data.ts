@@ -1564,14 +1564,14 @@ export const QUESTIONS_AI: Question[] = [
       {
         "id": 1703,
         "contenido": "a!isNullOrEmpty()",
-        "correcta": true,
-        "explicacion": "CORRECTO: isnullorempty() verifica si un valor es nulo o vacío."
+        "correcta": false,
+        "explicacion": "INCORRECTO: No existe la función a!isNullOrEmpty() en Appian. La función correcta es isnullorempty() (sin prefijo a!)."
       },
       {
         "id": 1704,
         "contenido": "isnullorempty()",
-        "correcta": false,
-        "explicacion": "INCORRECTO: No existe la función isnullorempty()."
+        "correcta": true,
+        "explicacion": "CORRECTO: isnullorempty() es la función nativa de Appian para verificar si un valor es nulo o vacío. Es una función integrada sin prefijo a!."
       },
       {
         "id": 1705,
@@ -2184,9 +2184,10 @@ export const QUESTIONS_AI: Question[] = [
         "id": 1784,
         "contenido": "Real-time error checking",
         "correcta": true,
-        "explicacion": "CORRECTO"
-      }]
-    },
+        "explicacion": "CORRECTO: El editor verifica errores en tiempo real mientras escribes."
+      }
+    ]
+  },
   {
     "id": 570,
     "contenido": "Which function is used to check if a value exists in a list in Appian?",
@@ -2425,7 +2426,7 @@ export const QUESTIONS_AI: Question[] = [
         "id": 1815,
         "contenido": "merge()",
         "correcta": false,
-        "explicacion": "INCORRECTO: merge() no existe en Appian."
+        "explicacion": "INCORRECTO: merge() existe en Appian pero se usa para combinar mapas/diccionarios, no para concatenar cadenas de texto."
       },
       {
         "id": 1816,
@@ -2754,14 +2755,14 @@ export const QUESTIONS_AI: Question[] = [
       {
         "id": 1857,
         "contenido": "todatetime()",
-        "correcta": true,
-        "explicacion": "CORRECTO: todatetime() se utiliza para convertir o formatear fechas."
+        "correcta": false,
+        "explicacion": "INCORRECTO: todatetime() convierte valores al tipo DateTime, no formatea fechas como texto."
       },
       {
         "id": 1858,
-        "contenido": "formatdate()",
-        "correcta": false,
-        "explicacion": "INCORRECTO: formatdate() no es una función nativa de Appian."
+        "contenido": "datetext()",
+        "correcta": true,
+        "explicacion": "CORRECTO: datetext() es la función de Appian para formatear fechas como texto usando un patrón específico (por ejemplo, datetext(now(), 'dd/MM/yyyy'))."
       },
       {
         "id": 1859,
@@ -2850,13 +2851,13 @@ export const QUESTIONS_AI: Question[] = [
         "id": 1869,
         "contenido": "Set user/group permissions in the process model security settings",
         "correcta": true,
-        "explicacion": "CORRECTO: Se pueden configurar permisos para usuarios o grupos específicos."
+        "explicacion": "CORRECTO: Se pueden configurar permisos para usuarios o grupos específicos en la seguridad del modelo de proceso."
       },
       {
         "id": 1870,
-        "contenido": "Use a!securityGroup() in the interface",
+        "contenido": "Configure application-level security to restrict which groups can access the process model",
         "correcta": true,
-        "explicacion": "CORRECTO: Permite restringir visibilidad en la interfaz de la aplicación."
+        "explicacion": "CORRECTO: La seguridad a nivel de aplicación permite restringir el acceso a objetos de diseño, incluyendo modelos de proceso."
       },
       {
         "id": 1871,
@@ -4281,9 +4282,9 @@ export const QUESTIONS_AI: Question[] = [
     "respuestas": [
       {
         "id": 2053,
-        "contenido": "a!fileUploadField",
+        "contenido": "a!documentUploadField()",
         "correcta": true,
-        "explicacion": "CORRECTO: Permite subir archivos."
+        "explicacion": "CORRECTO: a!documentUploadField() es el componente SAIL de Appian para subir documentos."
       },
       {
         "id": 2054,
@@ -4375,25 +4376,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 1993,
+        "id": 2513,
         "contenido": "Start Event",
         "correcta": true,
         "explicacion": "CORRECTO: El Start Event inicia un proceso en un modelo de proceso."
       },
       {
-        "id": 1994,
+        "id": 2514,
         "contenido": "End Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Termina un proceso, no lo inicia."
       },
       {
-        "id": 1995,
+        "id": 2515,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo representa tareas de usuario dentro del proceso."
       },
       {
-        "id": 1996,
+        "id": 2516,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo controla el flujo del proceso."
@@ -4406,25 +4407,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 1997,
+        "id": 2517,
         "contenido": "Gateway",
         "correcta": true,
         "explicacion": "CORRECTO: Los gateways permiten ramificar el flujo según condiciones."
       },
       {
-        "id": 1998,
+        "id": 2518,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo inicia el proceso."
       },
       {
-        "id": 1999,
+        "id": 2519,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Es una tarea de usuario, no controla el flujo."
       },
       {
-        "id": 2000,
+        "id": 2520,
         "contenido": "End Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Termina el flujo."
@@ -4437,25 +4438,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": true,
     "respuestas": [
       {
-        "id": 2001,
+        "id": 2521,
         "contenido": "Send Message",
         "correcta": true,
         "explicacion": "CORRECTO: El nodo Send Message permite enviar notificaciones."
       },
       {
-        "id": 2002,
+        "id": 2522,
         "contenido": "User Task",
         "correcta": true,
         "explicacion": "CORRECTO: Con configuraciones de notificación puede enviar emails."
       },
       {
-        "id": 2003,
+        "id": 2523,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: No envía mensajes por sí mismo."
       },
       {
-        "id": 2004,
+        "id": 2524,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: No envía notificaciones."
@@ -4468,25 +4469,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2005,
+        "id": 2525,
         "contenido": "a!save",
         "correcta": false,
         "explicacion": "INCORRECTO: Se usa en interfaces, no directamente en modelos de proceso."
       },
       {
-        "id": 2006,
+        "id": 2526,
         "contenido": "a!startProcess",
         "correcta": true,
         "explicacion": "CORRECTO: Inicia otro proceso desde un modelo."
       },
       {
-        "id": 2007,
+        "id": 2527,
         "contenido": "a!queryRecordType",
         "correcta": false,
         "explicacion": "INCORRECTO: Se usa en interfaces para consultar datos."
       },
       {
-        "id": 2008,
+        "id": 2528,
         "contenido": "a!localVariables",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo en interfaces."
@@ -4499,25 +4500,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2009,
+        "id": 2529,
         "contenido": "User Task",
         "correcta": true,
         "explicacion": "CORRECTO: Solo las tareas de usuario requieren acción humana."
       },
       {
-        "id": 2010,
+        "id": 2530,
         "contenido": "Service Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Se ejecuta automáticamente."
       },
       {
-        "id": 2011,
+        "id": 2531,
         "contenido": "Script Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Se ejecuta automáticamente con scripts."
       },
       {
-        "id": 2012,
+        "id": 2532,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo controla flujo."
@@ -4530,25 +4531,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2013,
+        "id": 2533,
         "contenido": "End Event",
         "correcta": true,
         "explicacion": "CORRECTO: Marca el final del proceso."
       },
       {
-        "id": 2014,
+        "id": 2534,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia el proceso."
       },
       {
-        "id": 2015,
+        "id": 2535,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo representa una tarea de usuario."
       },
       {
-        "id": 2016,
+        "id": 2536,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo controla el flujo."
@@ -4561,25 +4562,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2017,
+        "id": 2537,
         "contenido": "Receive Message Event",
         "correcta": true,
         "explicacion": "CORRECTO: Permite que un proceso espere hasta recibir un mensaje externo."
       },
       {
-        "id": 2018,
+        "id": 2538,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo inicia el proceso."
       },
       {
-        "id": 2019,
+        "id": 2539,
         "contenido": "End Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Termina el proceso."
       },
       {
-        "id": 2020,
+        "id": 2540,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Controla flujo, no espera señales."
@@ -4592,25 +4593,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2021,
+        "id": 2541,
         "contenido": "Service Task",
         "correcta": true,
         "explicacion": "CORRECTO: Ejecuta integraciones o scripts automáticamente."
       },
       {
-        "id": 2022,
+        "id": 2542,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Requiere acción de usuario."
       },
       {
-        "id": 2023,
+        "id": 2543,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo controla flujo."
       },
       {
-        "id": 2024,
+        "id": 2544,
         "contenido": "End Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Termina el proceso."
@@ -4623,25 +4624,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2025,
+        "id": 2545,
         "contenido": "Assignment",
         "correcta": true,
         "explicacion": "CORRECTO: Define los usuarios o grupos asignados."
       },
       {
-        "id": 2026,
+        "id": 2546,
         "contenido": "Task Name",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo da un nombre a la tarea."
       },
       {
-        "id": 2027,
+        "id": 2547,
         "contenido": "Due Date",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo establece fecha límite."
       },
       {
-        "id": 2028,
+        "id": 2548,
         "contenido": "Description",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo texto descriptivo."
@@ -4654,25 +4655,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2029,
+        "id": 2549,
         "contenido": "Send Message",
         "correcta": true,
         "explicacion": "CORRECTO: Envía mensajes condicionalmente."
       },
       {
-        "id": 2030,
+        "id": 2550,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: No envía mensajes por sí solo."
       },
       {
-        "id": 2031,
+        "id": 2551,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Controla flujo, no envía mensajes."
       },
       {
-        "id": 2032,
+        "id": 2552,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia el proceso."
@@ -4685,25 +4686,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": true,
     "respuestas": [
       {
-        "id": 2033,
+        "id": 2553,
         "contenido": "Service Task",
         "correcta": true,
         "explicacion": "CORRECTO: Ejecuta automáticamente integraciones o scripts."
       },
       {
-        "id": 2034,
+        "id": 2554,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Requiere usuario."
       },
       {
-        "id": 2035,
+        "id": 2555,
         "contenido": "Script Task",
         "correcta": true,
         "explicacion": "CORRECTO: Ejecuta scripts automáticamente."
       },
       {
-        "id": 2036,
+        "id": 2556,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Controla flujo."
@@ -4716,25 +4717,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2037,
+        "id": 2557,
         "contenido": "Due Date",
         "correcta": true,
         "explicacion": "CORRECTO: Define la fecha límite de la tarea."
       },
       {
-        "id": 2038,
+        "id": 2558,
         "contenido": "Assignment",
         "correcta": false,
         "explicacion": "INCORRECTO: Define quién realiza la tarea."
       },
       {
-        "id": 2039,
+        "id": 2559,
         "contenido": "Task Name",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo es el nombre."
       },
       {
-        "id": 2040,
+        "id": 2560,
         "contenido": "Description",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo texto explicativo."
@@ -4747,25 +4748,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2041,
+        "id": 2561,
         "contenido": "Sequence Flow",
         "correcta": true,
         "explicacion": "CORRECTO: Conecta nodos para definir el flujo del proceso."
       },
       {
-        "id": 2042,
+        "id": 2562,
         "contenido": "Message Flow",
         "correcta": false,
         "explicacion": "INCORRECTO: Envía mensajes entre procesos."
       },
       {
-        "id": 2043,
+        "id": 2563,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Controla ramificaciones, no conecta nodos en línea."
       },
       {
-        "id": 2044,
+        "id": 2564,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo inicia procesos."
@@ -4778,25 +4779,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2045,
+        "id": 2565,
         "contenido": "Timer Event",
         "correcta": true,
         "explicacion": "CORRECTO: Hace que el proceso espere un tiempo definido."
       },
       {
-        "id": 2046,
+        "id": 2566,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia procesos."
       },
       {
-        "id": 2047,
+        "id": 2567,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Espera interacción de usuario."
       },
       {
-        "id": 2048,
+        "id": 2568,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Controla flujo."
@@ -4809,25 +4810,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2049,
+        "id": 2569,
         "contenido": "a!startProcess",
         "correcta": true,
         "explicacion": "CORRECTO: Permite iniciar otro proceso desde expresiones."
       },
       {
-        "id": 2050,
+        "id": 2570,
         "contenido": "a!save",
         "correcta": false,
         "explicacion": "INCORRECTO: Guarda valores en interfaces."
       },
       {
-        "id": 2051,
+        "id": 2571,
         "contenido": "a!queryRecordType",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo consulta datos."
       },
       {
-        "id": 2052,
+        "id": 2572,
         "contenido": "a!localVariables",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo define variables locales."
@@ -4840,25 +4841,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2053,
+        "id": 2573,
         "contenido": "End Event",
         "correcta": true,
         "explicacion": "CORRECTO: Finaliza el flujo de un proceso."
       },
       {
-        "id": 2054,
+        "id": 2574,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia el proceso."
       },
       {
-        "id": 2055,
+        "id": 2575,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo controla flujo."
       },
       {
-        "id": 2056,
+        "id": 2576,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo tarea de usuario."
@@ -4871,25 +4872,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2057,
+        "id": 2577,
         "contenido": "Call Subprocess",
         "correcta": true,
         "explicacion": "CORRECTO: Permite ejecutar un modelo de proceso secundario."
       },
       {
-        "id": 2058,
+        "id": 2578,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: No inicia subprocessos."
       },
       {
-        "id": 2059,
+        "id": 2579,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo controla flujo."
       },
       {
-        "id": 2060,
+        "id": 2580,
         "contenido": "Service Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Ejecuta acciones, no inicia procesos completos."
@@ -4902,25 +4903,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2061,
+        "id": 2581,
         "contenido": "Script Task",
         "correcta": true,
         "explicacion": "CORRECTO: Ejecuta scripts para automatizar acciones."
       },
       {
-        "id": 2062,
+        "id": 2582,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Requiere interacción de usuario."
       },
       {
-        "id": 2063,
+        "id": 2583,
         "contenido": "Service Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Ejecuta integraciones, no scripts internos."
       },
       {
-        "id": 2064,
+        "id": 2584,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Controla flujo."
@@ -4933,25 +4934,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2065,
+        "id": 2585,
         "contenido": "Assignment",
         "correcta": true,
         "explicacion": "CORRECTO: Se puede usar expresión para asignar dinámicamente."
       },
       {
-        "id": 2066,
+        "id": 2586,
         "contenido": "Due Date",
         "correcta": false,
         "explicacion": "INCORRECTO: Define fecha límite."
       },
       {
-        "id": 2067,
+        "id": 2587,
         "contenido": "Task Name",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo nombre."
       },
       {
-        "id": 2068,
+        "id": 2588,
         "contenido": "Description",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo texto."
@@ -4964,25 +4965,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2069,
+        "id": 2589,
         "contenido": "Error Event",
         "correcta": true,
         "explicacion": "CORRECTO: Captura errores durante la ejecución."
       },
       {
-        "id": 2070,
+        "id": 2590,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: No maneja errores."
       },
       {
-        "id": 2071,
+        "id": 2591,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo tarea de usuario."
       },
       {
-        "id": 2072,
+        "id": 2592,
         "contenido": "Service Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Ejecuta acciones, pero no captura errores automáticamente."
@@ -4999,25 +5000,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2013,
+        "id": 2593,
         "contenido": "A data structure representing business entities",
         "correcta": true,
         "explicacion": "CORRECTO: Un record type define estructuras de datos para entidades de negocio."
       },
       {
-        "id": 2014,
+        "id": 2594,
         "contenido": "A process that runs automatically",
         "correcta": false,
         "explicacion": "INCORRECTO: Esto describe un proceso, no un record type."
       },
       {
-        "id": 2015,
+        "id": 2595,
         "contenido": "A user interface layout",
         "correcta": false,
         "explicacion": "INCORRECTO: No es un layout de interfaz."
       },
       {
-        "id": 2016,
+        "id": 2596,
         "contenido": "A security rule",
         "correcta": false,
         "explicacion": "INCORRECTO: No gestiona seguridad por sí mismo."
@@ -5030,25 +5031,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2017,
+        "id": 2597,
         "contenido": "a!queryRecordType",
         "correcta": true,
         "explicacion": "CORRECTO: Se usa para consultar datos de un record type."
       },
       {
-        "id": 2018,
+        "id": 2598,
         "contenido": "a!queryEntity",
         "correcta": false,
         "explicacion": "INCORRECTO: Se usa para entidades de base de datos, no record types directamente."
       },
       {
-        "id": 2019,
+        "id": 2599,
         "contenido": "a!save",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo guarda valores."
       },
       {
-        "id": 2020,
+        "id": 2600,
         "contenido": "a!startProcess",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia procesos, no consulta record types."
@@ -5061,28 +5062,28 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": true,
     "respuestas": [
       {
-        "id": 2021,
+        "id": 2601,
         "contenido": "List View",
         "correcta": true,
         "explicacion": "CORRECTO: Muestra múltiples registros en una lista."
       },
       {
-        "id": 2022,
+        "id": 2602,
         "contenido": "Record View",
         "correcta": true,
         "explicacion": "CORRECTO: Muestra detalles de un registro individual."
       },
       {
-        "id": 2023,
+        "id": 2603,
         "contenido": "Form View",
         "correcta": false,
         "explicacion": "INCORRECTO: No es un tipo de vista de record type."
       },
       {
-        "id": 2024,
+        "id": 2604,
         "contenido": "Chart View",
-        "correcta": false,
-        "explicacion": "INCORRECTO: No es una vista estándar de record type."
+        "correcta": true,
+        "explicacion": "CORRECTO: Chart View es una vista estándar de record type que permite mostrar datos en formato gráfico."
       }
     ]
   },
@@ -5092,25 +5093,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": true,
     "respuestas": [
       {
-        "id": 2025,
+        "id": 2605,
         "contenido": "Action",
         "correcta": true,
         "explicacion": "CORRECTO: Define acciones que se pueden ejecutar sobre un registro."
       },
       {
-        "id": 2026,
+        "id": 2606,
         "contenido": "Record Action",
         "correcta": true,
         "explicacion": "CORRECTO: Específicamente asociado a records."
       },
       {
-        "id": 2027,
+        "id": 2607,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: No es un record action."
       },
       {
-        "id": 2028,
+        "id": 2608,
         "contenido": "Process Model",
         "correcta": false,
         "explicacion": "INCORRECTO: No define acciones directas sobre records."
@@ -5123,25 +5124,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2029,
+        "id": 2609,
         "contenido": "a!recordData",
         "correcta": true,
         "explicacion": "CORRECTO: Devuelve los datos de un registro específico."
       },
       {
-        "id": 2030,
+        "id": 2610,
         "contenido": "a!queryRecordType",
         "correcta": false,
         "explicacion": "INCORRECTO: Retorna múltiples registros o listas, no un solo registro."
       },
       {
-        "id": 2031,
+        "id": 2611,
         "contenido": "a!save",
         "correcta": false,
         "explicacion": "INCORRECTO: Guarda valores, no consulta registros."
       },
       {
-        "id": 2032,
+        "id": 2612,
         "contenido": "a!startProcess",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia procesos."
@@ -5154,25 +5155,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2033,
+        "id": 2613,
         "contenido": "Data Store Entity",
         "correcta": true,
         "explicacion": "CORRECTO: Define la entidad de base de datos usada como fuente de datos."
       },
       {
-        "id": 2034,
+        "id": 2614,
         "contenido": "Record Action",
         "correcta": false,
         "explicacion": "INCORRECTO: Define acciones, no fuente de datos."
       },
       {
-        "id": 2035,
+        "id": 2615,
         "contenido": "List View",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo muestra datos, no los define."
       },
       {
-        "id": 2036,
+        "id": 2616,
         "contenido": "Security",
         "correcta": false,
         "explicacion": "INCORRECTO: No define la fuente de datos."
@@ -5185,25 +5186,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": true,
     "respuestas": [
       {
-        "id": 2037,
+        "id": 2617,
         "contenido": "List View",
         "correcta": true,
         "explicacion": "CORRECTO: Permite aplicar filtros sobre la lista de registros."
       },
       {
-        "id": 2038,
+        "id": 2618,
         "contenido": "Record View",
         "correcta": true,
         "explicacion": "CORRECTO: Se puede filtrar la vista de detalles según reglas."
       },
       {
-        "id": 2039,
+        "id": 2619,
         "contenido": "Record Action",
         "correcta": false,
         "explicacion": "INCORRECTO: No se filtra, ejecuta acciones."
       },
       {
-        "id": 2040,
+        "id": 2620,
         "contenido": "Start Event",
         "correcta": false,
         "explicacion": "INCORRECTO: No es parte del record type."
@@ -5216,25 +5217,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": true,
     "respuestas": [
       {
-        "id": 2041,
+        "id": 2621,
         "contenido": "Role-based access",
         "correcta": true,
         "explicacion": "CORRECTO: Se puede restringir el acceso según roles."
       },
       {
-        "id": 2042,
+        "id": 2622,
         "contenido": "User-based access",
         "correcta": true,
         "explicacion": "CORRECTO: También se puede asignar acceso específico a usuarios."
       },
       {
-        "id": 2043,
+        "id": 2623,
         "contenido": "Start Process",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia procesos, no controla seguridad de records."
       },
       {
-        "id": 2044,
+        "id": 2624,
         "contenido": "Local Variables",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo se usa en interfaces."
@@ -5247,25 +5248,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2045,
+        "id": 2625,
         "contenido": "a!queryRecordType",
         "correcta": true,
         "explicacion": "CORRECTO: Devuelve múltiples registros y permite filtros."
       },
       {
-        "id": 2046,
+        "id": 2626,
         "contenido": "a!recordData",
         "correcta": false,
         "explicacion": "INCORRECTO: Devuelve solo un registro específico."
       },
       {
-        "id": 2047,
+        "id": 2627,
         "contenido": "a!save",
         "correcta": false,
         "explicacion": "INCORRECTO: No consulta datos."
       },
       {
-        "id": 2048,
+        "id": 2628,
         "contenido": "a!startProcess",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia procesos."
@@ -5278,25 +5279,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2049,
+        "id": 2629,
         "contenido": "Chart View",
         "correcta": true,
         "explicacion": "CORRECTO: Permite visualizar datos de manera gráfica."
       },
       {
-        "id": 2050,
+        "id": 2630,
         "contenido": "List View",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo muestra registros en tabla o lista."
       },
       {
-        "id": 2051,
+        "id": 2631,
         "contenido": "Record View",
         "correcta": false,
         "explicacion": "INCORRECTO: Muestra detalles de un registro individual."
       },
       {
-        "id": 2052,
+        "id": 2632,
         "contenido": "Form View",
         "correcta": false,
         "explicacion": "INCORRECTO: No es tipo de vista en record types."
@@ -5309,25 +5310,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2053,
+        "id": 2633,
         "contenido": "ri!recordId",
         "correcta": true,
         "explicacion": "CORRECTO: El parámetro ri!recordId contiene el ID del registro."
       },
       {
-        "id": 2054,
+        "id": 2634,
         "contenido": "a!recordData",
         "correcta": false,
         "explicacion": "INCORRECTO: Devuelve los datos completos, no solo el ID."
       },
       {
-        "id": 2055,
+        "id": 2635,
         "contenido": "a!queryRecordType",
         "correcta": false,
         "explicacion": "INCORRECTO: Retorna registros, no un ID directamente."
       },
       {
-        "id": 2056,
+        "id": 2636,
         "contenido": "a!save",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo guarda valores."
@@ -5340,25 +5341,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": true,
     "respuestas": [
       {
-        "id": 2057,
+        "id": 2637,
         "contenido": "Quick Action",
         "correcta": true,
         "explicacion": "CORRECTO: Acción rápida sobre un registro."
       },
       {
-        "id": 2058,
+        "id": 2638,
         "contenido": "Open Process",
         "correcta": true,
         "explicacion": "CORRECTO: Puede iniciar un proceso relacionado al registro."
       },
       {
-        "id": 2059,
+        "id": 2639,
         "contenido": "Query Record Type",
         "correcta": false,
         "explicacion": "INCORRECTO: No es una acción directa sobre un registro."
       },
       {
-        "id": 2060,
+        "id": 2640,
         "contenido": "List View",
         "correcta": false,
         "explicacion": "INCORRECTO: No es acción, es vista."
@@ -5371,25 +5372,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2061,
+        "id": 2641,
         "contenido": "Default View",
         "correcta": true,
         "explicacion": "CORRECTO: Establece qué vista se muestra por defecto al abrir un record."
       },
       {
-        "id": 2062,
+        "id": 2642,
         "contenido": "List View",
         "correcta": false,
         "explicacion": "INCORRECTO: No define default, solo muestra lista."
       },
       {
-        "id": 2063,
+        "id": 2643,
         "contenido": "Record Action",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo acciones sobre registros."
       },
       {
-        "id": 2064,
+        "id": 2644,
         "contenido": "Data Source",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo define la fuente de datos."
@@ -5402,25 +5403,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2065,
+        "id": 2645,
         "contenido": "Record Relationships",
         "correcta": true,
         "explicacion": "CORRECTO: Permite enlazar datos de distintas entidades."
       },
       {
-        "id": 2066,
+        "id": 2646,
         "contenido": "Record Actions",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo define acciones sobre el registro."
       },
       {
-        "id": 2067,
+        "id": 2647,
         "contenido": "List View",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo muestra registros."
       },
       {
-        "id": 2068,
+        "id": 2648,
         "contenido": "Record Views",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo muestra un registro."
@@ -5433,25 +5434,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2069,
+        "id": 2649,
         "contenido": "Form View",
         "correcta": true,
         "explicacion": "CORRECTO: Se usa para capturar datos detallados de un registro."
       },
       {
-        "id": 2070,
+        "id": 2650,
         "contenido": "List View",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo muestra múltiples registros."
       },
       {
-        "id": 2071,
+        "id": 2651,
         "contenido": "Record View",
         "correcta": false,
         "explicacion": "INCORRECTO: Muestra información, no captura nuevos datos."
       },
       {
-        "id": 2072,
+        "id": 2652,
         "contenido": "Chart View",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo visualización gráfica."
@@ -5464,25 +5465,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2073,
+        "id": 2653,
         "contenido": "a!relatedRecords",
         "correcta": true,
         "explicacion": "CORRECTO: Permite obtener registros relacionados."
       },
       {
-        "id": 2074,
+        "id": 2654,
         "contenido": "a!recordData",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo devuelve datos de un registro."
       },
       {
-        "id": 2075,
+        "id": 2655,
         "contenido": "a!queryRecordType",
         "correcta": false,
         "explicacion": "INCORRECTO: Consulta principal, no relaciones."
       },
       {
-        "id": 2076,
+        "id": 2656,
         "contenido": "a!save",
         "correcta": false,
         "explicacion": "INCORRECTO: No consulta datos."
@@ -5495,25 +5496,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2077,
+        "id": 2657,
         "contenido": "Record Action",
         "correcta": true,
         "explicacion": "CORRECTO: Permite ejecutar acciones directamente desde el record."
       },
       {
-        "id": 2078,
+        "id": 2658,
         "contenido": "User Task",
         "correcta": false,
         "explicacion": "INCORRECTO: No ejecuta acciones desde un record."
       },
       {
-        "id": 2079,
+        "id": 2659,
         "contenido": "Service Task",
         "correcta": false,
         "explicacion": "INCORRECTO: Automatiza procesos, no acciones de record."
       },
       {
-        "id": 2080,
+        "id": 2660,
         "contenido": "Gateway",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo controla flujo."
@@ -5526,25 +5527,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2081,
+        "id": 2661,
         "contenido": "filters",
         "correcta": true,
         "explicacion": "CORRECTO: Define qué registros se muestran según criterios."
       },
       {
-        "id": 2082,
+        "id": 2662,
         "contenido": "columns",
         "correcta": false,
         "explicacion": "INCORRECTO: Define columnas visibles, no filtros."
       },
       {
-        "id": 2083,
+        "id": 2663,
         "contenido": "actions",
         "correcta": false,
         "explicacion": "INCORRECTO: Define acciones, no filtros."
       },
       {
-        "id": 2084,
+        "id": 2664,
         "contenido": "security",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo controla acceso."
@@ -5557,25 +5558,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": false,
     "respuestas": [
       {
-        "id": 2085,
+        "id": 2665,
         "contenido": "columns",
         "correcta": true,
         "explicacion": "CORRECTO: Define qué campos se muestran en la lista de registros."
       },
       {
-        "id": 2086,
+        "id": 2666,
         "contenido": "filters",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo define criterios de filtrado."
       },
       {
-        "id": 2087,
+        "id": 2667,
         "contenido": "actions",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo define acciones disponibles."
       },
       {
-        "id": 2088,
+        "id": 2668,
         "contenido": "defaultView",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo define vista inicial."
@@ -5588,25 +5589,25 @@ export const QUESTIONS_AI: Question[] = [
     "multiple": true,
     "respuestas": [
       {
-        "id": 2089,
+        "id": 2669,
         "contenido": "Record Type Security",
         "correcta": true,
         "explicacion": "CORRECTO: Permite restringir acceso a registros según roles."
       },
       {
-        "id": 2090,
+        "id": 2670,
         "contenido": "Start Process",
         "correcta": false,
         "explicacion": "INCORRECTO: Inicia procesos, no controla seguridad de records."
       },
       {
-        "id": 2091,
+        "id": 2671,
         "contenido": "Local Variables",
         "correcta": false,
         "explicacion": "INCORRECTO: Solo se usan en interfaces."
       },
       {
-        "id": 2092,
+        "id": 2672,
         "contenido": "Action Assignments",
         "correcta": true,
         "explicacion": "CORRECTO: Puede restringir qué usuarios pueden ejecutar ciertas acciones sobre el registro."
@@ -5621,10 +5622,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "What is a CDT (Complex Data Type) in Appian?",
     "multiple": false,
     "respuestas": [
-      {"id": 2033, "contenido": "A custom data structure representing business entities", "correcta": true, "explicacion": "CORRECTO: CDT permite definir estructuras de datos complejas para entidades de negocio."},
-      {"id": 2034, "contenido": "A process model template", "correcta": false, "explicacion": "INCORRECTO: No tiene relación con procesos."},
-      {"id": 2035, "contenido": "A security rule", "correcta": false, "explicacion": "INCORRECTO: No controla seguridad."},
-      {"id": 2036, "contenido": "An interface layout", "correcta": false, "explicacion": "INCORRECTO: No define layouts."}
+      {"id": 2673, "contenido": "A custom data structure representing business entities", "correcta": true, "explicacion": "CORRECTO: CDT permite definir estructuras de datos complejas para entidades de negocio."},
+      {"id": 2674, "contenido": "A process model template", "correcta": false, "explicacion": "INCORRECTO: No tiene relación con procesos."},
+      {"id": 2675, "contenido": "A security rule", "correcta": false, "explicacion": "INCORRECTO: No controla seguridad."},
+      {"id": 2676, "contenido": "An interface layout", "correcta": false, "explicacion": "INCORRECTO: No define layouts."}
     ]
   },
   {
@@ -5632,10 +5633,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Where are CDTs typically defined?",
     "multiple": false,
     "respuestas": [
-      {"id": 2037, "contenido": "Data Types", "correcta": true, "explicacion": "CORRECTO: Se definen dentro de la sección Data Types de Appian."},
-      {"id": 2038, "contenido": "Record Types", "correcta": false, "explicacion": "INCORRECTO: Los record types usan CDTs, pero no los definen."},
-      {"id": 2039, "contenido": "Process Models", "correcta": false, "explicacion": "INCORRECTO: No se definen CDTs en procesos."},
-      {"id": 2040, "contenido": "Interfaces", "correcta": false, "explicacion": "INCORRECTO: Las interfaces usan CDTs, pero no los definen."}
+      {"id": 2677, "contenido": "Data Types", "correcta": true, "explicacion": "CORRECTO: Se definen dentro de la sección Data Types de Appian."},
+      {"id": 2678, "contenido": "Record Types", "correcta": false, "explicacion": "INCORRECTO: Los record types usan CDTs, pero no los definen."},
+      {"id": 2679, "contenido": "Process Models", "correcta": false, "explicacion": "INCORRECTO: No se definen CDTs en procesos."},
+      {"id": 2680, "contenido": "Interfaces", "correcta": false, "explicacion": "INCORRECTO: Las interfaces usan CDTs, pero no los definen."}
     ]
   },
   {
@@ -5643,10 +5644,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which function is used to create a CDT instance?",
     "multiple": false,
     "respuestas": [
-      {"id": 2041, "contenido": "type!MyCDT()", "correcta": true, "explicacion": "CORRECTO: Se utiliza type!NombreCDT() para crear una instancia de CDT."},
-      {"id": 2042, "contenido": "a!localVariables", "correcta": false, "explicacion": "INCORRECTO: Solo define variables locales, no CDT directamente."},
-      {"id": 2043, "contenido": "a!queryRecordType", "correcta": false, "explicacion": "INCORRECTO: Consulta datos de record types."},
-      {"id": 2044, "contenido": "a!startProcess", "correcta": false, "explicacion": "INCORRECTO: Inicia procesos."}
+      {"id": 2681, "contenido": "type!MyCDT()", "correcta": true, "explicacion": "CORRECTO: Se utiliza type!NombreCDT() para crear una instancia de CDT."},
+      {"id": 2682, "contenido": "a!localVariables", "correcta": false, "explicacion": "INCORRECTO: Solo define variables locales, no CDT directamente."},
+      {"id": 2683, "contenido": "a!queryRecordType", "correcta": false, "explicacion": "INCORRECTO: Consulta datos de record types."},
+      {"id": 2684, "contenido": "a!startProcess", "correcta": false, "explicacion": "INCORRECTO: Inicia procesos."}
     ]
   },
   {
@@ -5654,10 +5655,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which of the following can be fields in a CDT?",
     "multiple": true,
     "respuestas": [
-      {"id": 2045, "contenido": "Text", "correcta": true, "explicacion": "CORRECTO: Campos de tipo texto se pueden definir en un CDT."},
-      {"id": 2046, "contenido": "Integer", "correcta": true, "explicacion": "CORRECTO: Campos numéricos también se pueden definir."},
-      {"id": 2047, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: No se usa un record type como campo directamente."},
-      {"id": 2048, "contenido": "Boolean", "correcta": true, "explicacion": "CORRECTO: Campos lógicos son válidos en un CDT."}
+      {"id": 2685, "contenido": "Text", "correcta": true, "explicacion": "CORRECTO: Campos de tipo texto se pueden definir en un CDT."},
+      {"id": 2686, "contenido": "Integer", "correcta": true, "explicacion": "CORRECTO: Campos numéricos también se pueden definir."},
+      {"id": 2687, "contenido": "Record Type", "correcta": false, "explicacion": "INCORRECTO: No se usa un record type como campo directamente."},
+      {"id": 2688, "contenido": "Boolean", "correcta": true, "explicacion": "CORRECTO: Campos lógicos son válidos en un CDT."}
     ]
   },
   {
@@ -5665,10 +5666,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which property defines the relationship between CDTs?",
     "multiple": false,
     "respuestas": [
-      {"id": 2049, "contenido": "Parent-Child Relationship", "correcta": true, "explicacion": "CORRECTO: Permite anidar CDTs unos dentro de otros."},
-      {"id": 2050, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Es para tareas de usuario."},
-      {"id": 2051, "contenido": "Due Date", "correcta": false, "explicacion": "INCORRECTO: Solo en tareas."},
-      {"id": 2052, "contenido": "List View", "correcta": false, "explicacion": "INCORRECTO: Solo muestra registros, no define relaciones."}
+      {"id": 2689, "contenido": "Parent-Child Relationship", "correcta": true, "explicacion": "CORRECTO: Permite anidar CDTs unos dentro de otros."},
+      {"id": 2690, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Es para tareas de usuario."},
+      {"id": 2691, "contenido": "Due Date", "correcta": false, "explicacion": "INCORRECTO: Solo en tareas."},
+      {"id": 2692, "contenido": "List View", "correcta": false, "explicacion": "INCORRECTO: Solo muestra registros, no define relaciones."}
     ]
   },
   {
@@ -5676,10 +5677,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which feature ensures a CDT field cannot be null?",
     "multiple": false,
     "respuestas": [
-      {"id": 2053, "contenido": "Required", "correcta": true, "explicacion": "CORRECTO: Required:true obliga a que el campo tenga valor."},
-      {"id": 2054, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad, no obligatoriedad."},
-      {"id": 2055, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna valor por defecto."},
-      {"id": 2056, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
+      {"id": 2693, "contenido": "Required", "correcta": true, "explicacion": "CORRECTO: Required:true obliga a que el campo tenga valor."},
+      {"id": 2694, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad, no obligatoriedad."},
+      {"id": 2695, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna valor por defecto."},
+      {"id": 2696, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
     ]
   },
   {
@@ -5687,10 +5688,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which type of CDT can store multiple records?",
     "multiple": false,
     "respuestas": [
-      {"id": 2057, "contenido": "List of CDT", "correcta": true, "explicacion": "CORRECTO: Un campo puede ser una lista de instancias de CDT."},
-      {"id": 2058, "contenido": "Single CDT", "correcta": false, "explicacion": "INCORRECTO: Solo almacena un registro."},
-      {"id": 2059, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: No almacena múltiples registros."},
-      {"id": 2060, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: No almacena múltiples registros."}
+      {"id": 2697, "contenido": "List of CDT", "correcta": true, "explicacion": "CORRECTO: Un campo puede ser una lista de instancias de CDT."},
+      {"id": 2698, "contenido": "Single CDT", "correcta": false, "explicacion": "INCORRECTO: Solo almacena un registro."},
+      {"id": 2699, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: No almacena múltiples registros."},
+      {"id": 2700, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: No almacena múltiples registros."}
     ]
   },
   {
@@ -5698,10 +5699,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which CDT feature allows inheritance from another CDT?",
     "multiple": false,
     "respuestas": [
-      {"id": 2061, "contenido": "Extends", "correcta": true, "explicacion": "CORRECTO: Un CDT puede extender otro para heredar campos."},
-      {"id": 2062, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Obligatoriedad de campos, no herencia."},
-      {"id": 2063, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna valor por defecto."},
-      {"id": 2064, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
+      {"id": 2701, "contenido": "Extends", "correcta": true, "explicacion": "CORRECTO: Un CDT puede extender otro para heredar campos."},
+      {"id": 2702, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Obligatoriedad de campos, no herencia."},
+      {"id": 2703, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna valor por defecto."},
+      {"id": 2704, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
     ]
   },
   {
@@ -5709,10 +5710,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which expression function maps CDT data into an interface?",
     "multiple": false,
     "respuestas": [
-      {"id": 2065, "contenido": "a!localVariables", "correcta": true, "explicacion": "CORRECTO: Permite almacenar instancias de CDT en interfaces."},
-      {"id": 2066, "contenido": "a!startProcess", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos."},
-      {"id": 2067, "contenido": "a!queryRecordType", "correcta": false, "explicacion": "INCORRECTO: Consulta registros, no crea instancias en interfaz."},
-      {"id": 2068, "contenido": "a!save", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
+      {"id": 2705, "contenido": "a!localVariables", "correcta": true, "explicacion": "CORRECTO: Permite almacenar instancias de CDT en interfaces."},
+      {"id": 2706, "contenido": "a!startProcess", "correcta": false, "explicacion": "INCORRECTO: Solo inicia procesos."},
+      {"id": 2707, "contenido": "a!queryRecordType", "correcta": false, "explicacion": "INCORRECTO: Consulta registros, no crea instancias en interfaz."},
+      {"id": 2708, "contenido": "a!save", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
     ]
   },
   {
@@ -5720,10 +5721,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which data type is NOT valid in a CDT field?",
     "multiple": false,
     "respuestas": [
-      {"id": 2069, "contenido": "Color", "correcta": true, "explicacion": "CORRECTO: No existe tipo 'Color' en CDTs."},
-      {"id": 2070, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Es válido."},
-      {"id": 2071, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Es válido."},
-      {"id": 2072, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Es válido."}
+      {"id": 2709, "contenido": "Color", "correcta": true, "explicacion": "CORRECTO: No existe tipo 'Color' en CDTs."},
+      {"id": 2710, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Es válido."},
+      {"id": 2711, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Es válido."},
+      {"id": 2712, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Es válido."}
     ]
   },
   {
@@ -5731,10 +5732,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which property allows defining default values for CDT fields?",
     "multiple": false,
     "respuestas": [
-      {"id": 2073, "contenido": "Default Value", "correcta": true, "explicacion": "CORRECTO: Se puede asignar un valor inicial a un campo."},
-      {"id": 2074, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a que el campo tenga valor."},
-      {"id": 2075, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad."},
-      {"id": 2076, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Solo para tareas de usuario."}
+      {"id": 2713, "contenido": "Default Value", "correcta": true, "explicacion": "CORRECTO: Se puede asignar un valor inicial a un campo."},
+      {"id": 2714, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a que el campo tenga valor."},
+      {"id": 2715, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad."},
+      {"id": 2716, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Solo para tareas de usuario."}
     ]
   },
   {
@@ -5742,10 +5743,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which function converts CDT to JSON for integrations?",
     "multiple": false,
     "respuestas": [
-      {"id": 2077, "contenido": "a!toJson", "correcta": true, "explicacion": "CORRECTO: Convierte instancias de CDT a JSON."},
-      {"id": 2078, "contenido": "a!fromJson", "correcta": false, "explicacion": "INCORRECTO: Convierte JSON a CDT."},
-      {"id": 2079, "contenido": "type!MyCDT()", "correcta": false, "explicacion": "INCORRECTO: Crea instancias de CDT, no las convierte."},
-      {"id": 2080, "contenido": "a!save", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
+      {"id": 2717, "contenido": "a!toJson", "correcta": true, "explicacion": "CORRECTO: Convierte instancias de CDT a JSON."},
+      {"id": 2718, "contenido": "a!fromJson", "correcta": false, "explicacion": "INCORRECTO: Convierte JSON a CDT."},
+      {"id": 2719, "contenido": "type!MyCDT()", "correcta": false, "explicacion": "INCORRECTO: Crea instancias de CDT, no las convierte."},
+      {"id": 2720, "contenido": "a!save", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores."}
     ]
   },
   {
@@ -5753,10 +5754,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which field type allows referencing another CDT?",
     "multiple": false,
     "respuestas": [
-      {"id": 2081, "contenido": "Data Type", "correcta": true, "explicacion": "CORRECTO: Se puede definir un campo que sea de otro CDT."},
-      {"id": 2082, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Campo numérico, no referencia CDT."},
-      {"id": 2083, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Campo texto, no referencia CDT."},
-      {"id": 2084, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Campo lógico, no referencia CDT."}
+      {"id": 2721, "contenido": "Data Type", "correcta": true, "explicacion": "CORRECTO: Se puede definir un campo que sea de otro CDT."},
+      {"id": 2722, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Campo numérico, no referencia CDT."},
+      {"id": 2723, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Campo texto, no referencia CDT."},
+      {"id": 2724, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Campo lógico, no referencia CDT."}
     ]
   },
   {
@@ -5764,10 +5765,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which CDT property ensures field values are unique?",
     "multiple": false,
     "respuestas": [
-      {"id": 2085, "contenido": "Unique", "correcta": true, "explicacion": "CORRECTO: Unique:true garantiza que los valores no se repitan."},
-      {"id": 2086, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo hace obligatorio un valor."},
-      {"id": 2087, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna un valor inicial."},
-      {"id": 2088, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Solo para tareas de usuario."}
+      {"id": 2725, "contenido": "Unique", "correcta": true, "explicacion": "CORRECTO: Unique:true garantiza que los valores no se repitan."},
+      {"id": 2726, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo hace obligatorio un valor."},
+      {"id": 2727, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo asigna un valor inicial."},
+      {"id": 2728, "contenido": "Assignment", "correcta": false, "explicacion": "INCORRECTO: Solo para tareas de usuario."}
     ]
   },
   {
@@ -5775,10 +5776,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which type of CDT field stores a single date value?",
     "multiple": true,
     "respuestas": [
-      {"id": 2089, "contenido": "Date", "correcta": true, "explicacion": "CORRECTO: Campo de tipo Date almacena un valor de fecha."},
-      {"id": 2090, "contenido": "DateTime", "correcta": true, "explicacion": "CORRECTO: También almacena fecha y hora."},
-      {"id": 2091, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Solo números enteros."},
-      {"id": 2092, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Solo texto."}
+      {"id": 2729, "contenido": "Date", "correcta": true, "explicacion": "CORRECTO: Campo de tipo Date almacena un valor de fecha."},
+      {"id": 2730, "contenido": "DateTime", "correcta": true, "explicacion": "CORRECTO: También almacena fecha y hora."},
+      {"id": 2731, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Solo números enteros."},
+      {"id": 2732, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Solo texto."}
     ]
   },
   {
@@ -5786,10 +5787,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which property defines a list field in a CDT?",
     "multiple": false,
     "respuestas": [
-      {"id": 2093, "contenido": "Multiple", "correcta": true, "explicacion": "CORRECTO: Indica que el campo almacena múltiples valores."},
-      {"id": 2094, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a tener valor."},
-      {"id": 2095, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad."},
-      {"id": 2096, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo valor inicial."}
+      {"id": 2733, "contenido": "Multiple", "correcta": true, "explicacion": "CORRECTO: Indica que el campo almacena múltiples valores."},
+      {"id": 2734, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a tener valor."},
+      {"id": 2735, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: Solo garantiza unicidad."},
+      {"id": 2736, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo valor inicial."}
     ]
   },
   {
@@ -5797,10 +5798,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which CDT feature is useful for integrations with external systems?",
     "multiple": true,
     "respuestas": [
-      {"id": 2097, "contenido": "ToJSON conversion", "correcta": true, "explicacion": "CORRECTO: Permite enviar datos a APIs externas en formato JSON."},
-      {"id": 2098, "contenido": "FromJSON", "correcta": true, "explicacion": "CORRECTO: Permite recibir datos JSON y mapearlos a CDT."},
-      {"id": 2099, "contenido": "Local Variables", "correcta": false, "explicacion": "INCORRECTO: Solo en interfaces."},
-      {"id": 2100, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores locales."}
+      {"id": 2737, "contenido": "ToJSON conversion", "correcta": true, "explicacion": "CORRECTO: Permite enviar datos a APIs externas en formato JSON."},
+      {"id": 2738, "contenido": "FromJSON", "correcta": true, "explicacion": "CORRECTO: Permite recibir datos JSON y mapearlos a CDT."},
+      {"id": 2739, "contenido": "Local Variables", "correcta": false, "explicacion": "INCORRECTO: Solo en interfaces."},
+      {"id": 2740, "contenido": "SaveInto", "correcta": false, "explicacion": "INCORRECTO: Solo guarda valores locales."}
     ]
   },
   {
@@ -5808,10 +5809,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which property defines a fixed set of values for a CDT field?",
     "multiple": false,
     "respuestas": [
-      {"id": 2101, "contenido": "Constraint", "correcta": true, "explicacion": "CORRECTO: Limita los valores posibles a un conjunto definido."},
-      {"id": 2102, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a que exista valor."},
-      {"id": 2103, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo valor inicial."},
-      {"id": 2104, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: No restringe valores, solo garantiza no repetición."}
+      {"id": 2741, "contenido": "Constraint", "correcta": true, "explicacion": "CORRECTO: Limita los valores posibles a un conjunto definido."},
+      {"id": 2742, "contenido": "Required", "correcta": false, "explicacion": "INCORRECTO: Solo obliga a que exista valor."},
+      {"id": 2743, "contenido": "Default Value", "correcta": false, "explicacion": "INCORRECTO: Solo valor inicial."},
+      {"id": 2744, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: No restringe valores, solo garantiza no repetición."}
     ]
   },
   {
@@ -5819,10 +5820,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which field type stores decimal numbers in a CDT?",
     "multiple": false,
     "respuestas": [
-      {"id": 2105, "contenido": "Decimal", "correcta": true, "explicacion": "CORRECTO: Se usa para valores decimales."},
-      {"id": 2106, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Solo números enteros."},
-      {"id": 2107, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Solo texto."},
-      {"id": 2108, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Solo true/false."}
+      {"id": 2745, "contenido": "Decimal", "correcta": true, "explicacion": "CORRECTO: Se usa para valores decimales."},
+      {"id": 2746, "contenido": "Integer", "correcta": false, "explicacion": "INCORRECTO: Solo números enteros."},
+      {"id": 2747, "contenido": "Text", "correcta": false, "explicacion": "INCORRECTO: Solo texto."},
+      {"id": 2748, "contenido": "Boolean", "correcta": false, "explicacion": "INCORRECTO: Solo true/false."}
     ]
   },
   {
@@ -5830,10 +5831,10 @@ export const QUESTIONS_AI: Question[] = [
     "contenido": "Which feature allows a CDT to evolve without breaking existing interfaces?",
     "multiple": true,
     "respuestas": [
-      {"id": 2109, "contenido": "Optional Fields", "correcta": true, "explicacion": "CORRECTO: Hacer campos opcionales permite mantener compatibilidad."},
-      {"id": 2110, "contenido": "Required Fields", "correcta": false, "explicacion": "INCORRECTO: Cambiarlos puede romper interfaces."},
-      {"id": 2111, "contenido": "Default Values", "correcta": true, "explicacion": "CORRECTO: Asignar valores por defecto mantiene compatibilidad."},
-      {"id": 2112, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: No afecta compatibilidad de interfaces."}
+      {"id": 2749, "contenido": "Optional Fields", "correcta": true, "explicacion": "CORRECTO: Hacer campos opcionales permite mantener compatibilidad."},
+      {"id": 2750, "contenido": "Required Fields", "correcta": false, "explicacion": "INCORRECTO: Cambiarlos puede romper interfaces."},
+      {"id": 2751, "contenido": "Default Values", "correcta": true, "explicacion": "CORRECTO: Asignar valores por defecto mantiene compatibilidad."},
+      {"id": 2752, "contenido": "Unique", "correcta": false, "explicacion": "INCORRECTO: No afecta compatibilidad de interfaces."}
     ]
   },
 

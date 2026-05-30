@@ -1,0 +1,1201 @@
+  {
+    "id": 156,
+    "contenido": "During CDT creation, when should you select the option to Create New Version from XSD?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 649,
+        "contenido": "When the data type (cdt) contains more than 12 fields",
+        "correcta": false,
+        "explicacion": "INCORRECTO: When the data type (cdt) contains more than 12 fields"
+      },
+      {
+        "id": 650,
+        "contenido": "When the data type (cdt) is created through a Web Service",
+        "correcta": false,
+        "explicacion": "INCORRECTO: When the data type (cdt) is created through a Web Service"
+      },
+      {
+        "id": 651,
+        "contenido": "When the data type (cdt) Designer docs not allow you to identify your Primary Key field",
+        "correcta": false,
+        "explicacion": "INCORRECTO: When the data type (cdt) Designer docs not allow you to identify your Primary Key field"
+      },
+      {
+        "id": 652,
+        "contenido": "When the data type (cdt) configurations are not accessible through the Data Type (CDT) Designer",
+        "correcta": true,
+        "explicacion": "CORRECTO: When the data type (cdt) configurations are not accessible through the Data Type (CDT) Designer"
+      }
+    ]
+  },
+
+  {
+    "id": 157,
+    "contenido": "In a rule, there is a variable named local!numberOfCustomers which will eventually change value. You are tasked with creating a variable that captures the original value so that you can later compare the original and new value. Which parameter settings should you use for your new variable",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 653,
+        "contenido": "refreshAlways: true",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshAlways: true"
+      },
+      {
+        "id": 654,
+        "contenido": "refreshOnReferencedVarChange: false",
+        "correcta": true,
+        "explicacion": "CORRECTO: refreshOnReferencedVarChange: false"
+      },
+      {
+        "id": 655,
+        "contenido": "refreshOnReferencedVarChange: true",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshOnReferencedVarChange: true"
+      },
+      {
+        "id": 656,
+        "contenido": "refreshOnVarChange: local!numberOfCustomers",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshOnVarChange: local!numberOfCustomers"
+      }
+    ]
+  },
+
+  {
+    "id": 158,
+    "contenido": "Which two statements are true about the Primary Key constraint in SQL (Choose two)",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 657,
+        "contenido": "A Primary Key must be on integer.ax",
+        "correcta": false,
+        "explicacion": "INCORRECTO: A Primary Key must be on integer.ax"
+      },
+      {
+        "id": 658,
+        "contenido": "A primary Key must contain UNIQUE values",
+        "correcta": true,
+        "explicacion": "CORRECTO: A primary Key must contain UNIQUE values"
+      },
+      {
+        "id": 659,
+        "contenido": "A Primary key must be mode of a single column only",
+        "correcta": false,
+        "explicacion": "INCORRECTO: A Primary key must be mode of a single column only"
+      },
+      {
+        "id": 660,
+        "contenido": "A Primary Key uniquely identifies each record in a SQL database table",
+        "correcta": true,
+        "explicacion": "CORRECTO: A Primary Key uniquely identifies each record in a SQL database table"
+      }
+    ]
+  },
+
+  {
+    "id": 159,
+    "contenido": "You connected multiple input paths to an XOR gateway in a loop. What will happen when the second input flow reaches the gateway?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 661,
+        "contenido": "All input flows will execute",
+        "correcta": false,
+        "explicacion": "INCORRECTO: All input flows will execute"
+      },
+      {
+        "id": 662,
+        "contenido": "The first flow executes successfully, and the remaining will wait indefinitely",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The first flow executes successfully, and the remaining will wait indefinitely"
+      },
+      {
+        "id": 663,
+        "contenido": "The first flow executes successfully, and the remaining will throw an error",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The first flow executes successfully, and the remaining will throw an error"
+      },
+      {
+        "id": 664,
+        "contenido": "The first flow executes successfully, and the remaining will be skipped",
+        "correcta": true,
+        "explicacion": "CORRECTO: The first flow executes successfully, and the remaining will be skipped"
+      }
+    ]
+  },
+
+  {
+    "id": 160,
+    "contenido": "Where can an Appian Developer connect with and share their expertise with other Appian Developers.",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 665,
+        "contenido": "Appian Learning Paths via Appian Academy",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Appian Learning Paths via Appian Academy"
+      },
+      {
+        "id": 666,
+        "contenido": "Appian Knowledge Base",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Appian Knowledge Base"
+      },
+      {
+        "id": 667,
+        "contenido": "Appian Community discussions",
+        "correcta": true,
+        "explicacion": "CORRECTO: Appian Community discussions"
+      }
+    ]
+  },
+
+  {
+    "id": 161,
+    "contenido": "You created and published a new process model. The model has a start from with two synchronous subprocesses with 40 and 66 nodes each. All nodes are chained from the start node through the subprocesses to the end node. After the tasks and subprocesses, there is a second User Input Task in which the user can confirm the entries and add a comment. When testing a normal Acme business user, you see that the confirmation screen is not shown to you. What might be the reason for this behaviour?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 668,
+        "contenido": "The maximum number of activity chained nodes is exceeded and breaks.",
+        "correcta": true,
+        "explicacion": "CORRECTO: The maximum number of activity chained nodes is exceeded and breaks."
+      },
+      {
+        "id": 669,
+        "contenido": "The second User Input Task is assigned to the process initiator",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The second User Input Task is assigned to the process initiator"
+      },
+      {
+        "id": 670,
+        "contenido": "The second User Input Task is assigned to the Acme business user group",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The second User Input Task is assigned to the Acme business user group"
+      }
+    ]
+  },
+
+  {
+    "id": 162,
+    "contenido": "Your customer wants to change the name of a field on an existing CDT to match a renamed database field. The CDT is backed by a database entity, whose data store has the Automatically Update Database Schema disabled. The old column name was BIRTHDATE and the new column name is DATE_OF_BIRTH. How should you proceed?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 671,
+        "contenido": "Download the CDT as XSD, make the appropiate changes, and reupload the XSD. Verify and publish the data store.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Download the CDT as XSD, make the appropiate changes, and reupload the XSD. Verify and publish the data store."
+      },
+      {
+        "id": 672,
+        "contenido": "Rename the field in the record type in Appian to automatically update the CDT field.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Rename the field in the record type in Appian to automatically update the CDT field."
+      },
+      {
+        "id": 673,
+        "contenido": "Rename the field in the CDT in Appian. Verify and publish the data store.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Rename the field in the CDT in Appian. Verify and publish the data store."
+      }
+    ]
+  },
+
+  {
+    "id": 163,
+    "contenido": "Which step can be critical in passing information from a form back to a process model?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 674,
+        "contenido": "Configure the Data Management tab",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Configure the Data Management tab"
+      },
+      {
+        "id": 675,
+        "contenido": "Configure the activity class parameters of a Write to Data Store Entity node",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Configure the activity class parameters of a Write to Data Store Entity node"
+      },
+      {
+        "id": 676,
+        "contenido": "Configure inputs on the Data tab of a User Input Task",
+        "correcta": true,
+        "explicacion": "CORRECTO: Configure inputs on the Data tab of a User Input Task"
+      }
+    ]
+  },
+
+  {
+    "id": 164,
+    "contenido": "You configured a CDT, ACME_video. You need to set up a node in your process model to weite a new video as a row in the CDT's corresponding database table. Which set of inputs must you configure on your Write to Data Stor smart service node?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 677,
+        "contenido": "The data store and an input corresponding to each field of the ACME_video CDT",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The data store and an input corresponding to each field of the ACME_video CDT"
+      },
+      {
+        "id": 678,
+        "contenido": "The data store entity and an input of type ACME_video",
+        "correcta": true,
+        "explicacion": "CORRECTO: The data store entity and an input of type ACME_video"
+      },
+      {
+        "id": 679,
+        "contenido": "The data store and an input of type ACME_video",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The data store and an input of type ACME_video"
+      }
+    ]
+  },
+
+  {
+    "id": 165,
+    "contenido": "Review the following code snippet:\ndisplayvalue( 1, {0,1,2}, {\"Low\", \"Medium\", \"High\"}, \"Unknown\" )\nThe definition of displayvalue is: Tries to match a value in a given array with a value at the same index in a replacement array and returns either the value at the same index or a default value if the value is not found. What does this code snippet return?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 680,
+        "contenido": "Low",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Low"
+      },
+      {
+        "id": 681,
+        "contenido": "Medium",
+        "correcta": true,
+        "explicacion": "CORRECTO: Medium"
+      },
+      {
+        "id": 682,
+        "contenido": "High",
+        "correcta": false,
+        "explicacion": "INCORRECTO: High"
+      }
+    ]
+  },
+
+  {
+    "id": 166,
+    "contenido": "You are creating a new interface objetc to display a pie chart. The data for the chart is stored in a local variable in the parent interface object which references your child interface. In terms of performance, what is the most efficient to access the data required for the pie chart?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 683,
+        "contenido": "Create a rule input on the child interface and pass the local variables data from the parent interface",
+        "correcta": true,
+        "explicacion": "CORRECTO: Create a rule input on the child interface and pass the local variables data from the parent interface"
+      },
+      {
+        "id": 684,
+        "contenido": "Reference the local variable directly from the child interface using a process report",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Reference the local variable directly from the child interface using a process report"
+      },
+      {
+        "id": 685,
+        "contenido": "Query the data separately in the child interface to avoid passing it from the parent interface",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Query the data separately in the child interface to avoid passing it from the parent interface"
+      }
+    ]
+  },
+
+  {
+    "id": 167,
+    "contenido": "You are configuring a local variable on an interface to store the date and time that the username field was last modified. The local variables are currently configured as follows:\n\nlocal!username,\nlocal!usernameLastModified: a!refreshVariable(\n       value :now()\n)\n\nWhich a!refreshVariable configuration should be added so that local!usernameLastModified stores the correct timestamp?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 686,
+        "contenido": "refreshInterval: 0",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshInterval: 0"
+      },
+      {
+        "id": 687,
+        "contenido": "refreshOnVarChange: local!username",
+        "correcta": true,
+        "explicacion": "CORRECTO: refreshOnVarChange: local!username"
+      },
+      {
+        "id": 688,
+        "contenido": "refreshAlways: true",
+        "correcta": false,
+        "explicacion": "INCORRECTO: refreshAlways: true"
+      }
+    ]
+  },
+
+  {
+    "id": 168,
+    "contenido": "How do you refer to metadata of a process model object within process model expressions? For example: the creator, name, or description",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 689,
+        "contenido": "Process Properties, referred to in process model expressions using the pp!domain",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Process Properties, referred to in process model expressions using the pp!domain"
+      },
+      {
+        "id": 690,
+        "contenido": "Process Variables, referred to in process model expressions using the pv!domain",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Process Variables, referred to in process model expressions using the pv!domain"
+      },
+      {
+        "id": 691,
+        "contenido": "Process Model Properties, referred to in process model expressions using the pm!domain",
+        "correcta": true,
+        "explicacion": "CORRECTO: Process Model Properties, referred to in process model expressions using the pm!domain"
+      }
+    ]
+  },
+
+  {
+    "id": 169,
+    "contenido": "What could be the problem of the following error message after creating a dropdown field?\n\nA dropdown component has an invalid vlaue for choiceValues. The choiceLabels and choiceValues arrays must be the same length, but choiceLabels was length 12 and choiceValues was length 7.",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 692,
+        "contenido": "The choiceLabels and choiceValues datatypes do not match",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The choiceLabels and choiceValues datatypes do not match"
+      },
+      {
+        "id": 693,
+        "contenido": "The choiceValues has too few values",
+        "correcta": true,
+        "explicacion": "CORRECTO: The choiceValues has too few values"
+      },
+      {
+        "id": 694,
+        "contenido": "The choiceLabels has too few labels",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The choiceLabels has too few labels"
+      }
+    ]
+  },
+
+  {
+    "id": 170,
+    "contenido": "You are working on a process model \"VIM Update Vehicle\". You want to call another process \"VIM Get Service Date\" that accepts pv!vehicleId as a process parameter and sets a value for pv!serviceDate. The next node in VIM Update Vehicle depends on the value of pv!serviceDate. Which node should you use to execute \"VIM Get Service Date\" from VIM Update Vehicle?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 695,
+        "contenido": "Start Process smart service",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Start Process smart service"
+      },
+      {
+        "id": 696,
+        "contenido": "Asynchronous subprocess with activity chaining",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Asynchronous subprocess with activity chaining"
+      },
+      {
+        "id": 697,
+        "contenido": "Synchronous subprocess with input and output variables configured",
+        "correcta": true,
+        "explicacion": "CORRECTO: Synchronous subprocess with input and output variables configured"
+      }
+    ]
+  },
+
+  {
+    "id": 171,
+    "contenido": "Which two scenarios are ideal for using Appian Portals? (Choose two.)",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 698,
+        "contenido": "A manager wants to obtain a view of their team's performance",
+        "correcta": false,
+        "explicacion": "INCORRECTO: A manager wants to obtain a view of their team's performance"
+      },
+      {
+        "id": 699,
+        "contenido": "A retail customer wants to conduct a public survey for their recently launched product",
+        "correcta": true,
+        "explicacion": "CORRECTO: A retail customer wants to conduct a public survey for their recently launched product"
+      },
+      {
+        "id": 700,
+        "contenido": "An employee who does not have an account wants to register for their company's vehicle fleet a management system",
+        "correcta": true,
+        "explicacion": "CORRECTO: An employee who does not have an account wants to register for their company's vehicle fleet a management system"
+      },
+      {
+        "id": 701,
+        "contenido": "A user needs to submit support requests when they are using their mobile device in areas with bad network coverage",
+        "correcta": false,
+        "explicacion": "INCORRECTO: A user needs to submit support requests when they are using their mobile device in areas with bad network coverage"
+      }
+    ]
+  },
+
+  {
+    "id": 172,
+    "contenido": "You have two CDTs: ACME_invoice and ACME_invoiceItem that have a flat relationship. The invoice item table has a field that is a foreign key to the incoive table. You are leveraging the database to automatically generate their primary keys. How should you structure the process model to add a new invoice and the new invoice items to the system?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 702,
+        "contenido": "1 - Write to Multiple Data Store Entitites smart service (Writing to the ACME_invoiceItem table and ACME_invoice table)",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 1 - Write to Multiple Data Store Entitites smart service (Writing to the ACME_invoiceItem table and ACME_invoice table)"
+      },
+      {
+        "id": 703,
+        "contenido": "1 - Write to Data Store Entity smart service (Writing to the ACME_invoiceItem table). 2 - Script Task to update foreign keys. 3 - Write to Data Store Entity smart service (Writing to the ACME_invoice table)",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 1 - Write to Data Store Entity smart service (Writing to the ACME_invoiceItem table). 2 - Script Task to update foreign "
+      },
+      {
+        "id": 704,
+        "contenido": "1 - Write to Data Store Entity smart service (Writing to the ACME_invoice table). 2 - Script Task to update foreign keys. 3 - Write to Data Store Entity smart service (Writing to the ACME_invoiceItem table)",
+        "correcta": true,
+        "explicacion": "CORRECTO: 1 - Write to Data Store Entity smart service (Writing to the ACME_invoice table). 2 - Script Task to update foreign keys"
+      }
+    ]
+  },
+
+  {
+    "id": 173,
+    "contenido": "After selecting a record, a user wants to initiate an activity in the context of that selected record. You start by creating the process model that implements this activity. What should you do next?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 705,
+        "contenido": "Add the process model as a record list action to that record",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Add the process model as a record list action to that record"
+      },
+      {
+        "id": 706,
+        "contenido": "Configure a site page as an action to kick off the process model",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Configure a site page as an action to kick off the process model"
+      },
+      {
+        "id": 707,
+        "contenido": "Add the process model as a record related action to that record",
+        "correcta": true,
+        "explicacion": "CORRECTO: Add the process model as a record related action to that record"
+      }
+    ]
+  },
+
+  {
+    "id": 174,
+    "contenido": "After identifying groups, what should you do next?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 708,
+        "contenido": "List each group's primary activities in using the application",
+        "correcta": true,
+        "explicacion": "CORRECTO: List each group's primary activities in using the application"
+      },
+      {
+        "id": 709,
+        "contenido": "Create an organizational chart",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Create an organizational chart"
+      },
+      {
+        "id": 710,
+        "contenido": "Create login credentials for each group members",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Create login credentials for each group members"
+      },
+      {
+        "id": 711,
+        "contenido": "Delete the All Users group",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Delete the All Users group"
+      }
+    ]
+  },
+
+  {
+    "id": 175,
+    "contenido": "Write an expression that tests a rule input value, IF it is null, then the message \"Null value\" should be displayed. Otherwise, the rule input value should be displayed.",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 712,
+        "contenido": "if( isnull(ri!value), \"Null value\", ri!value )",
+        "correcta": true,
+        "explicacion": "CORRECTO: if( isnull(ri!value), \"Null value\", ri!value )"
+      },
+      {
+        "id": 713,
+        "contenido": "if( isnull(), \"Null value\", ri!value )",
+        "correcta": false,
+        "explicacion": "INCORRECTO: if( isnull(), \"Null value\", ri!value )"
+      },
+      {
+        "id": 714,
+        "contenido": "if( isnull(value), \"Null value\", value )",
+        "correcta": false,
+        "explicacion": "INCORRECTO: if( isnull(value), \"Null value\", value )"
+      },
+      {
+        "id": 715,
+        "contenido": "if( null(ri!value), \"Null value\", ri!value )",
+        "correcta": false,
+        "explicacion": "INCORRECTO: if( null(ri!value), \"Null value\", ri!value )"
+      }
+    ]
+  },
+
+  {
+    "id": 176,
+    "contenido": "Which properties of a component can you modify in the Component Configuration pane? (Choose two.)",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 716,
+        "contenido": "Where the component is placed on the canvas",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Where the component is placed on the canvas"
+      },
+      {
+        "id": 717,
+        "contenido": "Conditions that determine whether the component is visible",
+        "correcta": true,
+        "explicacion": "CORRECTO: Conditions that determine whether the component is visible"
+      },
+      {
+        "id": 718,
+        "contenido": "Where the component's label is located in relation to it",
+        "correcta": true,
+        "explicacion": "CORRECTO: Where the component's label is located in relation to it"
+      },
+      {
+        "id": 719,
+        "contenido": "Whether the component is required",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Whether the component is required"
+      }
+    ]
+  },
+
+  {
+    "id": 177,
+    "contenido": "What is the primary purpose of process parameters?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 720,
+        "contenido": "To capture data throughout a process",
+        "correcta": false,
+        "explicacion": "INCORRECTO: To capture data throughout a process"
+      },
+      {
+        "id": 721,
+        "contenido": "To receive values at the beginning of a process",
+        "correcta": true,
+        "explicacion": "CORRECTO: To receive values at the beginning of a process"
+      },
+      {
+        "id": 722,
+        "contenido": "To capture data in a node",
+        "correcta": false,
+        "explicacion": "INCORRECTO: To capture data in a node"
+      },
+      {
+        "id": 723,
+        "contenido": "To enable node inputs",
+        "correcta": false,
+        "explicacion": "INCORRECTO: To enable node inputs"
+      }
+    ]
+  },
+
+  {
+    "id": 178,
+    "contenido": "Why should you use escalations and exceptions for user input tasks?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 724,
+        "contenido": "To set a deadline for the entire process to complete by",
+        "correcta": false,
+        "explicacion": "INCORRECTO: To set a deadline for the entire process to complete by"
+      },
+      {
+        "id": 725,
+        "contenido": "To automatically change the security permissions for the process model",
+        "correcta": false,
+        "explicacion": "INCORRECTO: To automatically change the security permissions for the process model"
+      },
+      {
+        "id": 726,
+        "contenido": "To ensure the process does not stay open indefinitely",
+        "correcta": true,
+        "explicacion": "CORRECTO: To ensure the process does not stay open indefinitely"
+      },
+      {
+        "id": 727,
+        "contenido": "To skip the User Input task if a user is part of a particular application group",
+        "correcta": false,
+        "explicacion": "INCORRECTO: To skip the User Input task if a user is part of a particular application group"
+      }
+    ]
+  },
+
+  {
+    "id": 179,
+    "contenido": "You are reviewing the Process Model Metrics tab to determine the memory footprint of your process models. Which setting of Process Model Properties does NOT have a direct impact on the total memory usage of a process model?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 728,
+        "contenido": "Average Process INstance Memory (AMU)",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Average Process INstance Memory (AMU)"
+      },
+      {
+        "id": 729,
+        "contenido": "Clean-up Days",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Clean-up Days"
+      },
+      {
+        "id": 730,
+        "contenido": "Clean-up Type",
+        "correcta": true,
+        "explicacion": "CORRECTO: Clean-up Type"
+      },
+      {
+        "id": 731,
+        "contenido": "Instances",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Instances"
+      }
+    ]
+  },
+
+  {
+    "id": 180,
+    "contenido": "How can you check the data type returned by an expression?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 732,
+        "contenido": "By checking the Appian docs",
+        "correcta": false,
+        "explicacion": "INCORRECTO: By checking the Appian docs"
+      },
+      {
+        "id": 733,
+        "contenido": "Check for red flags in the numbered editor lines",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Check for red flags in the numbered editor lines"
+      },
+      {
+        "id": 734,
+        "contenido": "By using the pagingInfo() function",
+        "correcta": false,
+        "explicacion": "INCORRECTO: By using the pagingInfo() function"
+      },
+      {
+        "id": 735,
+        "contenido": "By testing the expression",
+        "correcta": true,
+        "explicacion": "CORRECTO: By testing the expression"
+      }
+    ]
+  },
+
+  {
+    "id": 181,
+    "contenido": "What are the key components of application planning?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 736,
+        "contenido": "Data points, records, forms, scheduling process models",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Data points, records, forms, scheduling process models"
+      },
+      {
+        "id": 737,
+        "contenido": "Databases, web APIs, users, forms, process models, reports",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Databases, web APIs, users, forms, process models, reports"
+      },
+      {
+        "id": 738,
+        "contenido": "Personas, data points, records, process models, reports",
+        "correcta": true,
+        "explicacion": "CORRECTO: Personas, data points, records, process models, reports"
+      },
+      {
+        "id": 739,
+        "contenido": "Personas, project budget, data points, records, reports",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Personas, project budget, data points, records, reports"
+      }
+    ]
+  },
+
+  {
+    "id": 182,
+    "contenido": "You should consider creating a custom Task Report when users...",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 740,
+        "contenido": "want to see basic Task information",
+        "correcta": false,
+        "explicacion": "INCORRECTO: want to see basic Task information"
+      },
+      {
+        "id": 741,
+        "contenido": "want to see Tasks in a list",
+        "correcta": false,
+        "explicacion": "INCORRECTO: want to see Tasks in a list"
+      },
+      {
+        "id": 742,
+        "contenido": "are using a Site",
+        "correcta": true,
+        "explicacion": "CORRECTO: are using a Site"
+      },
+      {
+        "id": 743,
+        "contenido": "want to send Tasks to other Users",
+        "correcta": false,
+        "explicacion": "INCORRECTO: want to send Tasks to other Users"
+      }
+    ]
+  },
+
+  {
+    "id": 183,
+    "contenido": "Which gateway is used most frequently?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 744,
+        "contenido": "Complex",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Complex"
+      },
+      {
+        "id": 745,
+        "contenido": "OR",
+        "correcta": false,
+        "explicacion": "INCORRECTO: OR"
+      },
+      {
+        "id": 746,
+        "contenido": "AND",
+        "correcta": false,
+        "explicacion": "INCORRECTO: AND"
+      },
+      {
+        "id": 747,
+        "contenido": "XOR",
+        "correcta": true,
+        "explicacion": "CORRECTO: XOR"
+      }
+    ]
+  },
+
+  {
+    "id": 184,
+    "contenido": "Which two methods can be used to return values from a specific field in an array?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 748,
+        "contenido": ").customer.name",
+        "correcta": false,
+        "explicacion": "INCORRECTO: ).customer.name"
+      },
+      {
+        "id": 749,
+        "contenido": ").customer.Name",
+        "correcta": false,
+        "explicacion": "INCORRECTO: ).customer.Name"
+      },
+      {
+        "id": 750,
+        "contenido": ")data.customerName",
+        "correcta": false,
+        "explicacion": "INCORRECTO: )data.customerName"
+      },
+      {
+        "id": 751,
+        "contenido": ").data.customerName",
+        "correcta": true,
+        "explicacion": "CORRECTO: ).data.customerName"
+      }
+    ]
+  },
+
+  {
+    "id": 185,
+    "contenido": "What should you click to create a new version fo your process model?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 752,
+        "contenido": "Save",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Save"
+      },
+      {
+        "id": 753,
+        "contenido": "Properties",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Properties"
+      },
+      {
+        "id": 754,
+        "contenido": "Start Process for Debugging",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Start Process for Debugging"
+      },
+      {
+        "id": 755,
+        "contenido": "Save and Publish",
+        "correcta": true,
+        "explicacion": "CORRECTO: Save and Publish"
+      }
+    ]
+  },
+
+  {
+    "id": 186,
+    "contenido": "Your test plan for a user interface should contain the happy path and steps that try to break your work including which of the following?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 756,
+        "contenido": "Cancelling an action",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Cancelling an action"
+      },
+      {
+        "id": 757,
+        "contenido": "Submitting an incomplete form",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Submitting an incomplete form"
+      },
+      {
+        "id": 758,
+        "contenido": "All the options are correct",
+        "correcta": true,
+        "explicacion": "CORRECTO: All the options are correct"
+      },
+      {
+        "id": 759,
+        "contenido": "Testing entered values that are out of bounds",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Testing entered values that are out of bounds"
+      }
+    ]
+  },
+
+  {
+    "id": 187,
+    "contenido": "Which of the following practices helps you to create scalable process models?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 760,
+        "contenido": "Build unitary models that include between 100-300 activities",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Build unitary models that include between 100-300 activities"
+      },
+      {
+        "id": 761,
+        "contenido": "Activity chain flows between Script Tasks and End Events",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Activity chain flows between Script Tasks and End Events"
+      },
+      {
+        "id": 762,
+        "contenido": "Design short-lived processes",
+        "correcta": true,
+        "explicacion": "CORRECTO: Design short-lived processes"
+      },
+      {
+        "id": 763,
+        "contenido": "Archive processes after 8 or more days",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Archive processes after 8 or more days"
+      }
+    ]
+  },
+
+  {
+    "id": 188,
+    "contenido": "Which of the following objects are not permitted in pages of a Site?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 764,
+        "contenido": "Record Type",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Record Type"
+      },
+      {
+        "id": 765,
+        "contenido": "News Feed",
+        "correcta": true,
+        "explicacion": "CORRECTO: News Feed"
+      },
+      {
+        "id": 766,
+        "contenido": "Task Report",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Task Report"
+      },
+      {
+        "id": 767,
+        "contenido": "An Interface saved as a Report",
+        "correcta": false,
+        "explicacion": "INCORRECTO: An Interface saved as a Report"
+      }
+    ]
+  },
+
+  {
+    "id": 189,
+    "contenido": "Task Reports are displayed on which tab, in Tempo?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 768,
+        "contenido": "Tasks",
+        "correcta": true,
+        "explicacion": "CORRECTO: Tasks"
+      },
+      {
+        "id": 769,
+        "contenido": "News",
+        "correcta": false,
+        "explicacion": "INCORRECTO: News"
+      },
+      {
+        "id": 770,
+        "contenido": "Reports",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Reports"
+      },
+      {
+        "id": 771,
+        "contenido": "Records",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Records"
+      }
+    ]
+  },
+
+  {
+    "id": 190,
+    "contenido": "From which location do you create an application?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 772,
+        "contenido": "The Knowledge Center",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The Knowledge Center"
+      },
+      {
+        "id": 773,
+        "contenido": "The Process Modeler",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The Process Modeler"
+      },
+      {
+        "id": 774,
+        "contenido": "The Administration Console",
+        "correcta": false,
+        "explicacion": "INCORRECTO: The Administration Console"
+      },
+      {
+        "id": 775,
+        "contenido": "The Appian Designer",
+        "correcta": true,
+        "explicacion": "CORRECTO: The Appian Designer"
+      }
+    ]
+  },
+
+  {
+    "id": 191,
+    "contenido": "Verifying a Data Store Entity allows a developer to download which structural type of file?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 776,
+        "contenido": "XLS",
+        "correcta": false,
+        "explicacion": "INCORRECTO: XLS"
+      },
+      {
+        "id": 777,
+        "contenido": "XSD",
+        "correcta": false,
+        "explicacion": "INCORRECTO: XSD"
+      },
+      {
+        "id": 778,
+        "contenido": "SQL",
+        "correcta": true,
+        "explicacion": "CORRECTO: SQL"
+      },
+      {
+        "id": 779,
+        "contenido": "XML",
+        "correcta": false,
+        "explicacion": "INCORRECTO: XML"
+      }
+    ]
+  },
+
+  {
+    "id": 192,
+    "contenido": "To display data from a CDT in a read only text field, what do you need to configure?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 780,
+        "contenido": "Save Input to",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Save Input to"
+      },
+      {
+        "id": 781,
+        "contenido": "Display Value",
+        "correcta": true,
+        "explicacion": "CORRECTO: Display Value"
+      },
+      {
+        "id": 782,
+        "contenido": "Contents",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Contents"
+      },
+      {
+        "id": 783,
+        "contenido": "Visibility",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Visibility"
+      }
+    ]
+  },
+
+  {
+    "id": 193,
+    "contenido": "Which prefix should an Appian query expression typically use for enhanced readability?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 784,
+        "contenido": "Go",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Go"
+      },
+      {
+        "id": 785,
+        "contenido": "Get",
+        "correcta": true,
+        "explicacion": "CORRECTO: Get"
+      },
+      {
+        "id": 786,
+        "contenido": "DTO",
+        "correcta": false,
+        "explicacion": "INCORRECTO: DTO"
+      },
+      {
+        "id": 787,
+        "contenido": "SqlCornmand",
+        "correcta": false,
+        "explicacion": "INCORRECTO: SqlCornmand"
+      }
+    ]
+  },
+
+  {
+    "id": 194,
+    "contenido": "Which Process Model ACtivities designate a task completed by the system?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 788,
+        "contenido": "Sub-processes",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Sub-processes"
+      },
+      {
+        "id": 789,
+        "contenido": "User Input Task",
+        "correcta": false,
+        "explicacion": "INCORRECTO: User Input Task"
+      },
+      {
+        "id": 790,
+        "contenido": "Script Tasks",
+        "correcta": true,
+        "explicacion": "CORRECTO: Script Tasks"
+      },
+      {
+        "id": 791,
+        "contenido": "Rules",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Rules"
+      }
+    ]
+  },
+
+  {
+    "id": 195,
+    "contenido": "Which of the following cannot be exported from one instance to another?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 792,
+        "contenido": "Groups",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Groups"
+      },
+      {
+        "id": 793,
+        "contenido": "CDTs",
+        "correcta": false,
+        "explicacion": "INCORRECTO: CDTs"
+      },
+      {
+        "id": 794,
+        "contenido": "Users",
+        "correcta": true,
+        "explicacion": "CORRECTO: Users"
+      },
+      {
+        "id": 795,
+        "contenido": "Process Models",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Process Models"
+      }
+    ]
+  },
