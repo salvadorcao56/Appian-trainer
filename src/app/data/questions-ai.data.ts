@@ -6951,18 +6951,480 @@ export const QUESTIONS_AI: Question[] = [
       {"id": 2511, "contenido": "Phases", "correcta": false, "explicacion": "INCORRECTO: Típico de Waterfall, no Agile."},
       {"id": 2512, "contenido": "Tasks Only", "correcta": false, "explicacion": "INCORRECTO: Una historia puede contener varias tareas, no solo tasks."}
     ]
+  },
+  {
+    "id": 800,
+    "contenido": "What is an application in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2513,
+        "contenido": "A set of design objects that together form the user interfaces, logic, processes, and data users interact with while doing work in Appian.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Una aplicación en Appian es un contenedor lógico que agrupa interfaces, procesos, datos y lógica para resolver una necesidad de negocio."
+      },
+      {
+        "id": 2514,
+        "contenido": "A collection of documents used to store information for an application.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Una aplicación no es solo un repositorio de documentos; incluye procesos, interfaces, reglas y datos."
+      },
+      {
+        "id": 2534,
+        "contenido": "A single process model that handles all business logic.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Una aplicación puede contener múltiples procesos, no solo uno."
+      },
+      {
+        "id": 2535,
+        "contenido": "A database schema used to store application records.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La base de datos es solo una parte; una aplicación Appian incluye mucho más que el esquema de datos."
+      }
+    ]
+  },
+  {
+    "id": 801,
+    "contenido": "Which design object is the root container for all other design objects in an Appian application?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2515,
+        "contenido": "The Application Object",
+        "correcta": true,
+        "explicacion": "CORRECTO: El Application Object es el contenedor raíz que agrupa todos los objetos de diseño de una aplicación Appian."
+      },
+      {
+        "id": 2516,
+        "contenido": "The Process Model Object",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Un Process Model es un objeto dentro de la aplicación, no el contenedor raíz."
+      },
+      {
+        "id": 2536,
+        "contenido": "The Record Type Object",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Un Record Type es un objeto de datos, no el contenedor principal de la aplicación."
+      },
+      {
+        "id": 2537,
+        "contenido": "The Group Object",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los grupos son para seguridad y organización, no son el contenedor raíz."
+      }
+    ]
+  },
+  {
+    "id": 802,
+    "contenido": "In Appian, what is the purpose of creating a security group?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2517,
+        "contenido": "To manage user access and permissions for design objects.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los grupos de seguridad permiten asignar permisos de forma organizada a usuarios y objetos de diseño."
+      },
+      {
+        "id": 2518,
+        "contenido": "To organize design objects in a project structure.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los grupos organizan usuarios, no objetos de diseño. Para objetos se usan las carpetas."
+      },
+      {
+        "id": 2538,
+        "contenido": "To define email notification rules for process models.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las notificaciones se configuran en los procesos, no mediante grupos de seguridad."
+      },
+      {
+        "id": 2539,
+        "contenido": "To create backup copies of application objects.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los grupos no tienen relación con backups. Las copias se gestionan con exportaciones."
+      }
+    ]
+  },
+  {
+    "id": 803,
+    "contenido": "What is the default prefix used by Appian when creating an application?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2519,
+        "contenido": "AT",
+        "correcta": true,
+        "explicacion": "CORRECTO: Appian asigna automáticamente el prefijo 'AT' (Application Template) como valor por defecto."
+      },
+      {
+        "id": 2520,
+        "contenido": "APP",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'APP' no es el prefijo por defecto de Appian, aunque pueda parecer intuitivo."
+      },
+      {
+        "id": 2540,
+        "contenido": "APN",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'APN' no es un prefijo estándar de Appian."
+      },
+      {
+        "id": 2541,
+        "contenido": "DFT",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'DFT' no corresponde al prefijo por defecto de una aplicación Appian."
+      }
+    ]
+  },
+  {
+    "id": 804,
+    "contenido": "Which property is used to set the name of an application in Appian Designer?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2521,
+        "contenido": "Name",
+        "correcta": true,
+        "explicacion": "CORRECTO: La propiedad 'Name' es donde se define el nombre visible de la aplicación en Appian Designer."
+      },
+      {
+        "id": 2522,
+        "contenido": "Description",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'Description' es para describir el propósito, no para nombrar la aplicación."
+      },
+      {
+        "id": 2542,
+        "contenido": "Label",
+        "correcta": false,
+        "explicacion": "INCORRECTO: En Appian Designer la propiedad se llama 'Name', no 'Label'."
+      },
+      {
+        "id": 2543,
+        "contenido": "Title",
+        "correcta": false,
+        "explicacion": "INCORRECTO: 'Title' no es una propiedad estándar para el nombre de una aplicación en Appian."
+      }
+    ]
+  },
+  {
+    "id": 805,
+    "contenido": "What is the purpose of creating a folder in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2523,
+        "contenido": "To organize design objects for security and access.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las carpetas en Appian organizan objetos de diseño y facilitan la asignación de permisos por carpeta."
+      },
+      {
+        "id": 2524,
+        "contenido": "To store files related to the application.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las carpetas almacenan objetos de diseño, no archivos. Los documentos se gestionan en Knowledge Center."
+      },
+      {
+        "id": 2544,
+        "contenido": "To define the order of process execution.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El orden de ejecución se define en el Process Model, no mediante carpetas."
+      },
+      {
+        "id": 2545,
+        "contenido": "To version control application components.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El control de versiones se gestiona a nivel de objeto individual, no por carpetas."
+      }
+    ]
+  },
+  {
+    "id": 806,
+    "contenido": "Which steps are typically covered in the Appian Application Building Tutorial?",
+    "multiple": true,
+    "respuestas": [
+      {
+        "id": 2525,
+        "contenido": "Creating an application and configuring security.",
+        "correcta": true,
+        "explicacion": "CORRECTO: El tutorial cubre la creación de la aplicación y la configuración de seguridad."
+      },
+      {
+        "id": 2526,
+        "contenido": "Building interfaces with SAIL components.",
+        "correcta": true,
+        "explicacion": "CORRECTO: El tutorial incluye la creación de interfaces SAIL como parte del flujo de construcción."
+      },
+      {
+        "id": 2546,
+        "contenido": "Configuring advanced AI model integrations.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El tutorial básico no cubre integraciones avanzadas de IA."
+      },
+      {
+        "id": 2547,
+        "contenido": "Creating process models with gateways and assignments.",
+        "correcta": true,
+        "explicacion": "CORRECTO: El tutorial enseña a crear modelos de proceso con compuertas y tareas de asignación."
+      }
+    ]
+  },
+  {
+    "id": 807,
+    "contenido": "What is the recommended naming convention for design objects in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2528,
+        "contenido": "Using a consistent prefix based on the application prefix and object type.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Appian recomienda usar un prefijo constante (ej. AT_Process_Model) para identificar objetos por tipo y aplicación."
+      },
+      {
+        "id": 2529,
+        "contenido": "Using lowercase names separated by hyphens.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los nombres en Appian suelen usar PascalCase o mayúsculas para prefijos, no guiones."
+      },
+      {
+        "id": 2548,
+        "contenido": "Using random numeric IDs to avoid naming conflicts.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los nombres deben ser descriptivos, no numéricos, para facilitar el mantenimiento."
+      },
+      {
+        "id": 2549,
+        "contenido": "Using the creator's name as a prefix.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El prefijo debe identificar la aplicación y el tipo de objeto, no al creador."
+      }
+    ]
+  },
+  {
+    "id": 808,
+    "contenido": "What is the primary purpose of creating security configurations in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2530,
+        "contenido": "To restrict access to design objects based on user roles and permissions.",
+        "correcta": true,
+        "explicacion": "CORRECTO: La seguridad en Appian controla qué usuarios pueden ver, modificar o ejecutar cada objeto de diseño."
+      },
+      {
+        "id": 2531,
+        "contenido": "To optimize performance by reducing the number of design objects.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La seguridad no optimiza rendimiento; su propósito es control de acceso."
+      },
+      {
+        "id": 2550,
+        "contenido": "To enable version control for all application components.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: El versionado es automático en Appian y no depende de la configuración de seguridad."
+      },
+      {
+        "id": 2551,
+        "contenido": "To generate automated documentation for the application.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: La seguridad no genera documentación; eso se hace con herramientas de documentación."
+      }
+    ]
+  },
+  {
+    "id": 809,
+    "contenido": "What is a design object in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2532,
+        "contenido": "A reusable component that represents a piece of application functionality, such as a process model, interface, or expression rule.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Un design object es cualquier componente funcional reutilizable dentro de una aplicación Appian."
+      },
+      {
+        "id": 2533,
+        "contenido": "A static document used for reference purposes only.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Los design objects son funcionales y ejecutables, no estáticos ni meramente referenciales."
+      },
+      {
+        "id": 2552,
+        "contenido": "An external API endpoint configured in Appian.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Un API endpoint es un tipo específico de integración, no abarca todos los design objects."
+      },
+      {
+        "id": 2553,
+        "contenido": "A database table synchronized with Appian records.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Las tablas de base de datos son fuentes de datos, no design objects de Appian."
+      }
+    ]
+  },
+  {
+    "id": 810,
+    "contenido": "What is a Data Store in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2554,
+        "contenido": "A reference to an external relational database used to store application data.",
+        "correcta": true,
+        "explicacion": "CORRECTO: A Data Store is a crucial component of Appian that acts as a connection to external databases. It manages the storage and retrieval of structured data."
+      },
+      {
+        "id": 2555,
+        "contenido": "A user-defined structure for sharing data across different objects.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: While Data Types are indeed used to share data, a Data Store is specifically designed to manage external database connections and not as a user-defined structure for sharing data."
+      },
+      {
+        "id": 2556,
+        "contenido": "A type of record that displays information in a single view.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Record Types are responsible for displaying information across multiple views, while Data Stores focus on managing external database connections and data storage."
+      },
+      {
+        "id": 2557,
+        "contenido": "A tool to design web applications in Appian.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Design Objects are used for designing business processes, record types, and other key components of an application, not web applications themselves."
+      }
+    ]
+  },
+  {
+    "id": 811,
+    "contenido": "Which object allows users to easily deploy a process for business users created in Process HQ?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2558,
+        "contenido": "Data Object",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Data Objects are primarily used for storing and managing data within applications. They do not directly facilitate process deployment."
+      },
+      {
+        "id": 2559,
+        "contenido": "Process Model",
+        "correcta": true,
+        "explicacion": "CORRECTO: Los procesos creados en Process HQ se publican como Process Models, que son los objetos de diseño ejecutables en Appian para flujos de trabajo."
+      },
+      {
+        "id": 2560,
+        "contenido": "Data Store",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Data Stores are used for managing connections to external databases but do not handle process deployment directly."
+      },
+      {
+        "id": 2561,
+        "contenido": "Record Type",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Record Types manage the display of data within an application but are not responsible for deploying processes."
+      }
+    ]
+  },
+  {
+    "id": 812,
+    "contenido": "What is a Data Type in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2562,
+        "contenido": "A type of object that provides a centralized view of business functions.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Record Types are responsible for displaying information in a series of record views and centralizing views of business functions."
+      },
+      {
+        "id": 2563,
+        "contenido": "A tool used to design user interfaces in Appian.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Design Objects include many types, but Interface Objects are primarily used for designing user interfaces and not data types."
+      },
+      {
+        "id": 2564,
+        "contenido": "A developer-defined structure that allows designers to group related data.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Data Types are a key feature in Appian that allow developers to define structured data groups for use across different objects within the application."
+      },
+      {
+        "id": 2565,
+        "contenido": "A type of object used for managing external databases.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Data Stores are designed to manage connections to external databases but do not function as data types in the same way."
+      }
+    ]
+  },
+  {
+    "id": 813,
+    "contenido": "What is a Record Type in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2566,
+        "contenido": "A type of object used for managing external databases.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Data Stores are specifically designed for managing connections to external databases and do not manage record types."
+      },
+      {
+        "id": 2567,
+        "contenido": "A tool used to design user interfaces in Appian.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Design Objects include many types, but Interface Objects are primarily used for designing user interfaces and do not manage record types."
+      },
+      {
+        "id": 2568,
+        "contenido": "A centralized view of business functions within an application.",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Record Types manage the display of information across multiple views and centralize views of business functions but do not provide a centralized view themselves."
+      },
+      {
+        "id": 2569,
+        "contenido": "A type of object that brings together all data on a single topic.",
+        "correcta": true,
+        "explicacion": "CORRECTO: Record Types are the core building blocks of an application in Appian. They group related data and provide a centralized view of specific business functions."
+      }
+    ]
+  },
+  {
+    "id": 814,
+    "contenido": "Which object is used to design web applications in Appian?",
+    "multiple": false,
+    "respuestas": [
+      {
+        "id": 2570,
+        "contenido": "Interface",
+        "correcta": true,
+        "explicacion": "CORRECTO: Las interfaces SAIL son el objeto de diseño específico para crear interfaces de usuario y aplicaciones web en Appian."
+      },
+      {
+        "id": 2571,
+        "contenido": "Design Object",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Design Object es un término genérico que abarca todos los objetos de diseño, no uno específico para interfaces web."
+      },
+      {
+        "id": 2572,
+        "contenido": "Data Store",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Data Stores manage connections to external databases and are not involved in designing web applications."
+      },
+      {
+        "id": 2573,
+        "contenido": "Record Type",
+        "correcta": false,
+        "explicacion": "INCORRECTO: Record Types are used for managing data but do not design web applications."
+      }
+    ]
   }
-
-
-
 //==========================================================
   // =====================================================
-  // PRÓXIMAS PREGUNTAS A AÑADIR (IDs 521 en adelante)
+  // PRÓXIMAS PREGUNTAS A AÑADIR (IDs 815 en adelante)
   // =====================================================
   // Para añadir más preguntas:
-  // 1. Continuar desde ID 521
+  // 1. Continuar desde ID 815
   // 2. Mantener preguntas en inglés
   // 3. Explicaciones en castellano
-  // 4. IDs de respuestas consecutivos desde 1584
+  // 4. IDs de respuestas consecutivos desde 2574
   // =====================================================
 ];

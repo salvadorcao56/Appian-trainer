@@ -28,6 +28,12 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# Internal testing / local experiments
+local-docs/
+promt.txt
+scripts/
+*.bak
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
