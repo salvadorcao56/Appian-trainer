@@ -803,17 +803,17 @@ export const QUESTIONS_EXTRA: Question[] = [
       correcta: false,
       explicacion: 'INCORRECTO: El Process Display Name no está relacionado con la configuración de triggers de email.'
     },
-    {
-      id: 400,
-      contenido: 'Go to File > Properties. Select the Public Events checkbox to allow anyone to fire triggers.',
-      correcta: false,
-      explicacion: 'INCORRECTO: Public Events no es para configurar triggers de email.'
+{
+      "id": 400,
+      "contenido": "Go to File > Properties. Select the Public Events checkbox to allow anyone to fire triggers.",
+      "correcta": false,
+      "explicacion": "INCORRECTO: El checkbox Public Events es necesario pero no suficiente. Además de habilitarlo, debes configurar un Email Event en el Start Event del modelo en el canvas."
     },
     {
       "id": 796,
       "contenido": "Go to File > Properties > Start Events. Add an Email Event to start the process automatically.",
       "correcta": true,
-      "explicacion": "CORRECTO: Los email start triggers se configuran en Process Model Properties > Start Events, agregando un Email Event que inicia el proceso al recibir un correo entrante."
+      "explicacion": "CORRECTO: Se configura desde el Start Event en el canvas del Process Modeler. Se añade un Email Trigger en la pestaña Triggers del nodo Start Event, y previamente se debe habilitar Public Events en File > Properties."
     }
   ]
 },

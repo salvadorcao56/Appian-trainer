@@ -1564,14 +1564,14 @@ export const QUESTIONS_AI: Question[] = [
       {
         "id": 1703,
         "contenido": "a!isNullOrEmpty()",
-        "correcta": false,
-        "explicacion": "INCORRECTO: No existe la función a!isNullOrEmpty() en Appian. La función correcta es isnullorempty() (sin prefijo a!)."
+        "correcta": true,
+        "explicacion": "CORRECTO: a!isNullOrEmpty() es la función de Appian para verificar si un valor es nulo, cadena vacía o lista vacía. Está documentada oficialmente en Appian."
       },
       {
         "id": 1704,
         "contenido": "isnullorempty()",
-        "correcta": true,
-        "explicacion": "CORRECTO: isnullorempty() es la función nativa de Appian para verificar si un valor es nulo o vacío. Es una función integrada sin prefijo a!."
+        "correcta": false,
+        "explicacion": "INCORRECTO: isnullorempty() sin prefijo no es una función standalone en Appian. La función correcta es a!isNullOrEmpty()."
       },
       {
         "id": 1705,
@@ -4282,9 +4282,9 @@ export const QUESTIONS_AI: Question[] = [
     "respuestas": [
       {
         "id": 2053,
-        "contenido": "a!documentUploadField()",
+        "contenido": "a!fileUploadField",
         "correcta": true,
-        "explicacion": "CORRECTO: a!documentUploadField() es el componente SAIL de Appian para subir documentos."
+        "explicacion": "CORRECTO: a!fileUploadField es el componente SAIL de Appian para subir documentos. Está documentado oficialmente como File Upload Component."
       },
       {
         "id": 2054,
