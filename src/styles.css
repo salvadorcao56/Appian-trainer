@@ -1,1 +1,147 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  color-scheme: light;
+
+  --bg-body: #f5f5f5;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f9f9f9;
+  --bg-selected: #e6f3ff;
+  --bg-correct: #e8f5e8;
+  --bg-incorrect: #ffebee;
+  --bg-skipped: #fff3e0;
+  --bg-stat: #f8f9fa;
+  --bg-stat-correct: #e8f5e8;
+  --bg-stat-incorrect: #ffebee;
+  --bg-stat-percentage: #e3f2fd;
+  --bg-stat-study: #fff3e0;
+  --bg-header: #1976d2;
+  --bg-question: #007acc;
+  --bg-disabled: #ccc;
+  --bg-badge-multiple: #e3f2fd;
+  --bg-badge-single: #f3e5f5;
+
+  --text-primary: #000000;
+  --text-secondary: #555555;
+  --text-on-color: #ffffff;
+  --text-badge-multiple: #1976d2;
+  --text-badge-single: #7b1fa2;
+  --text-correct: #2e7d32;
+  --text-incorrect: #c62828;
+  --text-skipped: #ef6c00;
+
+  --border-default: #ddd;
+  --border-selected: #007acc;
+  --border-correct: #4caf50;
+  --border-incorrect: #f44336;
+  --border-skipped: #ff9800;
+  --border-badge-multiple: #bbdefb;
+  --border-badge-single: #e1bee7;
+  --border-footer: #eee;
+
+  --btn-primary: #007acc;
+  --btn-primary-hover: #005a9e;
+  --btn-success: #4caf50;
+  --btn-success-hover: #45a049;
+  --btn-warning: #ff9800;
+  --btn-warning-hover: #f57c00;
+  --btn-danger: #f44336;
+  --btn-finish: #795548;
+  --btn-finish-hover: #5d4037;
+  --btn-restart: #2196f3;
+  --btn-restart-hover: #1976d2;
+
+  --stat-border-correct: #4caf50;
+  --stat-border-incorrect: #f44336;
+  --stat-border-percentage: #2196f3;
+  --stat-border-study: #ff9800;
+
+  --shadow-selected: rgba(0, 122, 204, 0.3);
+  --shadow-card: rgba(0, 0, 0, 0.1);
+
+  --expl-bg: rgba(0, 0, 0, 0.04);
+  --expl-bg-correct: rgba(76, 175, 80, 0.1);
+  --expl-bg-incorrect: rgba(244, 67, 54, 0.1);
+
+  --timer-bg: #2196f3;
+  --timer-alert-bg: #f44336;
+
+  --mode-exam-course: #f44336;
+  --mode-exam-complete: #ff9800;
+  --mode-study: #4caf50;
+
+  --score-correct-bg: #4caf50;
+  --score-incorrect-bg: #f44336;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg-body: #121212;
+  --bg-surface: #1e1e1e;
+  --bg-surface-hover: #2a2a2a;
+  --bg-selected: #1a3a5c;
+  --bg-correct: #1a3a1a;
+  --bg-incorrect: #3a1a1a;
+  --bg-skipped: #3a2a1a;
+  --bg-stat: #2a2a2a;
+  --bg-stat-correct: #1a3a1a;
+  --bg-stat-incorrect: #3a1a1a;
+  --bg-stat-percentage: #1a2a4a;
+  --bg-stat-study: #3a2a1a;
+  --bg-header: #0d47a1;
+  --bg-question: #005a9e;
+  --bg-disabled: #555;
+  --bg-badge-multiple: #1a3a5c;
+  --bg-badge-single: #3a1a4a;
+
+  --text-primary: #e0e0e0;
+  --text-secondary: #aaaaaa;
+  --text-on-color: #ffffff;
+  --text-badge-multiple: #90caf9;
+  --text-badge-single: #ce93d8;
+  --text-correct: #81c784;
+  --text-incorrect: #ef9a9a;
+  --text-skipped: #ffb74d;
+
+  --border-default: #444;
+  --border-selected: #4fc3f7;
+  --border-correct: #66bb6a;
+  --border-incorrect: #ef5350;
+  --border-skipped: #ffa726;
+  --border-badge-multiple: #1a3a5c;
+  --border-badge-single: #3a1a4a;
+  --border-footer: #333;
+
+  --btn-primary: #0088d0;
+  --btn-primary-hover: #0095e5;
+  --btn-success: #388e3c;
+  --btn-success-hover: #43a047;
+  --btn-warning: #f57c00;
+  --btn-warning-hover: #ff9800;
+  --btn-danger: #d32f2f;
+  --btn-finish: #5d4037;
+  --btn-finish-hover: #6d4c41;
+  --btn-restart: #1976d2;
+  --btn-restart-hover: #2196f3;
+
+  --stat-border-correct: #66bb6a;
+  --stat-border-incorrect: #ef5350;
+  --stat-border-percentage: #42a5f5;
+  --stat-border-study: #ffa726;
+
+  --shadow-selected: rgba(79, 195, 247, 0.4);
+  --shadow-card: rgba(0, 0, 0, 0.4);
+
+  --expl-bg: rgba(255, 255, 255, 0.05);
+  --expl-bg-correct: rgba(76, 175, 80, 0.15);
+  --expl-bg-incorrect: rgba(244, 67, 54, 0.15);
+
+  --timer-bg: #1976d2;
+  --timer-alert-bg: #d32f2f;
+
+  --mode-exam-course: #d32f2f;
+  --mode-exam-complete: #e65100;
+  --mode-study: #2e7d32;
+
+  --score-correct-bg: #388e3c;
+  --score-incorrect-bg: #d32f2f;
+}

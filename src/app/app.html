@@ -3,6 +3,9 @@
     <header class="app-header">
       <h1 class="app-title">🎯 Appian Trainer</h1>
       <p class="app-subtitle">Preparación para la certificación</p>
+      <button class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="isDark ? 'Modo claro' : 'Modo oscuro'">
+        {{isDark ? '☀️' : '🌙'}}
+      </button>
     </header>
 
     <app-question></app-question>
